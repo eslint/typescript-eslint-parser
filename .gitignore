@@ -4,3 +4,5 @@ node_modules
 npm-debug.log
 _test.js
 
+#IDE
+.idea
