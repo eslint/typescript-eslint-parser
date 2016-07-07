@@ -24,9 +24,9 @@ var assert = require("chai").assert,
 var FIXTURES_DIR = "./tests/fixtures/typescript";
 
 var testFiles = shelljs.find(FIXTURES_DIR).filter(function(filename) {
-    return filename.indexOf(".src.js") > -1;
+    return filename.indexOf(".src.ts") > -1;
 }).map(function(filename) {
-    return filename.substring(FIXTURES_DIR.length - 1, filename.length - 7);  // strip off ".src.js"
+    return filename.substring(FIXTURES_DIR.length - 1, filename.length - 7);  // strip off ".src.ts"
 });
 
 /**
@@ -58,7 +58,7 @@ describe("typescript", function() {
     leche.withData(testFiles, function(filename) {
         // Uncomment and fill in filename to focus on a single file
         // var filename = "jsx/invalid-matching-placeholder-in-closing-tag";
-        var code = shelljs.cat(path.resolve(FIXTURES_DIR, filename) + ".src.js");
+        var code = shelljs.cat(path.resolve(FIXTURES_DIR, filename) + ".src.ts");
 
         it("should parse correctly", function() {
             var expected = require(path.resolve(__dirname, "../../", FIXTURES_DIR, filename) + ".result.js");
