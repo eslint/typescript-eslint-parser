@@ -49,6 +49,8 @@ module.exports = {
                 ],
                 "name": "f"
             },
+            "generator": false,
+            "expression": false,
             "params": [],
             "body": {
                 "type": "BlockStatement",
@@ -238,9 +240,7 @@ module.exports = {
                         ]
                     }
                 ]
-            },
-            "expression": false,
-            "generator": false
+            }
         }
     ],
     "sourceType": "script",

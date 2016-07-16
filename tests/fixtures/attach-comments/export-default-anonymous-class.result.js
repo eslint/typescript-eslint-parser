@@ -7,6 +7,7 @@ module.exports = {
         "type": "ClassDeclaration",
         "id": null,
         "superClass": null,
+        "implements": [],
         "body": {
           "type": "ClassBody",
           "body": [
