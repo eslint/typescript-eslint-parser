@@ -89,9 +89,9 @@ module.exports = {
                 "flags": 0,
                 "statements": [
                     {
-                        "type": "TSExportNamedDeclaration",
+                        "type": "TSNamespaceExportDeclaration",
                         "declaration": {
-                            "type": "TSFunctionDeclaration",
+                            "type": "TSNamespaceFunctionDeclaration",
                             "range": [
                                 32,
                                 82
