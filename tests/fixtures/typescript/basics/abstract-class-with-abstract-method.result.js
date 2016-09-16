@@ -18,7 +18,7 @@ module.exports = {
         {
             "type": "ExportNamedDeclaration",
             "declaration": {
-                "type": "AbstractClassDeclaration",
+                "type": "TSAbstractClassDeclaration",
                 "range": [
                     16,
                     86
@@ -55,7 +55,7 @@ module.exports = {
                     "type": "ClassBody",
                     "body": [
                         {
-                            "type": "AbstractMethodDefinition",
+                            "type": "TSAbstractMethodDefinition",
                             "range": [
                                 43,
                                 84
