@@ -1,7 +1,6 @@
 module.exports = {
     "body": [
         {
-            "flags": 2,
             "loc": {
                 "end": {
                     "column": 32,
@@ -14,7 +13,6 @@ module.exports = {
             },
             "modifiers": [
                 {
-                    "flags": 0,
                     "loc": {
                         "end": {
                             "column": 7,
