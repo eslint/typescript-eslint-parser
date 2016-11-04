@@ -68,7 +68,59 @@ module.exports = {
                             "column": 24
                         }
                     },
-                    "name": "e"
+                    "name": "e",
+                    "typeAnnotation": {
+                        "type": "TypeAnnotation",
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 27
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 33
+                            }
+                        },
+                        "range": [
+                            27,
+                            33
+                        ],
+                        "typeAnnotation": {
+                            "type": "TSTypeReference",
+                            "range": [
+                                27,
+                                33
+                            ],
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 27
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 33
+                                }
+                            },
+                            "typeName": {
+                                "type": "Identifier",
+                                "range": [
+                                    27,
+                                    33
+                                ],
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 27
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 33
+                                    }
+                                },
+                                "name": "Entity"
+                            }
+                        }
+                    }
                 }
             ],
             "body": {

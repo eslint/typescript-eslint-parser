@@ -1,149 +1,149 @@
 module.exports = {
-    "body": [
-        {
-            "loc": {
-                "end": {
-                    "column": 32,
-                    "line": 1
-                },
-                "start": {
-                    "column": 0,
-                    "line": 1
-                }
-            },
-            "modifiers": [
-                {
-                    "loc": {
-                        "end": {
-                            "column": 7,
-                            "line": 1
-                        },
-                        "start": {
-                            "column": 0,
-                            "line": 1
-                        }
-                    },
-                    "range": [
-                        0,
-                        7
-                    ],
-                    "type": "TSDeclareKeyword"
-                }
-            ],
-            "name": {
-                "loc": {
-                    "end": {
-                        "column": 31,
-                        "line": 1
-                    },
-                    "start": {
-                        "column": 15,
-                        "line": 1
-                    }
-                },
-                "range": [
-                    15,
-                    31
-                ],
-                "raw": "\"hot-new-module\"",
-                "type": "Literal",
-                "value": "hot-new-module"
-            },
-            "range": [
-                0,
-                32
-            ],
-            "type": "TSModuleDeclaration"
-        }
-    ],
-    "loc": {
-        "end": {
-            "column": 32,
-            "line": 1
-        },
-        "start": {
-            "column": 0,
-            "line": 1
-        }
-    },
+    "type": "Program",
     "range": [
         0,
         32
     ],
+    "loc": {
+        "start": {
+            "line": 1,
+            "column": 0
+        },
+        "end": {
+            "line": 1,
+            "column": 32
+        }
+    },
+    "body": [
+        {
+            "type": "TSModuleDeclaration",
+            "range": [
+                0,
+                32
+            ],
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 32
+                }
+            },
+            "modifiers": [
+                {
+                    "type": "TSDeclareKeyword",
+                    "range": [
+                        0,
+                        7
+                    ],
+                    "loc": {
+                        "start": {
+                            "line": 1,
+                            "column": 0
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 7
+                        }
+                    }
+                }
+            ],
+            "name": {
+                "type": "Literal",
+                "range": [
+                    15,
+                    31
+                ],
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 15
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 31
+                    }
+                },
+                "value": "hot-new-module",
+                "raw": "\"hot-new-module\""
+            }
+        }
+    ],
     "sourceType": "script",
     "tokens": [
         {
-            "loc": {
-                "end": {
-                    "column": 7,
-                    "line": 1
-                },
-                "start": {
-                    "column": 0,
-                    "line": 1
-                }
-            },
+            "type": "Identifier",
+            "value": "declare",
             "range": [
                 0,
                 7
             ],
-            "type": "Identifier",
-            "value": "declare"
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 7
+                }
+            }
         },
         {
-            "loc": {
-                "end": {
-                    "column": 14,
-                    "line": 1
-                },
-                "start": {
-                    "column": 8,
-                    "line": 1
-                }
-            },
+            "type": "Identifier",
+            "value": "module",
             "range": [
                 8,
                 14
             ],
-            "type": "Identifier",
-            "value": "module"
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 8
+                },
+                "end": {
+                    "line": 1,
+                    "column": 14
+                }
+            }
         },
         {
-            "loc": {
-                "end": {
-                    "column": 31,
-                    "line": 1
-                },
-                "start": {
-                    "column": 15,
-                    "line": 1
-                }
-            },
+            "type": "String",
+            "value": "\"hot-new-module\"",
             "range": [
                 15,
                 31
             ],
-            "type": "String",
-            "value": "\"hot-new-module\""
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 15
+                },
+                "end": {
+                    "line": 1,
+                    "column": 31
+                }
+            }
         },
         {
-            "loc": {
-                "end": {
-                    "column": 32,
-                    "line": 1
-                },
-                "start": {
-                    "column": 31,
-                    "line": 1
-                }
-            },
+            "type": "Punctuator",
+            "value": ";",
             "range": [
                 31,
                 32
             ],
-            "type": "Punctuator",
-            "value": ";"
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 31
+                },
+                "end": {
+                    "line": 1,
+                    "column": 32
+                }
+            }
         }
-    ],
-    "type": "Program"
+    ]
 };
