@@ -171,6 +171,7 @@ module.exports = {
                             "id": null,
                             "generator": false,
                             "expression": false,
+                            "async": false,
                             "body": {
                                 "type": "BlockStatement",
                                 "range": [
@@ -261,7 +262,7 @@ module.exports = {
                                 ]
                             },
                             "range": [
-                                81,
+                                82,
                                 111
                             ],
                             "loc": {
@@ -321,6 +322,7 @@ module.exports = {
                             "id": null,
                             "generator": false,
                             "expression": false,
+                            "async": false,
                             "body": {
                                 "type": "BlockStatement",
                                 "range": [
@@ -447,7 +449,7 @@ module.exports = {
                                 ]
                             },
                             "range": [
-                                130,
+                                131,
                                 171
                             ],
                             "loc": {
