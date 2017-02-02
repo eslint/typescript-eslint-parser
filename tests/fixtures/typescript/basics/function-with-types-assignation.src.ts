@@ -1,3 +1,3 @@
-function message(name:string = "foo"):string {
+function message(name:string, age:number = 100, ...args:Array<string>):string {
   return name;
 }
