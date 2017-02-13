@@ -9,6 +9,7 @@
 "use strict";
 
 var astNodeTypes = require("./lib/ast-node-types"),
+    astConverter = require("./lib/ast-converter"),
     ts = require("typescript");
 
 var extra;
@@ -86,17 +87,14 @@ function getLocFor(start, end, ast) {
     };
 }
 
-//------------------------------------------------------------------------------
-// Parser
-//------------------------------------------------------------------------------
-
 /**
- * Parses the given source code to produce a valid AST
+ * Parses the given source code to produce a valid TypeScript AST
+ * and track options on `extra`
  * @param  {mixed} code    TypeScript code
  * @param  {object} options configuration object for the parser
- * @returns {object}         the AST
+ * @returns {object}         the TypeScript AST
  */
-function parse(code, options) {
+function generateTypeScriptASTAndConfigureExtra(code, options) {
 
     var program,
         toString = String;
@@ -214,9 +212,44 @@ function parse(code, options) {
 
     }
 
-    var convert = require("./lib/ast-converter");
+    return ast;
 
-    return convert(ast, extra);
+}
+
+//------------------------------------------------------------------------------
+// Parser
+//------------------------------------------------------------------------------
+
+/**
+ * Parses the given source code to produce a valid ESTree AST
+ * @param  {mixed} code    TypeScript code
+ * @param  {object} options configuration object for the parser
+ * @returns {object}         the ESTree AST
+ */
+function parse(code, options) {
+    var typescriptAST = generateTypeScriptASTAndConfigureExtra(code, options);
+    var converted = astConverter(typescriptAST, extra);
+    return converted.ast;
+}
+
+/**
+ * Parses the given source code to produce a valid ESTree AST, and parser services
+ * to be used in ESLint
+ * @param  {mixed} code    TypeScript code
+ * @param  {object} options configuration object for the parser
+ * @returns {object}         object containing the ESTree AST and parser services
+ */
+function parseForESLint(code, options) {
+    var typescriptAST = generateTypeScriptASTAndConfigureExtra(code, options);
+    var converted = astConverter(typescriptAST, extra);
+    return {
+        ast: converted.ast,
+        services: {
+            getOriginalTSNode: function getOriginalTSNode(node) {
+                return converted.nodeMap.get(node);
+            }
+        }
+    };
 }
 
 //------------------------------------------------------------------------------
@@ -226,6 +259,8 @@ function parse(code, options) {
 exports.version = require("./package.json").version;
 
 exports.parse = parse;
+
+exports.parseForESLint = parseForESLint;
 
 // Deep copy.
 /* istanbul ignore next */
