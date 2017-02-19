@@ -89,7 +89,7 @@ module.exports = {
                                 "name": "createSocket"
                             },
                             "value": {
-                                "type": "FunctionExpression",
+                                "type": "TSAbstractFunctionExpression",
                                 "id": null,
                                 "generator": false,
                                 "expression": false,
