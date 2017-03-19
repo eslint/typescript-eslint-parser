@@ -1,6 +1,6 @@
 # TypeScript ESLint Parser (Experimental)
 
-A parser that converts TypeScript into an [ESTree](https://github.com/estree/estree)-compatible form so it can be used in ESLint. The goal is to allow TypeScript files to be parsed by ESLint (though not necessarily pass all ESLint rules).
+A parser that converts TypeScript into an [ESTree](https://github.com/estree/estree)-compatible form (specifically, the [babylon AST](https://github.com/babel/babylon/blob/master/ast/spec.md)) so it can be used in ESLint. The goal is to allow TypeScript files to be parsed by ESLint (though not necessarily pass all ESLint rules).
 
 **Important:** This parser is still in the very early stages and is considered experimental. There are likely a lot of bugs. You should not rely on this in a production environment yet.
 
