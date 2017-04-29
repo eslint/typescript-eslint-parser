@@ -16,7 +16,7 @@ module.exports = {
     },
     "body": [
         {
-            "type": "DeclareFunction",
+            "type": "TSAmbientFunctionDeclaration",
             "range": [
                 0,
                 42
