@@ -28,7 +28,7 @@ The follow ESLint plugins have issues when used with this parser:
 The following TypeScript syntax will cause rules to fail or ESLint v3 to crash:
  - Empty body functions
    - Abstract methods
-   - Multiple function declarations
+   - Function overloading
    - Declared functions
 
 ## Usage
