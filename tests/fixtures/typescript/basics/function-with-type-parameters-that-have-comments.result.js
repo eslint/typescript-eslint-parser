@@ -65,12 +65,12 @@ module.exports = {
                         line: 1
                     },
                     start: {
-                        column: 17,
+                        column: 28,
                         line: 1
                     }
                 },
                 name: "T",
-                range: [17, 29],
+                range: [28, 29],
                 type: "TypeParameter"
             }],
             range: [16, 30],
