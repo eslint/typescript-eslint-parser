@@ -234,7 +234,9 @@ module.exports = {
                                             "column": 38
                                         }
                                     },
-                                    "name": {
+                                    "optional": false,
+                                    "computed": false,
+                                    "key": {
                                         "type": "Identifier",
                                         "range": [
                                             26,
@@ -303,7 +305,9 @@ module.exports = {
                                             "column": 42
                                         }
                                     },
-                                    "name": {
+                                    "optional": false,
+                                    "computed": false,
+                                    "key": {
                                         "type": "Identifier",
                                         "range": [
                                             39,
