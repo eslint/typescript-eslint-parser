@@ -103,7 +103,9 @@ module.exports = {
                                     }
                                 },
                                 "name": "bar"
-                            }
+                            },
+                            "computed": false,
+                            "shorthand": true
                         }
                     ]
                 }
