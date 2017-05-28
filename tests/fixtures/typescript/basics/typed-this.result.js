@@ -317,7 +317,11 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     }
                 ],
                 "range": [

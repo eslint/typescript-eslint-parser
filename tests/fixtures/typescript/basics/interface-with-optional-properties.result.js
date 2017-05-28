@@ -71,7 +71,12 @@ module.exports = {
                             },
                             "name": "foo"
                         },
-                        "typeAnnotation": null
+                        "typeAnnotation": null,
+                        "initializer": null,
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSPropertySignature",
@@ -142,7 +147,12 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "initializer": null,
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSMethodSignature",
@@ -272,7 +282,11 @@ module.exports = {
                                 "optional": true
                             }
                         ],
-                        "typeAnnotation": null
+                        "typeAnnotation": null,
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     }
                 ],
                 "range": [

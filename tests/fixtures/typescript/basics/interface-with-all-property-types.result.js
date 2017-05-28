@@ -104,7 +104,12 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "initializer": null,
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSPropertySignature",
@@ -175,7 +180,12 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "initializer": null,
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSPropertySignature",
@@ -246,7 +256,12 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "initializer": null,
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSPropertySignature",
@@ -317,7 +332,12 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "initializer": null,
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSIndexSignature",
@@ -420,7 +440,11 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSIndexSignature",
@@ -524,7 +548,11 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSMethodSignature",
@@ -596,7 +624,11 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSMethodSignature",
@@ -723,7 +755,11 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSMethodSignature",
@@ -850,7 +886,11 @@ module.exports = {
                                     }
                                 }
                             }
-                        }
+                        },
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSMethodSignature",
@@ -1015,7 +1055,11 @@ module.exports = {
                                     "constraint": null
                                 }
                             ]
-                        }
+                        },
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     },
                     {
                         "type": "TSConstructSignature",

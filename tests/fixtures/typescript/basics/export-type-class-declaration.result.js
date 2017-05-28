@@ -169,7 +169,12 @@ module.exports = {
                                                 }
                                             }
                                         }
-                                    }
+                                    },
+                                    "initializer": null,
+                                    "accessibility": null,
+                                    "readonly": false,
+                                    "static": false,
+                                    "export": false
                                 }
                             ]
                         }

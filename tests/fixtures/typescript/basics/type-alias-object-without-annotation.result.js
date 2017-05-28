@@ -139,7 +139,12 @@ module.exports = {
                                             }
                                         }
                                     }
-                                }
+                                },
+                                "initializer": null,
+                                "accessibility": null,
+                                "readonly": false,
+                                "static": false,
+                                "export": false
                             },
                             {
                                 "type": "TSPropertySignature",
@@ -177,7 +182,12 @@ module.exports = {
                                     },
                                     "name": "baz"
                                 },
-                                "typeAnnotation": null
+                                "typeAnnotation": null,
+                                "initializer": null,
+                                "accessibility": null,
+                                "readonly": false,
+                                "static": false,
+                                "export": false
                             }
                         ]
                     },

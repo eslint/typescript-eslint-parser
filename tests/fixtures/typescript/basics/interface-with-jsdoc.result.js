@@ -91,7 +91,11 @@ module.exports = {
                                 "name": "bar"
                             }
                         ],
-                        "typeAnnotation": null
+                        "typeAnnotation": null,
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     }
                 ],
                 "range": [

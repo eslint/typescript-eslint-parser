@@ -71,7 +71,12 @@ module.exports = {
                             },
                             "name": "foo"
                         },
-                        "typeAnnotation": null
+                        "typeAnnotation": null,
+                        "initializer": null,
+                        "accessibility": null,
+                        "readonly": false,
+                        "static": false,
+                        "export": false
                     }
                 ],
                 "range": [
