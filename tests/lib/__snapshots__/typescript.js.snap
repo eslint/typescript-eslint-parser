@@ -5069,202 +5069,6 @@ Object {
   "sourceType": "script",
   "tokens": Array [
     Object {
-<<<<<<< HEAD
-=======
-      "body": Object {
-        "body": Array [
-          Object {
-            "accessibility": null,
-            "computed": false,
-            "key": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 15,
-                  "line": 2,
-                },
-                "start": Object {
-                  "column": 4,
-                  "line": 2,
-                },
-              },
-              "name": "constructor",
-              "range": Array [
-                16,
-                27,
-              ],
-              "type": "Identifier",
-            },
-            "kind": "constructor",
-            "loc": Object {
-              "end": Object {
-                "column": 5,
-                "line": 4,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 2,
-              },
-            },
-            "range": Array [
-              16,
-              54,
-            ],
-            "static": false,
-            "type": "MethodDefinition",
-            "value": Object {
-              "async": false,
-              "body": Object {
-                "body": Array [],
-                "loc": Object {
-                  "end": Object {
-                    "column": 5,
-                    "line": 4,
-                  },
-                  "start": Object {
-                    "column": 34,
-                    "line": 2,
-                  },
-                },
-                "range": Array [
-                  46,
-                  54,
-                ],
-                "type": "BlockStatement",
-              },
-              "expression": false,
-              "generator": false,
-              "id": null,
-              "loc": Object {
-                "end": Object {
-                  "column": 5,
-                  "line": 4,
-                },
-                "start": Object {
-                  "column": 15,
-                  "line": 2,
-                },
-              },
-              "params": Array [
-                Object {
-                  "accessibility": null,
-                  "decorators": Array [],
-                  "export": true,
-                  "loc": Object {
-                    "end": Object {
-                      "column": 32,
-                      "line": 2,
-                    },
-                    "start": Object {
-                      "column": 16,
-                      "line": 2,
-                    },
-                  },
-                  "parameter": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 24,
-                        "line": 2,
-                      },
-                      "start": Object {
-                        "column": 23,
-                        "line": 2,
-                      },
-                    },
-                    "name": "a",
-                    "range": Array [
-                      35,
-                      44,
-                    ],
-                    "type": "Identifier",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 32,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 26,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        38,
-                        44,
-                      ],
-                      "type": "TypeAnnotation",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 32,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 26,
-                            "line": 2,
-                          },
-                        },
-                        "range": Array [
-                          38,
-                          44,
-                        ],
-                        "type": "TSStringKeyword",
-                      },
-                    },
-                  },
-                  "range": Array [
-                    28,
-                    44,
-                  ],
-                  "readonly": false,
-                  "static": false,
-                  "type": "TSParameterProperty",
-                },
-              ],
-              "range": Array [
-                27,
-                54,
-              ],
-              "type": "FunctionExpression",
-            },
-          },
-        ],
-        "loc": Object {
-          "end": Object {
-            "column": 1,
-            "line": 5,
-          },
-          "start": Object {
-            "column": 10,
-            "line": 1,
-          },
-        },
-        "range": Array [
-          10,
-          56,
-        ],
-        "type": "ClassBody",
-      },
-      "decorators": Array [],
-      "id": Object {
-        "loc": Object {
-          "end": Object {
-            "column": 9,
-            "line": 1,
-          },
-          "start": Object {
-            "column": 6,
-            "line": 1,
-          },
-        },
-        "name": "Foo",
-        "range": Array [
-          6,
-          9,
-        ],
-        "type": "Identifier",
-      },
-      "implements": Array [],
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
       "loc": Object {
         "end": Object {
           "column": 5,
@@ -6113,7 +5917,7 @@ Object {
                     "name": "a",
                     "range": Array [
                       35,
-                      36,
+                      44,
                     ],
                     "type": "Identifier",
                     "typeAnnotation": Object {
@@ -6946,7 +6750,6 @@ Object {
             "column": 34,
             "line": 1,
           },
-<<<<<<< HEAD
           "start": Object {
             "column": 31,
             "line": 1,
@@ -6990,15 +6793,6 @@ Object {
               ],
               "type": "Identifier",
             },
-=======
-          "name": "Base",
-          "range": Array [
-            38,
-            45,
-          ],
-          "type": "Identifier",
-          "typeAnnotation": Object {
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             "loc": Object {
               "end": Object {
                 "column": 36,
@@ -7367,7 +7161,6 @@ Object {
       "value": ",",
     },
     Object {
-<<<<<<< HEAD
       "loc": Object {
         "end": Object {
           "column": 39,
@@ -7376,239 +7169,6 @@ Object {
         "start": Object {
           "column": 38,
           "line": 1,
-=======
-      "declarations": Array [
-        Object {
-          "id": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 16,
-                "line": 9,
-              },
-              "start": Object {
-                "column": 5,
-                "line": 9,
-              },
-            },
-            "name": "Constructor",
-            "range": Array [
-              163,
-              174,
-            ],
-            "type": "Identifier",
-          },
-          "init": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 47,
-                "line": 9,
-              },
-              "start": Object {
-                "column": 22,
-                "line": 9,
-              },
-            },
-            "parameters": Array [
-              Object {
-                "argument": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 34,
-                      "line": 9,
-                    },
-                    "start": Object {
-                      "column": 30,
-                      "line": 9,
-                    },
-                  },
-                  "name": "args",
-                  "range": Array [
-                    188,
-                    199,
-                  ],
-                  "type": "Identifier",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 41,
-                        "line": 9,
-                      },
-                      "start": Object {
-                        "column": 36,
-                        "line": 9,
-                      },
-                    },
-                    "range": Array [
-                      194,
-                      199,
-                    ],
-                    "type": "TypeAnnotation",
-                    "typeAnnotation": Object {
-                      "elementType": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 39,
-                            "line": 9,
-                          },
-                          "start": Object {
-                            "column": 36,
-                            "line": 9,
-                          },
-                        },
-                        "range": Array [
-                          194,
-                          197,
-                        ],
-                        "type": "TSAnyKeyword",
-                      },
-                      "loc": Object {
-                        "end": Object {
-                          "column": 41,
-                          "line": 9,
-                        },
-                        "start": Object {
-                          "column": 36,
-                          "line": 9,
-                        },
-                      },
-                      "range": Array [
-                        194,
-                        199,
-                      ],
-                      "type": "TSArrayType",
-                    },
-                  },
-                },
-                "loc": Object {
-                  "end": Object {
-                    "column": 41,
-                    "line": 9,
-                  },
-                  "start": Object {
-                    "column": 27,
-                    "line": 9,
-                  },
-                },
-                "range": Array [
-                  185,
-                  199,
-                ],
-                "type": "RestElement",
-              },
-            ],
-            "range": Array [
-              180,
-              205,
-            ],
-            "type": "TSConstructorType",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 47,
-                  "line": 9,
-                },
-                "start": Object {
-                  "column": 46,
-                  "line": 9,
-                },
-              },
-              "range": Array [
-                204,
-                205,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 47,
-                    "line": 9,
-                  },
-                  "start": Object {
-                    "column": 46,
-                    "line": 9,
-                  },
-                },
-                "range": Array [
-                  204,
-                  205,
-                ],
-                "type": "TSTypeReference",
-                "typeName": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 47,
-                      "line": 9,
-                    },
-                    "start": Object {
-                      "column": 46,
-                      "line": 9,
-                    },
-                  },
-                  "name": "T",
-                  "range": Array [
-                    204,
-                    205,
-                  ],
-                  "type": "Identifier",
-                },
-              },
-            },
-            "typeParameters": null,
-          },
-          "loc": Object {
-            "end": Object {
-              "column": 48,
-              "line": 9,
-            },
-            "start": Object {
-              "column": 5,
-              "line": 9,
-            },
-          },
-          "range": Array [
-            163,
-            206,
-          ],
-          "type": "VariableDeclarator",
-          "typeParameters": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 19,
-                "line": 9,
-              },
-              "start": Object {
-                "column": 16,
-                "line": 9,
-              },
-            },
-            "params": Array [
-              Object {
-                "constraint": null,
-                "loc": Object {
-                  "end": Object {
-                    "column": 18,
-                    "line": 9,
-                  },
-                  "start": Object {
-                    "column": 17,
-                    "line": 9,
-                  },
-                },
-                "name": "T",
-                "range": Array [
-                  175,
-                  176,
-                ],
-                "type": "TypeParameter",
-              },
-            ],
-            "range": Array [
-              174,
-              177,
-            ],
-            "type": "TypeParameterDeclaration",
-          },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         },
       },
       "range": Array [
@@ -8693,7 +8253,6 @@ Object {
   "sourceType": "script",
   "tokens": Array [
     Object {
-<<<<<<< HEAD
       "loc": Object {
         "end": Object {
           "column": 5,
@@ -8812,459 +8371,6 @@ Object {
     Object {
       "body": Object {
         "body": Array [],
-=======
-      "body": Object {
-        "body": Array [
-          Object {
-            "accessibility": null,
-            "computed": false,
-            "key": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 13,
-                  "line": 2,
-                },
-                "start": Object {
-                  "column": 2,
-                  "line": 2,
-                },
-              },
-              "name": "constructor",
-              "range": Array [
-                14,
-                25,
-              ],
-              "type": "Identifier",
-            },
-            "kind": "constructor",
-            "loc": Object {
-              "end": Object {
-                "column": 59,
-                "line": 5,
-              },
-              "start": Object {
-                "column": 2,
-                "line": 2,
-              },
-            },
-            "range": Array [
-              14,
-              201,
-            ],
-            "static": false,
-            "type": "MethodDefinition",
-            "value": Object {
-              "async": false,
-              "body": Object {
-                "body": Array [],
-                "loc": Object {
-                  "end": Object {
-                    "column": 59,
-                    "line": 5,
-                  },
-                  "start": Object {
-                    "column": 57,
-                    "line": 5,
-                  },
-                },
-                "range": Array [
-                  199,
-                  201,
-                ],
-                "type": "BlockStatement",
-              },
-              "expression": false,
-              "generator": false,
-              "id": null,
-              "loc": Object {
-                "end": Object {
-                  "column": 59,
-                  "line": 5,
-                },
-                "start": Object {
-                  "column": 13,
-                  "line": 2,
-                },
-              },
-              "params": Array [
-                Object {
-                  "accessibility": "private",
-                  "decorators": Array [],
-                  "export": false,
-                  "loc": Object {
-                    "end": Object {
-                      "column": 39,
-                      "line": 2,
-                    },
-                    "start": Object {
-                      "column": 14,
-                      "line": 2,
-                    },
-                  },
-                  "parameter": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 31,
-                        "line": 2,
-                      },
-                      "start": Object {
-                        "column": 22,
-                        "line": 2,
-                      },
-                    },
-                    "name": "firstName",
-                    "range": Array [
-                      34,
-                      51,
-                    ],
-                    "type": "Identifier",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 39,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 33,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        45,
-                        51,
-                      ],
-                      "type": "TypeAnnotation",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 39,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 33,
-                            "line": 2,
-                          },
-                        },
-                        "range": Array [
-                          45,
-                          51,
-                        ],
-                        "type": "TSStringKeyword",
-                      },
-                    },
-                  },
-                  "range": Array [
-                    26,
-                    51,
-                  ],
-                  "readonly": false,
-                  "static": false,
-                  "type": "TSParameterProperty",
-                },
-                Object {
-                  "accessibility": "private",
-                  "decorators": Array [],
-                  "export": false,
-                  "loc": Object {
-                    "end": Object {
-                      "column": 47,
-                      "line": 3,
-                    },
-                    "start": Object {
-                      "column": 14,
-                      "line": 3,
-                    },
-                  },
-                  "parameter": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 39,
-                        "line": 3,
-                      },
-                      "start": Object {
-                        "column": 31,
-                        "line": 3,
-                      },
-                    },
-                    "name": "lastName",
-                    "range": Array [
-                      84,
-                      100,
-                    ],
-                    "type": "Identifier",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 47,
-                          "line": 3,
-                        },
-                        "start": Object {
-                          "column": 41,
-                          "line": 3,
-                        },
-                      },
-                      "range": Array [
-                        94,
-                        100,
-                      ],
-                      "type": "TypeAnnotation",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 47,
-                            "line": 3,
-                          },
-                          "start": Object {
-                            "column": 41,
-                            "line": 3,
-                          },
-                        },
-                        "range": Array [
-                          94,
-                          100,
-                        ],
-                        "type": "TSStringKeyword",
-                      },
-                    },
-                  },
-                  "range": Array [
-                    67,
-                    100,
-                  ],
-                  "readonly": true,
-                  "static": false,
-                  "type": "TSParameterProperty",
-                },
-                Object {
-                  "accessibility": "private",
-                  "decorators": Array [],
-                  "export": false,
-                  "loc": Object {
-                    "end": Object {
-                      "column": 38,
-                      "line": 4,
-                    },
-                    "start": Object {
-                      "column": 14,
-                      "line": 4,
-                    },
-                  },
-                  "parameter": Object {
-                    "left": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 25,
-                          "line": 4,
-                        },
-                        "start": Object {
-                          "column": 22,
-                          "line": 4,
-                        },
-                      },
-                      "name": "age",
-                      "range": Array [
-                        124,
-                        135,
-                      ],
-                      "type": "Identifier",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 33,
-                            "line": 4,
-                          },
-                          "start": Object {
-                            "column": 27,
-                            "line": 4,
-                          },
-                        },
-                        "range": Array [
-                          129,
-                          135,
-                        ],
-                        "type": "TypeAnnotation",
-                        "typeAnnotation": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 33,
-                              "line": 4,
-                            },
-                            "start": Object {
-                              "column": 27,
-                              "line": 4,
-                            },
-                          },
-                          "range": Array [
-                            129,
-                            135,
-                          ],
-                          "type": "TSNumberKeyword",
-                        },
-                      },
-                    },
-                    "loc": Object {
-                      "end": Object {
-                        "column": 38,
-                        "line": 4,
-                      },
-                      "start": Object {
-                        "column": 14,
-                        "line": 4,
-                      },
-                    },
-                    "range": Array [
-                      116,
-                      140,
-                    ],
-                    "right": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 38,
-                          "line": 4,
-                        },
-                        "start": Object {
-                          "column": 36,
-                          "line": 4,
-                        },
-                      },
-                      "range": Array [
-                        138,
-                        140,
-                      ],
-                      "raw": "30",
-                      "type": "Literal",
-                      "value": 30,
-                    },
-                    "type": "AssignmentPattern",
-                  },
-                  "range": Array [
-                    116,
-                    140,
-                  ],
-                  "readonly": false,
-                  "static": false,
-                  "type": "TSParameterProperty",
-                },
-                Object {
-                  "accessibility": "private",
-                  "decorators": Array [],
-                  "export": false,
-                  "loc": Object {
-                    "end": Object {
-                      "column": 55,
-                      "line": 5,
-                    },
-                    "start": Object {
-                      "column": 14,
-                      "line": 5,
-                    },
-                  },
-                  "parameter": Object {
-                    "left": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 38,
-                          "line": 5,
-                        },
-                        "start": Object {
-                          "column": 31,
-                          "line": 5,
-                        },
-                      },
-                      "name": "student",
-                      "range": Array [
-                        173,
-                        189,
-                      ],
-                      "type": "Identifier",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 47,
-                            "line": 5,
-                          },
-                          "start": Object {
-                            "column": 40,
-                            "line": 5,
-                          },
-                        },
-                        "range": Array [
-                          182,
-                          189,
-                        ],
-                        "type": "TypeAnnotation",
-                        "typeAnnotation": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 47,
-                              "line": 5,
-                            },
-                            "start": Object {
-                              "column": 40,
-                              "line": 5,
-                            },
-                          },
-                          "range": Array [
-                            182,
-                            189,
-                          ],
-                          "type": "TSBooleanKeyword",
-                        },
-                      },
-                    },
-                    "loc": Object {
-                      "end": Object {
-                        "column": 55,
-                        "line": 5,
-                      },
-                      "start": Object {
-                        "column": 14,
-                        "line": 5,
-                      },
-                    },
-                    "range": Array [
-                      156,
-                      197,
-                    ],
-                    "right": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 55,
-                          "line": 5,
-                        },
-                        "start": Object {
-                          "column": 50,
-                          "line": 5,
-                        },
-                      },
-                      "range": Array [
-                        192,
-                        197,
-                      ],
-                      "raw": "false",
-                      "type": "Literal",
-                      "value": false,
-                    },
-                    "type": "AssignmentPattern",
-                  },
-                  "range": Array [
-                    156,
-                    197,
-                  ],
-                  "readonly": true,
-                  "static": false,
-                  "type": "TSParameterProperty",
-                },
-              ],
-              "range": Array [
-                25,
-                201,
-              ],
-              "type": "FunctionExpression",
-            },
-          },
-        ],
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         "loc": Object {
           "end": Object {
             "column": 1,
@@ -9725,65 +8831,8 @@ Object {
                       "line": 1,
                     },
                     "start": Object {
-<<<<<<< HEAD
                       "column": 28,
                       "line": 1,
-=======
-                      "column": 14,
-                      "line": 2,
-                    },
-                  },
-                  "parameter": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 33,
-                        "line": 2,
-                      },
-                      "start": Object {
-                        "column": 24,
-                        "line": 2,
-                      },
-                    },
-                    "name": "firstName",
-                    "range": Array [
-                      36,
-                      53,
-                    ],
-                    "type": "Identifier",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 41,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 35,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        47,
-                        53,
-                      ],
-                      "type": "TypeAnnotation",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 41,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 35,
-                            "line": 2,
-                          },
-                        },
-                        "range": Array [
-                          47,
-                          53,
-                        ],
-                        "type": "TSStringKeyword",
-                      },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                     },
                   },
                   "name": "T",
@@ -9798,283 +8847,9 @@ Object {
                     "column": 29,
                     "line": 1,
                   },
-<<<<<<< HEAD
                   "start": Object {
                     "column": 28,
                     "line": 1,
-=======
-                  "parameter": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 41,
-                        "line": 3,
-                      },
-                      "start": Object {
-                        "column": 33,
-                        "line": 3,
-                      },
-                    },
-                    "name": "lastName",
-                    "range": Array [
-                      88,
-                      104,
-                    ],
-                    "type": "Identifier",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 49,
-                          "line": 3,
-                        },
-                        "start": Object {
-                          "column": 43,
-                          "line": 3,
-                        },
-                      },
-                      "range": Array [
-                        98,
-                        104,
-                      ],
-                      "type": "TypeAnnotation",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 49,
-                            "line": 3,
-                          },
-                          "start": Object {
-                            "column": 43,
-                            "line": 3,
-                          },
-                        },
-                        "range": Array [
-                          98,
-                          104,
-                        ],
-                        "type": "TSStringKeyword",
-                      },
-                    },
-                  },
-                  "range": Array [
-                    69,
-                    104,
-                  ],
-                  "readonly": true,
-                  "static": false,
-                  "type": "TSParameterProperty",
-                },
-                Object {
-                  "accessibility": "protected",
-                  "decorators": Array [],
-                  "export": false,
-                  "loc": Object {
-                    "end": Object {
-                      "column": 40,
-                      "line": 4,
-                    },
-                    "start": Object {
-                      "column": 14,
-                      "line": 4,
-                    },
-                  },
-                  "parameter": Object {
-                    "left": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 27,
-                          "line": 4,
-                        },
-                        "start": Object {
-                          "column": 24,
-                          "line": 4,
-                        },
-                      },
-                      "name": "age",
-                      "range": Array [
-                        130,
-                        141,
-                      ],
-                      "type": "Identifier",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 35,
-                            "line": 4,
-                          },
-                          "start": Object {
-                            "column": 29,
-                            "line": 4,
-                          },
-                        },
-                        "range": Array [
-                          135,
-                          141,
-                        ],
-                        "type": "TypeAnnotation",
-                        "typeAnnotation": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 35,
-                              "line": 4,
-                            },
-                            "start": Object {
-                              "column": 29,
-                              "line": 4,
-                            },
-                          },
-                          "range": Array [
-                            135,
-                            141,
-                          ],
-                          "type": "TSNumberKeyword",
-                        },
-                      },
-                    },
-                    "loc": Object {
-                      "end": Object {
-                        "column": 40,
-                        "line": 4,
-                      },
-                      "start": Object {
-                        "column": 14,
-                        "line": 4,
-                      },
-                    },
-                    "range": Array [
-                      120,
-                      146,
-                    ],
-                    "right": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 40,
-                          "line": 4,
-                        },
-                        "start": Object {
-                          "column": 38,
-                          "line": 4,
-                        },
-                      },
-                      "range": Array [
-                        144,
-                        146,
-                      ],
-                      "raw": "30",
-                      "type": "Literal",
-                      "value": 30,
-                    },
-                    "type": "AssignmentPattern",
-                  },
-                  "range": Array [
-                    120,
-                    146,
-                  ],
-                  "readonly": false,
-                  "static": false,
-                  "type": "TSParameterProperty",
-                },
-                Object {
-                  "accessibility": "protected",
-                  "decorators": Array [],
-                  "export": false,
-                  "loc": Object {
-                    "end": Object {
-                      "column": 57,
-                      "line": 5,
-                    },
-                    "start": Object {
-                      "column": 14,
-                      "line": 5,
-                    },
-                  },
-                  "parameter": Object {
-                    "left": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 40,
-                          "line": 5,
-                        },
-                        "start": Object {
-                          "column": 33,
-                          "line": 5,
-                        },
-                      },
-                      "name": "student",
-                      "range": Array [
-                        181,
-                        197,
-                      ],
-                      "type": "Identifier",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 49,
-                            "line": 5,
-                          },
-                          "start": Object {
-                            "column": 42,
-                            "line": 5,
-                          },
-                        },
-                        "range": Array [
-                          190,
-                          197,
-                        ],
-                        "type": "TypeAnnotation",
-                        "typeAnnotation": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 49,
-                              "line": 5,
-                            },
-                            "start": Object {
-                              "column": 42,
-                              "line": 5,
-                            },
-                          },
-                          "range": Array [
-                            190,
-                            197,
-                          ],
-                          "type": "TSBooleanKeyword",
-                        },
-                      },
-                    },
-                    "loc": Object {
-                      "end": Object {
-                        "column": 57,
-                        "line": 5,
-                      },
-                      "start": Object {
-                        "column": 14,
-                        "line": 5,
-                      },
-                    },
-                    "range": Array [
-                      162,
-                      205,
-                    ],
-                    "right": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 57,
-                          "line": 5,
-                        },
-                        "start": Object {
-                          "column": 52,
-                          "line": 5,
-                        },
-                      },
-                      "range": Array [
-                        200,
-                        205,
-                      ],
-                      "raw": "false",
-                      "type": "Literal",
-                      "value": false,
-                    },
-                    "type": "AssignmentPattern",
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                   },
                 },
                 "range": Array [
@@ -10472,7 +9247,7 @@ Object {
           "name": "Base",
           "range": Array [
             38,
-            42,
+            45,
           ],
           "type": "Identifier",
           "typeAnnotation": Object {
@@ -10569,63 +9344,9 @@ Object {
                     "column": 32,
                     "line": 1,
                   },
-<<<<<<< HEAD
                   "start": Object {
                     "column": 21,
                     "line": 1,
-=======
-                  "parameter": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 30,
-                        "line": 2,
-                      },
-                      "start": Object {
-                        "column": 21,
-                        "line": 2,
-                      },
-                    },
-                    "name": "firstName",
-                    "range": Array [
-                      33,
-                      50,
-                    ],
-                    "type": "Identifier",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 38,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 32,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        44,
-                        50,
-                      ],
-                      "type": "TypeAnnotation",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 38,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 32,
-                            "line": 2,
-                          },
-                        },
-                        "range": Array [
-                          44,
-                          50,
-                        ],
-                        "type": "TSStringKeyword",
-                      },
-                    },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                   },
                 },
                 "name": "Constructor",
@@ -10641,63 +9362,9 @@ Object {
                     "column": 36,
                     "line": 1,
                   },
-<<<<<<< HEAD
                   "start": Object {
                     "column": 32,
                     "line": 1,
-=======
-                  "parameter": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 38,
-                        "line": 3,
-                      },
-                      "start": Object {
-                        "column": 30,
-                        "line": 3,
-                      },
-                    },
-                    "name": "lastName",
-                    "range": Array [
-                      82,
-                      98,
-                    ],
-                    "type": "Identifier",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 46,
-                          "line": 3,
-                        },
-                        "start": Object {
-                          "column": 40,
-                          "line": 3,
-                        },
-                      },
-                      "range": Array [
-                        92,
-                        98,
-                      ],
-                      "type": "TypeAnnotation",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 46,
-                            "line": 3,
-                          },
-                          "start": Object {
-                            "column": 40,
-                            "line": 3,
-                          },
-                        },
-                        "range": Array [
-                          92,
-                          98,
-                        ],
-                        "type": "TSStringKeyword",
-                      },
-                    },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                   },
                 },
                 "params": Array [
@@ -10715,13 +9382,8 @@ Object {
                       },
                       "members": Array [],
                       "range": Array [
-<<<<<<< HEAD
                         33,
                         35,
-=======
-                        121,
-                        132,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                       ],
                       "type": "TSTypeLiteral",
                     },
@@ -10742,7 +9404,6 @@ Object {
                     "type": "GenericTypeAnnotation",
                     "typeParameters": null,
                   },
-<<<<<<< HEAD
                 ],
                 "range": Array [
                   32,
@@ -10760,110 +9421,6 @@ Object {
                 "column": 11,
                 "line": 1,
               },
-=======
-                  "parameter": Object {
-                    "left": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 37,
-                          "line": 5,
-                        },
-                        "start": Object {
-                          "column": 30,
-                          "line": 5,
-                        },
-                      },
-                      "name": "student",
-                      "range": Array [
-                        169,
-                        185,
-                      ],
-                      "type": "Identifier",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 46,
-                            "line": 5,
-                          },
-                          "start": Object {
-                            "column": 39,
-                            "line": 5,
-                          },
-                        },
-                        "range": Array [
-                          178,
-                          185,
-                        ],
-                        "type": "TypeAnnotation",
-                        "typeAnnotation": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 46,
-                              "line": 5,
-                            },
-                            "start": Object {
-                              "column": 39,
-                              "line": 5,
-                            },
-                          },
-                          "range": Array [
-                            178,
-                            185,
-                          ],
-                          "type": "TSBooleanKeyword",
-                        },
-                      },
-                    },
-                    "loc": Object {
-                      "end": Object {
-                        "column": 54,
-                        "line": 5,
-                      },
-                      "start": Object {
-                        "column": 14,
-                        "line": 5,
-                      },
-                    },
-                    "range": Array [
-                      153,
-                      193,
-                    ],
-                    "right": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 54,
-                          "line": 5,
-                        },
-                        "start": Object {
-                          "column": 49,
-                          "line": 5,
-                        },
-                      },
-                      "range": Array [
-                        188,
-                        193,
-                      ],
-                      "raw": "false",
-                      "type": "Literal",
-                      "value": false,
-                    },
-                    "type": "AssignmentPattern",
-                  },
-                  "range": Array [
-                    153,
-                    193,
-                  ],
-                  "readonly": true,
-                  "static": false,
-                  "type": "TSParameterProperty",
-                },
-              ],
-              "range": Array [
-                25,
-                197,
-              ],
-              "type": "FunctionExpression",
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             },
             "name": "T",
             "range": Array [
@@ -11239,7 +9796,7 @@ Object {
                   "name": "args",
                   "range": Array [
                     188,
-                    192,
+                    199,
                   ],
                   "type": "Identifier",
                   "typeAnnotation": Object {
@@ -11254,13 +9811,8 @@ Object {
                       },
                     },
                     "range": Array [
-<<<<<<< HEAD
                       194,
                       199,
-=======
-                      35,
-                      52,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                     ],
                     "type": "TypeAnnotation",
                     "typeAnnotation": Object {
@@ -11292,13 +9844,8 @@ Object {
                         },
                       },
                       "range": Array [
-<<<<<<< HEAD
                         194,
                         199,
-=======
-                        77,
-                        93,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                       ],
                       "type": "TSArrayType",
                     },
@@ -11542,179 +10089,10 @@ Object {
       "value": "T",
     },
     Object {
-<<<<<<< HEAD
       "loc": Object {
         "end": Object {
           "column": 20,
           "line": 1,
-=======
-      "body": Object {
-        "body": Array [
-          Object {
-            "accessibility": null,
-            "computed": false,
-            "key": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 15,
-                  "line": 2,
-                },
-                "start": Object {
-                  "column": 4,
-                  "line": 2,
-                },
-              },
-              "name": "constructor",
-              "range": Array [
-                16,
-                27,
-              ],
-              "type": "Identifier",
-            },
-            "kind": "constructor",
-            "loc": Object {
-              "end": Object {
-                "column": 5,
-                "line": 4,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 2,
-              },
-            },
-            "range": Array [
-              16,
-              54,
-            ],
-            "static": false,
-            "type": "MethodDefinition",
-            "value": Object {
-              "async": false,
-              "body": Object {
-                "body": Array [],
-                "loc": Object {
-                  "end": Object {
-                    "column": 5,
-                    "line": 4,
-                  },
-                  "start": Object {
-                    "column": 34,
-                    "line": 2,
-                  },
-                },
-                "range": Array [
-                  46,
-                  54,
-                ],
-                "type": "BlockStatement",
-              },
-              "expression": false,
-              "generator": false,
-              "id": null,
-              "loc": Object {
-                "end": Object {
-                  "column": 5,
-                  "line": 4,
-                },
-                "start": Object {
-                  "column": 15,
-                  "line": 2,
-                },
-              },
-              "params": Array [
-                Object {
-                  "accessibility": null,
-                  "decorators": Array [],
-                  "export": false,
-                  "loc": Object {
-                    "end": Object {
-                      "column": 32,
-                      "line": 2,
-                    },
-                    "start": Object {
-                      "column": 16,
-                      "line": 2,
-                    },
-                  },
-                  "parameter": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 24,
-                        "line": 2,
-                      },
-                      "start": Object {
-                        "column": 23,
-                        "line": 2,
-                      },
-                    },
-                    "name": "a",
-                    "range": Array [
-                      35,
-                      44,
-                    ],
-                    "type": "Identifier",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 32,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 26,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        38,
-                        44,
-                      ],
-                      "type": "TypeAnnotation",
-                      "typeAnnotation": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 32,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 26,
-                            "line": 2,
-                          },
-                        },
-                        "range": Array [
-                          38,
-                          44,
-                        ],
-                        "type": "TSStringKeyword",
-                      },
-                    },
-                  },
-                  "range": Array [
-                    28,
-                    44,
-                  ],
-                  "readonly": false,
-                  "static": true,
-                  "type": "TSParameterProperty",
-                },
-              ],
-              "range": Array [
-                27,
-                54,
-              ],
-              "type": "FunctionExpression",
-            },
-          },
-        ],
-        "loc": Object {
-          "end": Object {
-            "column": 1,
-            "line": 5,
-          },
-          "start": Object {
-            "column": 10,
-            "line": 1,
-          },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         },
         "start": Object {
           "column": 13,
@@ -12081,65 +10459,9 @@ Object {
           "line": 5,
         },
       },
-<<<<<<< HEAD
       "range": Array [
         86,
         91,
-=======
-      "params": Array [
-        Object {
-          "loc": Object {
-            "end": Object {
-              "column": 24,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 21,
-              "line": 1,
-            },
-          },
-          "name": "bar",
-          "range": Array [
-            21,
-            32,
-          ],
-          "type": "Identifier",
-          "typeAnnotation": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 32,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 26,
-                "line": 1,
-              },
-            },
-            "range": Array [
-              26,
-              32,
-            ],
-            "type": "TypeAnnotation",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 32,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 26,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                26,
-                32,
-              ],
-              "type": "TSStringKeyword",
-            },
-          },
-        },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
       ],
       "type": "Keyword",
       "value": "class",
@@ -13566,7 +11888,6 @@ Object {
       "value": "class",
     },
     Object {
-<<<<<<< HEAD
       "loc": Object {
         "end": Object {
           "column": 9,
@@ -13575,162 +11896,6 @@ Object {
         "start": Object {
           "column": 6,
           "line": 1,
-=======
-      "declaration": Object {
-        "declarations": Array [
-          Object {
-            "id": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 24,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 12,
-                  "line": 1,
-                },
-              },
-              "name": "TestCallback",
-              "range": Array [
-                12,
-                24,
-              ],
-              "type": "Identifier",
-            },
-            "init": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 46,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 27,
-                  "line": 1,
-                },
-              },
-              "parameters": Array [
-                Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 29,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 28,
-                      "line": 1,
-                    },
-                  },
-                  "name": "a",
-                  "range": Array [
-                    28,
-                    37,
-                  ],
-                  "type": "Identifier",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 37,
-                        "line": 1,
-                      },
-                      "start": Object {
-                        "column": 31,
-                        "line": 1,
-                      },
-                    },
-                    "range": Array [
-                      31,
-                      37,
-                    ],
-                    "type": "TypeAnnotation",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 37,
-                          "line": 1,
-                        },
-                        "start": Object {
-                          "column": 31,
-                          "line": 1,
-                        },
-                      },
-                      "range": Array [
-                        31,
-                        37,
-                      ],
-                      "type": "TSNumberKeyword",
-                    },
-                  },
-                },
-              ],
-              "range": Array [
-                27,
-                46,
-              ],
-              "type": "TSFunctionType",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 46,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 42,
-                    "line": 1,
-                  },
-                },
-                "range": Array [
-                  42,
-                  46,
-                ],
-                "type": "TypeAnnotation",
-                "typeAnnotation": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 46,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 42,
-                      "line": 1,
-                    },
-                  },
-                  "range": Array [
-                    42,
-                    46,
-                  ],
-                  "type": "TSVoidKeyword",
-                },
-              },
-              "typeParameters": null,
-            },
-            "loc": Object {
-              "end": Object {
-                "column": 47,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 12,
-                "line": 1,
-              },
-            },
-            "range": Array [
-              12,
-              47,
-            ],
-            "type": "VariableDeclarator",
-          },
-        ],
-        "kind": "type",
-        "loc": Object {
-          "end": Object {
-            "column": 47,
-            "line": 1,
-          },
-          "start": Object {
-            "column": 7,
-            "line": 1,
-          },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         },
       },
       "range": Array [
@@ -14213,16 +12378,6 @@ Object {
               ],
               "type": "Identifier",
             },
-<<<<<<< HEAD
-=======
-          ],
-          "range": Array [
-            13,
-            45,
-          ],
-          "type": "ObjectPattern",
-          "typeAnnotation": Object {
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             "loc": Object {
               "end": Object {
                 "column": 16,
@@ -14399,299 +12554,6 @@ Object {
           "line": 1,
         },
       },
-<<<<<<< HEAD
-=======
-      "params": Array [
-        Object {
-          "loc": Object {
-            "end": Object {
-              "column": 23,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 13,
-              "line": 1,
-            },
-          },
-          "properties": Array [
-            Object {
-              "computed": false,
-              "key": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 17,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 14,
-                    "line": 1,
-                  },
-                },
-                "name": "bar",
-                "range": Array [
-                  14,
-                  17,
-                ],
-                "type": "Identifier",
-              },
-              "kind": "init",
-              "loc": Object {
-                "end": Object {
-                  "column": 17,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 14,
-                  "line": 1,
-                },
-              },
-              "method": false,
-              "range": Array [
-                14,
-                17,
-              ],
-              "shorthand": true,
-              "type": "Property",
-              "value": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 17,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 14,
-                    "line": 1,
-                  },
-                },
-                "name": "bar",
-                "range": Array [
-                  14,
-                  17,
-                ],
-                "type": "Identifier",
-              },
-            },
-            Object {
-              "computed": false,
-              "key": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 22,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 19,
-                    "line": 1,
-                  },
-                },
-                "name": "baz",
-                "range": Array [
-                  19,
-                  22,
-                ],
-                "type": "Identifier",
-              },
-              "kind": "init",
-              "loc": Object {
-                "end": Object {
-                  "column": 22,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 19,
-                  "line": 1,
-                },
-              },
-              "method": false,
-              "range": Array [
-                19,
-                22,
-              ],
-              "shorthand": true,
-              "type": "Property",
-              "value": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 22,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 19,
-                    "line": 1,
-                  },
-                },
-                "name": "baz",
-                "range": Array [
-                  19,
-                  22,
-                ],
-                "type": "Identifier",
-              },
-            },
-          ],
-          "range": Array [
-            13,
-            43,
-          ],
-          "type": "ObjectPattern",
-          "typeAnnotation": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 43,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 25,
-                "line": 1,
-              },
-            },
-            "range": Array [
-              25,
-              43,
-            ],
-            "type": "TypeAnnotation",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 43,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 25,
-                  "line": 1,
-                },
-              },
-              "members": Array [
-                Object {
-                  "accessibility": null,
-                  "computed": false,
-                  "export": false,
-                  "initializer": null,
-                  "key": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 29,
-                        "line": 1,
-                      },
-                      "start": Object {
-                        "column": 26,
-                        "line": 1,
-                      },
-                    },
-                    "name": "bar",
-                    "range": Array [
-                      26,
-                      29,
-                    ],
-                    "type": "Identifier",
-                  },
-                  "loc": Object {
-                    "end": Object {
-                      "column": 38,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 26,
-                      "line": 1,
-                    },
-                  },
-                  "optional": false,
-                  "range": Array [
-                    26,
-                    38,
-                  ],
-                  "readonly": false,
-                  "static": false,
-                  "type": "TSPropertySignature",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 37,
-                        "line": 1,
-                      },
-                      "start": Object {
-                        "column": 31,
-                        "line": 1,
-                      },
-                    },
-                    "range": Array [
-                      31,
-                      37,
-                    ],
-                    "type": "TypeAnnotation",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 37,
-                          "line": 1,
-                        },
-                        "start": Object {
-                          "column": 31,
-                          "line": 1,
-                        },
-                      },
-                      "range": Array [
-                        31,
-                        37,
-                      ],
-                      "type": "TSStringKeyword",
-                    },
-                  },
-                },
-                Object {
-                  "accessibility": null,
-                  "computed": false,
-                  "export": false,
-                  "initializer": null,
-                  "key": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 42,
-                        "line": 1,
-                      },
-                      "start": Object {
-                        "column": 39,
-                        "line": 1,
-                      },
-                    },
-                    "name": "baz",
-                    "range": Array [
-                      39,
-                      42,
-                    ],
-                    "type": "Identifier",
-                  },
-                  "loc": Object {
-                    "end": Object {
-                      "column": 42,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 39,
-                      "line": 1,
-                    },
-                  },
-                  "optional": false,
-                  "range": Array [
-                    39,
-                    42,
-                  ],
-                  "readonly": false,
-                  "static": false,
-                  "type": "TSPropertySignature",
-                  "typeAnnotation": null,
-                },
-              ],
-              "range": Array [
-                25,
-                43,
-              ],
-              "type": "TSTypeLiteral",
-            },
-          },
-        },
-      ],
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
       "range": Array [
         0,
         63,
@@ -15158,83 +13020,9 @@ Object {
           "line": 1,
         },
       },
-<<<<<<< HEAD
       "range": Array [
         0,
         39,
-=======
-      "params": Array [
-        Object {
-          "loc": Object {
-            "end": Object {
-              "column": 15,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 14,
-              "line": 1,
-            },
-          },
-          "name": "b",
-          "range": Array [
-            14,
-            18,
-          ],
-          "type": "Identifier",
-          "typeAnnotation": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 18,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 17,
-                "line": 1,
-              },
-            },
-            "range": Array [
-              17,
-              18,
-            ],
-            "type": "TypeAnnotation",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 18,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 17,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                17,
-                18,
-              ],
-              "type": "TSTypeReference",
-              "typeName": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 18,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 17,
-                    "line": 1,
-                  },
-                },
-                "name": "X",
-                "range": Array [
-                  17,
-                  18,
-                ],
-                "type": "Identifier",
-              },
-            },
-          },
-        },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
       ],
       "superClass": null,
       "type": "ClassDeclaration",
@@ -15480,95 +13268,8 @@ Object {
               },
             },
             "range": Array [
-<<<<<<< HEAD
               14,
               201,
-=======
-              40,
-              49,
-            ],
-            "type": "ReturnStatement",
-          },
-        ],
-        "loc": Object {
-          "end": Object {
-            "column": 1,
-            "line": 3,
-          },
-          "start": Object {
-            "column": 34,
-            "line": 1,
-          },
-        },
-        "range": Array [
-          34,
-          51,
-        ],
-        "type": "BlockStatement",
-      },
-      "expression": false,
-      "generator": false,
-      "id": Object {
-        "loc": Object {
-          "end": Object {
-            "column": 10,
-            "line": 1,
-          },
-          "start": Object {
-            "column": 9,
-            "line": 1,
-          },
-        },
-        "name": "a",
-        "range": Array [
-          9,
-          10,
-        ],
-        "type": "Identifier",
-      },
-      "loc": Object {
-        "end": Object {
-          "column": 1,
-          "line": 3,
-        },
-        "start": Object {
-          "column": 0,
-          "line": 1,
-        },
-      },
-      "params": Array [
-        Object {
-          "loc": Object {
-            "end": Object {
-              "column": 26,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 25,
-              "line": 1,
-            },
-          },
-          "name": "b",
-          "range": Array [
-            25,
-            29,
-          ],
-          "type": "Identifier",
-          "typeAnnotation": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 29,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 28,
-                "line": 1,
-              },
-            },
-            "range": Array [
-              28,
-              29,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             ],
             "static": false,
             "type": "MethodDefinition",
@@ -15634,7 +13335,7 @@ Object {
                     "name": "firstName",
                     "range": Array [
                       34,
-                      43,
+                      51,
                     ],
                     "type": "Identifier",
                     "typeAnnotation": Object {
@@ -15708,7 +13409,7 @@ Object {
                     "name": "lastName",
                     "range": Array [
                       84,
-                      92,
+                      100,
                     ],
                     "type": "Identifier",
                     "typeAnnotation": Object {
@@ -15783,7 +13484,7 @@ Object {
                       "name": "age",
                       "range": Array [
                         124,
-                        127,
+                        135,
                       ],
                       "type": "Identifier",
                       "typeAnnotation": Object {
@@ -15893,7 +13594,7 @@ Object {
                       "name": "student",
                       "range": Array [
                         173,
-                        180,
+                        189,
                       ],
                       "type": "Identifier",
                       "typeAnnotation": Object {
@@ -16029,63 +13730,6 @@ Object {
           "line": 1,
         },
       },
-<<<<<<< HEAD
-=======
-      "params": Array [
-        Object {
-          "loc": Object {
-            "end": Object {
-              "column": 21,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 17,
-              "line": 1,
-            },
-          },
-          "name": "name",
-          "range": Array [
-            17,
-            28,
-          ],
-          "type": "Identifier",
-          "typeAnnotation": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 28,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 22,
-                "line": 1,
-              },
-            },
-            "range": Array [
-              22,
-              28,
-            ],
-            "type": "TypeAnnotation",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 28,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 22,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                22,
-                28,
-              ],
-              "type": "TSStringKeyword",
-            },
-          },
-        },
-      ],
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
       "range": Array [
         0,
         203,
@@ -16139,7 +13783,6 @@ Object {
           "line": 1,
         },
       },
-<<<<<<< HEAD
       "range": Array [
         6,
         9,
@@ -16156,289 +13799,6 @@ Object {
         "start": Object {
           "column": 10,
           "line": 1,
-=======
-      "params": Array [
-        Object {
-          "loc": Object {
-            "end": Object {
-              "column": 21,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 17,
-              "line": 1,
-            },
-          },
-          "name": "name",
-          "range": Array [
-            17,
-            28,
-          ],
-          "type": "Identifier",
-          "typeAnnotation": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 28,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 22,
-                "line": 1,
-              },
-            },
-            "range": Array [
-              22,
-              28,
-            ],
-            "type": "TypeAnnotation",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 28,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 22,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                22,
-                28,
-              ],
-              "type": "TSStringKeyword",
-            },
-          },
-        },
-        Object {
-          "left": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 33,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 30,
-                "line": 1,
-              },
-            },
-            "name": "age",
-            "range": Array [
-              30,
-              40,
-            ],
-            "type": "Identifier",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 40,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 34,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                34,
-                40,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 40,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 34,
-                    "line": 1,
-                  },
-                },
-                "range": Array [
-                  34,
-                  40,
-                ],
-                "type": "TSNumberKeyword",
-              },
-            },
-          },
-          "loc": Object {
-            "end": Object {
-              "column": 46,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 30,
-              "line": 1,
-            },
-          },
-          "range": Array [
-            30,
-            46,
-          ],
-          "right": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 46,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 43,
-                "line": 1,
-              },
-            },
-            "range": Array [
-              43,
-              46,
-            ],
-            "raw": "100",
-            "type": "Literal",
-            "value": 100,
-          },
-          "type": "AssignmentPattern",
-        },
-        Object {
-          "argument": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 55,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 51,
-                "line": 1,
-              },
-            },
-            "name": "args",
-            "range": Array [
-              51,
-              69,
-            ],
-            "type": "Identifier",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 69,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 56,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                56,
-                69,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 69,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 56,
-                    "line": 1,
-                  },
-                },
-                "range": Array [
-                  56,
-                  69,
-                ],
-                "type": "TSTypeReference",
-                "typeName": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 61,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 56,
-                      "line": 1,
-                    },
-                  },
-                  "name": "Array",
-                  "range": Array [
-                    56,
-                    61,
-                  ],
-                  "type": "Identifier",
-                },
-                "typeParameters": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 69,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 61,
-                      "line": 1,
-                    },
-                  },
-                  "params": Array [
-                    Object {
-                      "id": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 68,
-                            "line": 1,
-                          },
-                          "start": Object {
-                            "column": 62,
-                            "line": 1,
-                          },
-                        },
-                        "range": Array [
-                          62,
-                          68,
-                        ],
-                        "type": "TSStringKeyword",
-                      },
-                      "loc": Object {
-                        "end": Object {
-                          "column": 68,
-                          "line": 1,
-                        },
-                        "start": Object {
-                          "column": 62,
-                          "line": 1,
-                        },
-                      },
-                      "range": Array [
-                        62,
-                        68,
-                      ],
-                      "type": "GenericTypeAnnotation",
-                      "typeParameters": null,
-                    },
-                  ],
-                  "range": Array [
-                    61,
-                    69,
-                  ],
-                  "type": "TypeParameterInstantiation",
-                },
-              },
-            },
-          },
-          "loc": Object {
-            "end": Object {
-              "column": 69,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 48,
-              "line": 1,
-            },
-          },
-          "range": Array [
-            48,
-            69,
-          ],
-          "type": "RestElement",
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         },
       },
       "range": Array [
@@ -17088,37 +14448,11 @@ Object {
                   "line": 2,
                 },
               },
-<<<<<<< HEAD
               "params": Array [
                 Object {
                   "accessibility": "protected",
                   "decorators": Array [],
                   "export": false,
-=======
-              "name": "eee",
-              "range": Array [
-                95,
-                106,
-              ],
-              "type": "Identifier",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 16,
-                    "line": 6,
-                  },
-                  "start": Object {
-                    "column": 10,
-                    "line": 6,
-                  },
-                },
-                "range": Array [
-                  100,
-                  106,
-                ],
-                "type": "TypeAnnotation",
-                "typeAnnotation": Object {
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                   "loc": Object {
                     "end": Object {
                       "column": 41,
@@ -17143,7 +14477,7 @@ Object {
                     "name": "firstName",
                     "range": Array [
                       36,
-                      45,
+                      53,
                     ],
                     "type": "Identifier",
                     "typeAnnotation": Object {
@@ -17189,7 +14523,6 @@ Object {
                   "static": false,
                   "type": "TSParameterProperty",
                 },
-<<<<<<< HEAD
                 Object {
                   "accessibility": "protected",
                   "decorators": Array [],
@@ -17203,42 +14536,6 @@ Object {
                       "column": 14,
                       "line": 3,
                     },
-=======
-                "range": Array [
-                  109,
-                  115,
-                ],
-                "type": "TSStringKeyword",
-              },
-            },
-          },
-          Object {
-            "accessibility": null,
-            "export": false,
-            "index": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 8,
-                  "line": 7,
-                },
-                "start": Object {
-                  "column": 5,
-                  "line": 7,
-                },
-              },
-              "name": "fff",
-              "optional": true,
-              "range": Array [
-                122,
-                134,
-              ],
-              "type": "Identifier",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 17,
-                    "line": 7,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                   },
                   "parameter": Object {
                     "loc": Object {
@@ -17254,7 +14551,7 @@ Object {
                     "name": "lastName",
                     "range": Array [
                       88,
-                      96,
+                      104,
                     ],
                     "type": "Identifier",
                     "typeAnnotation": Object {
@@ -17329,7 +14626,7 @@ Object {
                       "name": "age",
                       "range": Array [
                         130,
-                        133,
+                        141,
                       ],
                       "type": "Identifier",
                       "typeAnnotation": Object {
@@ -17439,7 +14736,7 @@ Object {
                       "name": "student",
                       "range": Array [
                         181,
-                        188,
+                        197,
                       ],
                       "type": "Identifier",
                       "typeAnnotation": Object {
@@ -18322,7 +15619,7 @@ Object {
                     "name": "firstName",
                     "range": Array [
                       33,
-                      42,
+                      50,
                     ],
                     "type": "Identifier",
                     "typeAnnotation": Object {
@@ -18368,21 +15665,10 @@ Object {
                   "static": false,
                   "type": "TSParameterProperty",
                 },
-<<<<<<< HEAD
                 Object {
                   "accessibility": "public",
                   "decorators": Array [],
                   "export": false,
-=======
-                "name": "bar",
-                "optional": true,
-                "range": Array [
-                  59,
-                  71,
-                ],
-                "type": "Identifier",
-                "typeAnnotation": Object {
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                   "loc": Object {
                     "end": Object {
                       "column": 46,
@@ -18407,7 +15693,7 @@ Object {
                     "name": "lastName",
                     "range": Array [
                       82,
-                      90,
+                      98,
                     ],
                     "type": "Identifier",
                     "typeAnnotation": Object {
@@ -18482,7 +15768,7 @@ Object {
                       "name": "age",
                       "range": Array [
                         121,
-                        124,
+                        132,
                       ],
                       "type": "Identifier",
                       "typeAnnotation": Object {
@@ -18592,7 +15878,7 @@ Object {
                       "name": "student",
                       "range": Array [
                         169,
-                        176,
+                        185,
                       ],
                       "type": "Identifier",
                       "typeAnnotation": Object {
@@ -18843,263 +16129,10 @@ Object {
       "value": "(",
     },
     Object {
-<<<<<<< HEAD
       "loc": Object {
         "end": Object {
           "column": 20,
           "line": 2,
-=======
-      "declarations": Array [
-        Object {
-          "id": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 15,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 1,
-              },
-            },
-            "name": "nestedArray",
-            "range": Array [
-              4,
-              44,
-            ],
-            "type": "Identifier",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 44,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 17,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                17,
-                44,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 44,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 17,
-                    "line": 1,
-                  },
-                },
-                "range": Array [
-                  17,
-                  44,
-                ],
-                "type": "TSTypeReference",
-                "typeName": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 22,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 17,
-                      "line": 1,
-                    },
-                  },
-                  "name": "Array",
-                  "range": Array [
-                    17,
-                    22,
-                  ],
-                  "type": "Identifier",
-                },
-                "typeParameters": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 44,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 22,
-                      "line": 1,
-                    },
-                  },
-                  "params": Array [
-                    Object {
-                      "id": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 28,
-                            "line": 1,
-                          },
-                          "start": Object {
-                            "column": 23,
-                            "line": 1,
-                          },
-                        },
-                        "name": "Array",
-                        "range": Array [
-                          23,
-                          28,
-                        ],
-                        "type": "Identifier",
-                      },
-                      "loc": Object {
-                        "end": Object {
-                          "column": 43,
-                          "line": 1,
-                        },
-                        "start": Object {
-                          "column": 23,
-                          "line": 1,
-                        },
-                      },
-                      "range": Array [
-                        23,
-                        43,
-                      ],
-                      "type": "GenericTypeAnnotation",
-                      "typeParameters": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 43,
-                            "line": 1,
-                          },
-                          "start": Object {
-                            "column": 28,
-                            "line": 1,
-                          },
-                        },
-                        "params": Array [
-                          Object {
-                            "id": Object {
-                              "loc": Object {
-                                "end": Object {
-                                  "column": 34,
-                                  "line": 1,
-                                },
-                                "start": Object {
-                                  "column": 29,
-                                  "line": 1,
-                                },
-                              },
-                              "name": "Array",
-                              "range": Array [
-                                29,
-                                34,
-                              ],
-                              "type": "Identifier",
-                            },
-                            "loc": Object {
-                              "end": Object {
-                                "column": 42,
-                                "line": 1,
-                              },
-                              "start": Object {
-                                "column": 29,
-                                "line": 1,
-                              },
-                            },
-                            "range": Array [
-                              29,
-                              42,
-                            ],
-                            "type": "GenericTypeAnnotation",
-                            "typeParameters": Object {
-                              "loc": Object {
-                                "end": Object {
-                                  "column": 42,
-                                  "line": 1,
-                                },
-                                "start": Object {
-                                  "column": 34,
-                                  "line": 1,
-                                },
-                              },
-                              "params": Array [
-                                Object {
-                                  "id": Object {
-                                    "loc": Object {
-                                      "end": Object {
-                                        "column": 41,
-                                        "line": 1,
-                                      },
-                                      "start": Object {
-                                        "column": 35,
-                                        "line": 1,
-                                      },
-                                    },
-                                    "range": Array [
-                                      35,
-                                      41,
-                                    ],
-                                    "type": "TSStringKeyword",
-                                  },
-                                  "loc": Object {
-                                    "end": Object {
-                                      "column": 41,
-                                      "line": 1,
-                                    },
-                                    "start": Object {
-                                      "column": 35,
-                                      "line": 1,
-                                    },
-                                  },
-                                  "range": Array [
-                                    35,
-                                    41,
-                                  ],
-                                  "type": "GenericTypeAnnotation",
-                                  "typeParameters": null,
-                                },
-                              ],
-                              "range": Array [
-                                34,
-                                42,
-                              ],
-                              "type": "TypeParameterInstantiation",
-                            },
-                          },
-                        ],
-                        "range": Array [
-                          28,
-                          43,
-                        ],
-                        "type": "TypeParameterInstantiation",
-                      },
-                    },
-                  ],
-                  "range": Array [
-                    22,
-                    44,
-                  ],
-                  "type": "TypeParameterInstantiation",
-                },
-              },
-            },
-          },
-          "init": null,
-          "loc": Object {
-            "end": Object {
-              "column": 44,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 4,
-              "line": 1,
-            },
-          },
-          "range": Array [
-            4,
-            44,
-          ],
-          "type": "VariableDeclarator",
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         },
         "start": Object {
           "column": 14,
@@ -19196,7 +16229,6 @@ Object {
           "line": 3,
         },
       },
-<<<<<<< HEAD
       "range": Array [
         66,
         72,
@@ -19213,79 +16245,6 @@ Object {
         "start": Object {
           "column": 21,
           "line": 3,
-=======
-      "params": Array [
-        Object {
-          "loc": Object {
-            "end": Object {
-              "column": 24,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 23,
-              "line": 1,
-            },
-          },
-          "name": "e",
-          "optional": true,
-          "range": Array [
-            23,
-            33,
-          ],
-          "type": "Identifier",
-          "typeAnnotation": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 33,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 27,
-                "line": 1,
-              },
-            },
-            "range": Array [
-              27,
-              33,
-            ],
-            "type": "TypeAnnotation",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 33,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 27,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                27,
-                33,
-              ],
-              "type": "TSTypeReference",
-              "typeName": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 33,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 27,
-                    "line": 1,
-                  },
-                },
-                "name": "Entity",
-                "range": Array [
-                  27,
-                  33,
-                ],
-                "type": "Identifier",
-              },
-            },
-          },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         },
       },
       "range": Array [
@@ -19350,7 +16309,6 @@ Object {
       "value": "string",
     },
     Object {
-<<<<<<< HEAD
       "loc": Object {
         "end": Object {
           "column": 47,
@@ -19359,78 +16317,6 @@ Object {
         "start": Object {
           "column": 46,
           "line": 3,
-=======
-      "declarations": Array [
-        Object {
-          "id": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 5,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 1,
-              },
-            },
-            "name": "x",
-            "range": Array [
-              4,
-              11,
-            ],
-            "type": "Identifier",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 11,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 7,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                7,
-                11,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 11,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 7,
-                    "line": 1,
-                  },
-                },
-                "range": Array [
-                  7,
-                  11,
-                ],
-                "type": "TSNullKeyword",
-              },
-            },
-          },
-          "init": null,
-          "loc": Object {
-            "end": Object {
-              "column": 11,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 4,
-              "line": 1,
-            },
-          },
-          "range": Array [
-            4,
-            11,
-          ],
-          "type": "VariableDeclarator",
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         },
       },
       "range": Array [
@@ -19459,83 +16345,10 @@ Object {
       "value": "public",
     },
     Object {
-<<<<<<< HEAD
       "loc": Object {
         "end": Object {
           "column": 24,
           "line": 4,
-=======
-      "declarations": Array [
-        Object {
-          "id": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 5,
-                "line": 2,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 2,
-              },
-            },
-            "name": "y",
-            "range": Array [
-              17,
-              29,
-            ],
-            "type": "Identifier",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 16,
-                  "line": 2,
-                },
-                "start": Object {
-                  "column": 7,
-                  "line": 2,
-                },
-              },
-              "range": Array [
-                20,
-                29,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 16,
-                    "line": 2,
-                  },
-                  "start": Object {
-                    "column": 7,
-                    "line": 2,
-                  },
-                },
-                "range": Array [
-                  20,
-                  29,
-                ],
-                "type": "TSUndefinedKeyword",
-              },
-            },
-          },
-          "init": null,
-          "loc": Object {
-            "end": Object {
-              "column": 16,
-              "line": 2,
-            },
-            "start": Object {
-              "column": 4,
-              "line": 2,
-            },
-          },
-          "range": Array [
-            17,
-            29,
-          ],
-          "type": "VariableDeclarator",
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         },
         "start": Object {
           "column": 21,
@@ -19948,7 +16761,7 @@ Object {
                     "name": "firstName",
                     "range": Array [
                       35,
-                      44,
+                      52,
                     ],
                     "type": "Identifier",
                     "typeAnnotation": Object {
@@ -20023,7 +16836,7 @@ Object {
                       "name": "lastName",
                       "range": Array [
                         77,
-                        85,
+                        93,
                       ],
                       "type": "Identifier",
                       "typeAnnotation": Object {
@@ -20576,17 +17389,6 @@ Object {
               ],
               "type": "Identifier",
             },
-<<<<<<< HEAD
-=======
-          },
-          "name": "x",
-          "range": Array [
-            18,
-            24,
-          ],
-          "type": "Identifier",
-          "typeAnnotation": Object {
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             "loc": Object {
               "end": Object {
                 "column": 35,
@@ -20940,13 +17742,8 @@ Object {
                   },
                 },
                 "range": Array [
-<<<<<<< HEAD
                   46,
                   54,
-=======
-                  40,
-                  79,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                 ],
                 "type": "BlockStatement",
               },
@@ -20989,137 +17786,10 @@ Object {
                         "line": 2,
                       },
                     },
-<<<<<<< HEAD
                     "name": "a",
-=======
-                    "parameters": Array [
-                      Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 32,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 28,
-                            "line": 2,
-                          },
-                        },
-                        "name": "this",
-                        "range": Array [
-                          50,
-                          60,
-                        ],
-                        "type": "Identifier",
-                        "typeAnnotation": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 38,
-                              "line": 2,
-                            },
-                            "start": Object {
-                              "column": 34,
-                              "line": 2,
-                            },
-                          },
-                          "range": Array [
-                            56,
-                            60,
-                          ],
-                          "type": "TypeAnnotation",
-                          "typeAnnotation": Object {
-                            "loc": Object {
-                              "end": Object {
-                                "column": 38,
-                                "line": 2,
-                              },
-                              "start": Object {
-                                "column": 34,
-                                "line": 2,
-                              },
-                            },
-                            "range": Array [
-                              56,
-                              60,
-                            ],
-                            "type": "TSVoidKeyword",
-                          },
-                        },
-                      },
-                      Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 41,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 40,
-                            "line": 2,
-                          },
-                        },
-                        "name": "e",
-                        "range": Array [
-                          62,
-                          70,
-                        ],
-                        "type": "Identifier",
-                        "typeAnnotation": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 48,
-                              "line": 2,
-                            },
-                            "start": Object {
-                              "column": 43,
-                              "line": 2,
-                            },
-                          },
-                          "range": Array [
-                            65,
-                            70,
-                          ],
-                          "type": "TypeAnnotation",
-                          "typeAnnotation": Object {
-                            "loc": Object {
-                              "end": Object {
-                                "column": 48,
-                                "line": 2,
-                              },
-                              "start": Object {
-                                "column": 43,
-                                "line": 2,
-                              },
-                            },
-                            "range": Array [
-                              65,
-                              70,
-                            ],
-                            "type": "TSTypeReference",
-                            "typeName": Object {
-                              "loc": Object {
-                                "end": Object {
-                                  "column": 48,
-                                  "line": 2,
-                                },
-                                "start": Object {
-                                  "column": 43,
-                                  "line": 2,
-                                },
-                              },
-                              "name": "Event",
-                              "range": Array [
-                                65,
-                                70,
-                              ],
-                              "type": "Identifier",
-                            },
-                          },
-                        },
-                      },
-                    ],
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                     "range": Array [
                       35,
-                      36,
+                      44,
                     ],
                     "type": "Identifier",
                     "typeAnnotation": Object {
@@ -21245,170 +17915,6 @@ Object {
   "sourceType": "script",
   "tokens": Array [
     Object {
-<<<<<<< HEAD
-=======
-      "declarations": Array [
-        Object {
-          "id": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 7,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 1,
-              },
-            },
-            "name": "foo",
-            "range": Array [
-              4,
-              14,
-            ],
-            "type": "Identifier",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 14,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 9,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                9,
-                14,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 14,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 9,
-                    "line": 1,
-                  },
-                },
-                "range": Array [
-                  9,
-                  14,
-                ],
-                "type": "TSTypeReference",
-                "typeName": Object {
-                  "left": Object {
-                    "left": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 10,
-                          "line": 1,
-                        },
-                        "start": Object {
-                          "column": 9,
-                          "line": 1,
-                        },
-                      },
-                      "name": "A",
-                      "range": Array [
-                        9,
-                        10,
-                      ],
-                      "type": "Identifier",
-                    },
-                    "loc": Object {
-                      "end": Object {
-                        "column": 12,
-                        "line": 1,
-                      },
-                      "start": Object {
-                        "column": 9,
-                        "line": 1,
-                      },
-                    },
-                    "range": Array [
-                      9,
-                      12,
-                    ],
-                    "right": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 12,
-                          "line": 1,
-                        },
-                        "start": Object {
-                          "column": 11,
-                          "line": 1,
-                        },
-                      },
-                      "name": "B",
-                      "range": Array [
-                        11,
-                        12,
-                      ],
-                      "type": "Identifier",
-                    },
-                    "type": "TSQualifiedName",
-                  },
-                  "loc": Object {
-                    "end": Object {
-                      "column": 14,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 9,
-                      "line": 1,
-                    },
-                  },
-                  "range": Array [
-                    9,
-                    14,
-                  ],
-                  "right": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 14,
-                        "line": 1,
-                      },
-                      "start": Object {
-                        "column": 13,
-                        "line": 1,
-                      },
-                    },
-                    "name": "C",
-                    "range": Array [
-                      13,
-                      14,
-                    ],
-                    "type": "Identifier",
-                  },
-                  "type": "TSQualifiedName",
-                },
-              },
-            },
-          },
-          "init": null,
-          "loc": Object {
-            "end": Object {
-              "column": 14,
-              "line": 1,
-            },
-            "start": Object {
-              "column": 4,
-              "line": 1,
-            },
-          },
-          "range": Array [
-            4,
-            14,
-          ],
-          "type": "VariableDeclarator",
-        },
-      ],
-      "kind": "var",
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
       "loc": Object {
         "end": Object {
           "column": 5,
@@ -21651,68 +18157,12 @@ exports[`typescript fixtures/basics/class-with-type-parameter.src 1`] = `
 Object {
   "body": Array [
     Object {
-<<<<<<< HEAD
       "body": Object {
         "body": Array [],
         "loc": Object {
           "end": Object {
             "column": 1,
             "line": 3,
-=======
-      "declarations": Array [
-        Object {
-          "id": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 8,
-                "line": 1,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 1,
-              },
-            },
-            "name": "name",
-            "range": Array [
-              4,
-              15,
-            ],
-            "type": "Identifier",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 15,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 9,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                9,
-                15,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 15,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 9,
-                    "line": 1,
-                  },
-                },
-                "range": Array [
-                  9,
-                  15,
-                ],
-                "type": "TSStringKeyword",
-              },
-            },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
           },
           "start": Object {
             "column": 13,
@@ -21800,124 +18250,11 @@ Object {
         "type": "TypeParameterDeclaration",
       },
     },
-    Object {
-      "declarations": Array [
-        Object {
-          "id": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 7,
-                "line": 2,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 2,
-              },
-            },
-            "name": "foo",
-            "range": Array [
-              34,
-              45,
-            ],
-            "type": "Identifier",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 15,
-                  "line": 2,
-                },
-                "start": Object {
-                  "column": 9,
-                  "line": 2,
-                },
-              },
-              "range": Array [
-                39,
-                45,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 15,
-                    "line": 2,
-                  },
-                  "start": Object {
-                    "column": 9,
-                    "line": 2,
-                  },
-                },
-                "range": Array [
-                  39,
-                  45,
-                ],
-                "type": "TSStringKeyword",
-              },
-            },
-          },
-          "init": Object {
-            "loc": Object {
-              "end": Object {
-                "column": 23,
-                "line": 2,
-              },
-              "start": Object {
-                "column": 18,
-                "line": 2,
-              },
-            },
-            "range": Array [
-              48,
-              53,
-            ],
-            "raw": "\\"Bar\\"",
-            "type": "Literal",
-            "value": "Bar",
-          },
-          "loc": Object {
-            "end": Object {
-              "column": 23,
-              "line": 2,
-            },
-            "start": Object {
-              "column": 4,
-              "line": 2,
-            },
-          },
-          "range": Array [
-            34,
-            53,
-          ],
-          "type": "VariableDeclarator",
-        },
-      ],
-      "kind": "var",
-      "loc": Object {
-        "end": Object {
-          "column": 24,
-          "line": 2,
-        },
-        "start": Object {
-          "column": 0,
-          "line": 2,
-        },
-      },
-      "range": Array [
-        30,
-        54,
-      ],
-      "type": "VariableDeclaration",
-    },
   ],
   "loc": Object {
     "end": Object {
-<<<<<<< HEAD
       "column": 1,
       "line": 3,
-=======
-      "column": 24,
-      "line": 2,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
     },
     "start": Object {
       "column": 0,
@@ -21926,11 +18263,7 @@ Object {
   },
   "range": Array [
     0,
-<<<<<<< HEAD
     17,
-=======
-    54,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
   ],
   "sourceType": "script",
   "tokens": Array [
@@ -23073,7 +19406,7 @@ Object {
           "name": "bar",
           "range": Array [
             21,
-            24,
+            32,
           ],
           "type": "Identifier",
           "typeAnnotation": Object {
@@ -24219,7 +20552,6 @@ Object {
   "sourceType": "module",
   "tokens": Array [
     Object {
-<<<<<<< HEAD
       "loc": Object {
         "end": Object {
           "column": 6,
@@ -24228,387 +20560,6 @@ Object {
         "start": Object {
           "column": 0,
           "line": 1,
-=======
-      "body": Object {
-        "body": Array [
-          Object {
-            "accessibility": null,
-            "computed": false,
-            "key": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 15,
-                  "line": 2,
-                },
-                "start": Object {
-                  "column": 4,
-                  "line": 2,
-                },
-              },
-              "name": "constructor",
-              "range": Array [
-                20,
-                31,
-              ],
-              "type": "Identifier",
-            },
-            "kind": "constructor",
-            "loc": Object {
-              "end": Object {
-                "column": 5,
-                "line": 4,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 2,
-              },
-            },
-            "range": Array [
-              20,
-              113,
-            ],
-            "static": false,
-            "type": "MethodDefinition",
-            "value": Object {
-              "async": false,
-              "body": Object {
-                "body": Array [
-                  Object {
-                    "expression": Object {
-                      "left": Object {
-                        "computed": false,
-                        "loc": Object {
-                          "end": Object {
-                            "column": 18,
-                            "line": 3,
-                          },
-                          "start": Object {
-                            "column": 8,
-                            "line": 3,
-                          },
-                        },
-                        "object": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 12,
-                              "line": 3,
-                            },
-                            "start": Object {
-                              "column": 8,
-                              "line": 3,
-                            },
-                          },
-                          "range": Array [
-                            81,
-                            85,
-                          ],
-                          "type": "ThisExpression",
-                        },
-                        "property": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 18,
-                              "line": 3,
-                            },
-                            "start": Object {
-                              "column": 13,
-                              "line": 3,
-                            },
-                          },
-                          "name": "title",
-                          "range": Array [
-                            86,
-                            91,
-                          ],
-                          "type": "Identifier",
-                        },
-                        "range": Array [
-                          81,
-                          91,
-                        ],
-                        "type": "MemberExpression",
-                      },
-                      "loc": Object {
-                        "end": Object {
-                          "column": 33,
-                          "line": 3,
-                        },
-                        "start": Object {
-                          "column": 8,
-                          "line": 3,
-                        },
-                      },
-                      "operator": "=",
-                      "range": Array [
-                        81,
-                        106,
-                      ],
-                      "right": Object {
-                        "computed": false,
-                        "loc": Object {
-                          "end": Object {
-                            "column": 33,
-                            "line": 3,
-                          },
-                          "start": Object {
-                            "column": 21,
-                            "line": 3,
-                          },
-                        },
-                        "object": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 27,
-                              "line": 3,
-                            },
-                            "start": Object {
-                              "column": 21,
-                              "line": 3,
-                            },
-                          },
-                          "name": "config",
-                          "range": Array [
-                            94,
-                            100,
-                          ],
-                          "type": "Identifier",
-                        },
-                        "property": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 33,
-                              "line": 3,
-                            },
-                            "start": Object {
-                              "column": 28,
-                              "line": 3,
-                            },
-                          },
-                          "name": "title",
-                          "range": Array [
-                            101,
-                            106,
-                          ],
-                          "type": "Identifier",
-                        },
-                        "range": Array [
-                          94,
-                          106,
-                        ],
-                        "type": "MemberExpression",
-                      },
-                      "type": "AssignmentExpression",
-                    },
-                    "loc": Object {
-                      "end": Object {
-                        "column": 34,
-                        "line": 3,
-                      },
-                      "start": Object {
-                        "column": 8,
-                        "line": 3,
-                      },
-                    },
-                    "range": Array [
-                      81,
-                      107,
-                    ],
-                    "type": "ExpressionStatement",
-                  },
-                ],
-                "loc": Object {
-                  "end": Object {
-                    "column": 5,
-                    "line": 4,
-                  },
-                  "start": Object {
-                    "column": 55,
-                    "line": 2,
-                  },
-                },
-                "range": Array [
-                  71,
-                  113,
-                ],
-                "type": "BlockStatement",
-              },
-              "expression": false,
-              "generator": false,
-              "id": null,
-              "loc": Object {
-                "end": Object {
-                  "column": 5,
-                  "line": 4,
-                },
-                "start": Object {
-                  "column": 15,
-                  "line": 2,
-                },
-              },
-              "params": Array [
-                Object {
-                  "decorators": Array [
-                    Object {
-                      "expression": Object {
-                        "arguments": Array [
-                          Object {
-                            "loc": Object {
-                              "end": Object {
-                                "column": 34,
-                                "line": 2,
-                              },
-                              "start": Object {
-                                "column": 24,
-                                "line": 2,
-                              },
-                            },
-                            "name": "APP_CONFIG",
-                            "range": Array [
-                              40,
-                              50,
-                            ],
-                            "type": "Identifier",
-                          },
-                        ],
-                        "callee": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 23,
-                              "line": 2,
-                            },
-                            "start": Object {
-                              "column": 17,
-                              "line": 2,
-                            },
-                          },
-                          "name": "Inject",
-                          "range": Array [
-                            33,
-                            39,
-                          ],
-                          "type": "Identifier",
-                        },
-                        "loc": Object {
-                          "end": Object {
-                            "column": 35,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 17,
-                            "line": 2,
-                          },
-                        },
-                        "range": Array [
-                          33,
-                          51,
-                        ],
-                        "type": "CallExpression",
-                      },
-                      "loc": Object {
-                        "end": Object {
-                          "column": 35,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 16,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        32,
-                        51,
-                      ],
-                      "type": "Decorator",
-                    },
-                  ],
-                  "loc": Object {
-                    "end": Object {
-                      "column": 42,
-                      "line": 2,
-                    },
-                    "start": Object {
-                      "column": 36,
-                      "line": 2,
-                    },
-                  },
-                  "name": "config",
-                  "range": Array [
-                    52,
-                    69,
-                  ],
-                  "type": "Identifier",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 53,
-                        "line": 2,
-                      },
-                      "start": Object {
-                        "column": 44,
-                        "line": 2,
-                      },
-                    },
-                    "range": Array [
-                      60,
-                      69,
-                    ],
-                    "type": "TypeAnnotation",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 53,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 44,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        60,
-                        69,
-                      ],
-                      "type": "TSTypeReference",
-                      "typeName": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 53,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 44,
-                            "line": 2,
-                          },
-                        },
-                        "name": "AppConfig",
-                        "range": Array [
-                          60,
-                          69,
-                        ],
-                        "type": "Identifier",
-                      },
-                    },
-                  },
-                },
-              ],
-              "range": Array [
-                31,
-                113,
-              ],
-              "type": "FunctionExpression",
-            },
-          },
-        ],
-        "loc": Object {
-          "end": Object {
-            "column": 1,
-            "line": 5,
-          },
-          "start": Object {
-            "column": 14,
-            "line": 1,
-          },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
         },
       },
       "range": Array [
@@ -24851,139 +20802,7 @@ Object {
                   "line": 1,
                 },
               },
-<<<<<<< HEAD
               "name": "U",
-=======
-              "params": Array [
-                Object {
-                  "decorators": Array [
-                    Object {
-                      "expression": Object {
-                        "arguments": Array [
-                          Object {
-                            "loc": Object {
-                              "end": Object {
-                                "column": 21,
-                                "line": 2,
-                              },
-                              "start": Object {
-                                "column": 17,
-                                "line": 2,
-                              },
-                            },
-                            "range": Array [
-                              29,
-                              33,
-                            ],
-                            "raw": "true",
-                            "type": "Literal",
-                            "value": true,
-                          },
-                        ],
-                        "callee": Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 16,
-                              "line": 2,
-                            },
-                            "start": Object {
-                              "column": 9,
-                              "line": 2,
-                            },
-                          },
-                          "name": "special",
-                          "range": Array [
-                            21,
-                            28,
-                          ],
-                          "type": "Identifier",
-                        },
-                        "loc": Object {
-                          "end": Object {
-                            "column": 22,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 9,
-                            "line": 2,
-                          },
-                        },
-                        "range": Array [
-                          21,
-                          34,
-                        ],
-                        "type": "CallExpression",
-                      },
-                      "loc": Object {
-                        "end": Object {
-                          "column": 22,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 8,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        20,
-                        34,
-                      ],
-                      "type": "Decorator",
-                    },
-                  ],
-                  "loc": Object {
-                    "end": Object {
-                      "column": 26,
-                      "line": 2,
-                    },
-                    "start": Object {
-                      "column": 23,
-                      "line": 2,
-                    },
-                  },
-                  "name": "baz",
-                  "range": Array [
-                    35,
-                    46,
-                  ],
-                  "type": "Identifier",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 34,
-                        "line": 2,
-                      },
-                      "start": Object {
-                        "column": 28,
-                        "line": 2,
-                      },
-                    },
-                    "range": Array [
-                      40,
-                      46,
-                    ],
-                    "type": "TypeAnnotation",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 34,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 28,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        40,
-                        46,
-                      ],
-                      "type": "TSNumberKeyword",
-                    },
-                  },
-                },
-              ],
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
               "range": Array [
                 20,
                 21,
@@ -25588,10 +21407,6 @@ Object {
                   "range": Array [
                     35,
                     48,
-<<<<<<< HEAD
-=======
-                    59,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                   ],
                   "readonly": false,
                   "static": false,
@@ -25942,13 +21757,8 @@ Object {
                   },
                   "name": "a",
                   "range": Array [
-<<<<<<< HEAD
                     28,
-                    29,
-=======
-                    36,
-                    48,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
+                    37,
                   ],
                   "type": "Identifier",
                   "typeAnnotation": Object {
@@ -26355,100 +22165,6 @@ Object {
                   "line": 2,
                 },
               },
-<<<<<<< HEAD
-=======
-              "params": Array [
-                Object {
-                  "decorators": Array [
-                    Object {
-                      "expression": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 26,
-                            "line": 2,
-                          },
-                          "start": Object {
-                            "column": 18,
-                            "line": 2,
-                          },
-                        },
-                        "name": "required",
-                        "range": Array [
-                          40,
-                          48,
-                        ],
-                        "type": "Identifier",
-                      },
-                      "loc": Object {
-                        "end": Object {
-                          "column": 26,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 17,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        39,
-                        48,
-                      ],
-                      "type": "Decorator",
-                    },
-                  ],
-                  "loc": Object {
-                    "end": Object {
-                      "column": 31,
-                      "line": 2,
-                    },
-                    "start": Object {
-                      "column": 27,
-                      "line": 2,
-                    },
-                  },
-                  "name": "name",
-                  "range": Array [
-                    49,
-                    61,
-                  ],
-                  "type": "Identifier",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 39,
-                        "line": 2,
-                      },
-                      "start": Object {
-                        "column": 33,
-                        "line": 2,
-                      },
-                    },
-                    "range": Array [
-                      55,
-                      61,
-                    ],
-                    "type": "TypeAnnotation",
-                    "typeAnnotation": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 39,
-                          "line": 2,
-                        },
-                        "start": Object {
-                          "column": 33,
-                          "line": 2,
-                        },
-                      },
-                      "range": Array [
-                        55,
-                        61,
-                      ],
-                      "type": "TSStringKeyword",
-                    },
-                  },
-                },
-              ],
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
               "range": Array [
                 34,
                 46,
@@ -26947,7 +22663,7 @@ Object {
           ],
           "range": Array [
             13,
-            23,
+            45,
           ],
           "type": "ObjectPattern",
           "typeAnnotation": Object {
@@ -27696,7 +23412,7 @@ Object {
           ],
           "range": Array [
             13,
-            23,
+            43,
           ],
           "type": "ObjectPattern",
           "typeAnnotation": Object {
@@ -28330,7 +24046,7 @@ Object {
           "name": "b",
           "range": Array [
             14,
-            15,
+            18,
           ],
           "type": "Identifier",
           "typeAnnotation": Object {
@@ -28475,7 +24191,6 @@ Object {
             ],
             "type": "TypeParameter",
           },
-<<<<<<< HEAD
         ],
         "range": Array [
           10,
@@ -28876,114 +24591,6 @@ Object {
           "end": Object {
             "column": 30,
             "line": 1,
-=======
-          Object {
-            "accessibility": "public",
-            "export": false,
-            "index": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 15,
-                  "line": 10,
-                },
-                "start": Object {
-                  "column": 12,
-                  "line": 10,
-                },
-              },
-              "name": "baz",
-              "range": Array [
-                190,
-                201,
-              ],
-              "type": "Identifier",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 23,
-                    "line": 10,
-                  },
-                  "start": Object {
-                    "column": 17,
-                    "line": 10,
-                  },
-                },
-                "range": Array [
-                  195,
-                  201,
-                ],
-                "type": "TypeAnnotation",
-                "typeAnnotation": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 23,
-                      "line": 10,
-                    },
-                    "start": Object {
-                      "column": 17,
-                      "line": 10,
-                    },
-                  },
-                  "range": Array [
-                    195,
-                    201,
-                  ],
-                  "type": "TSStringKeyword",
-                },
-              },
-            },
-            "loc": Object {
-              "end": Object {
-                "column": 33,
-                "line": 10,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 10,
-              },
-            },
-            "range": Array [
-              182,
-              211,
-            ],
-            "readonly": false,
-            "static": false,
-            "type": "TSIndexSignature",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 32,
-                  "line": 10,
-                },
-                "start": Object {
-                  "column": 26,
-                  "line": 10,
-                },
-              },
-              "range": Array [
-                204,
-                210,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 32,
-                    "line": 10,
-                  },
-                  "start": Object {
-                    "column": 26,
-                    "line": 10,
-                  },
-                },
-                "range": Array [
-                  204,
-                  210,
-                ],
-                "type": "TSStringKeyword",
-              },
-            },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
           },
           "start": Object {
             "column": 16,
@@ -28992,64 +24599,7 @@ Object {
         },
         "params": Array [
           Object {
-<<<<<<< HEAD
             "constraint": null,
-=======
-            "accessibility": "private",
-            "export": false,
-            "index": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 16,
-                  "line": 11,
-                },
-                "start": Object {
-                  "column": 13,
-                  "line": 11,
-                },
-              },
-              "name": "baz",
-              "range": Array [
-                225,
-                236,
-              ],
-              "type": "Identifier",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 24,
-                    "line": 11,
-                  },
-                  "start": Object {
-                    "column": 18,
-                    "line": 11,
-                  },
-                },
-                "range": Array [
-                  230,
-                  236,
-                ],
-                "type": "TypeAnnotation",
-                "typeAnnotation": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 24,
-                      "line": 11,
-                    },
-                    "start": Object {
-                      "column": 18,
-                      "line": 11,
-                    },
-                  },
-                  "range": Array [
-                    230,
-                    236,
-                  ],
-                  "type": "TSStringKeyword",
-                },
-              },
-            },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             "loc": Object {
               "end": Object {
                 "column": 29,
@@ -29280,13 +24830,8 @@ Object {
               },
               "name": "b",
               "range": Array [
-<<<<<<< HEAD
                 47,
                 48,
-=======
-                262,
-                273,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
               ],
               "type": "Identifier",
             },
@@ -29368,7 +24913,7 @@ Object {
           "name": "b",
           "range": Array [
             25,
-            26,
+            29,
           ],
           "type": "Identifier",
           "typeAnnotation": Object {
@@ -29399,13 +24944,8 @@ Object {
                 },
               },
               "range": Array [
-<<<<<<< HEAD
                 28,
                 29,
-=======
-                296,
-                307,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
               ],
               "type": "TSTypeReference",
               "typeName": Object {
@@ -29946,13 +25486,8 @@ Object {
               },
               "name": "name",
               "range": Array [
-<<<<<<< HEAD
                 50,
                 54,
-=======
-                330,
-                341,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
               ],
               "type": "Identifier",
             },
@@ -30034,7 +25569,7 @@ Object {
           "name": "name",
           "range": Array [
             17,
-            21,
+            28,
           ],
           "type": "Identifier",
           "typeAnnotation": Object {
@@ -30408,13 +25943,8 @@ Object {
               },
               "name": "name",
               "range": Array [
-<<<<<<< HEAD
                 89,
                 93,
-=======
-                366,
-                377,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
               ],
               "type": "Identifier",
             },
@@ -30496,7 +26026,7 @@ Object {
           "name": "name",
           "range": Array [
             17,
-            21,
+            28,
           ],
           "type": "Identifier",
           "typeAnnotation": Object {
@@ -30549,7 +26079,7 @@ Object {
             "name": "age",
             "range": Array [
               30,
-              33,
+              40,
             ],
             "type": "Identifier",
             "typeAnnotation": Object {
@@ -30612,64 +26142,6 @@ Object {
                 "line": 1,
               },
             },
-<<<<<<< HEAD
-=======
-            "optional": false,
-            "params": Array [
-              Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 16,
-                    "line": 17,
-                  },
-                  "start": Object {
-                    "column": 13,
-                    "line": 17,
-                  },
-                },
-                "name": "bar",
-                "range": Array [
-                  402,
-                  413,
-                ],
-                "type": "Identifier",
-                "typeAnnotation": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 24,
-                      "line": 17,
-                    },
-                    "start": Object {
-                      "column": 18,
-                      "line": 17,
-                    },
-                  },
-                  "range": Array [
-                    407,
-                    413,
-                  ],
-                  "type": "TypeAnnotation",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 24,
-                        "line": 17,
-                      },
-                      "start": Object {
-                        "column": 18,
-                        "line": 17,
-                      },
-                    },
-                    "range": Array [
-                      407,
-                      413,
-                    ],
-                    "type": "TSStringKeyword",
-                  },
-                },
-              },
-            ],
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             "range": Array [
               43,
               46,
@@ -30692,68 +26164,10 @@ Object {
                 "line": 1,
               },
             },
-<<<<<<< HEAD
             "name": "args",
-=======
-            "optional": false,
-            "params": Array [
-              Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 17,
-                    "line": 18,
-                  },
-                  "start": Object {
-                    "column": 14,
-                    "line": 18,
-                  },
-                },
-                "name": "bar",
-                "range": Array [
-                  436,
-                  447,
-                ],
-                "type": "Identifier",
-                "typeAnnotation": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 25,
-                      "line": 18,
-                    },
-                    "start": Object {
-                      "column": 19,
-                      "line": 18,
-                    },
-                  },
-                  "range": Array [
-                    441,
-                    447,
-                  ],
-                  "type": "TypeAnnotation",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 25,
-                        "line": 18,
-                      },
-                      "start": Object {
-                        "column": 19,
-                        "line": 18,
-                      },
-                    },
-                    "range": Array [
-                      441,
-                      447,
-                    ],
-                    "type": "TSStringKeyword",
-                  },
-                },
-              },
-            ],
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             "range": Array [
               51,
-              55,
+              69,
             ],
             "type": "Identifier",
             "typeAnnotation": Object {
@@ -30784,13 +26198,8 @@ Object {
                   },
                 },
                 "range": Array [
-<<<<<<< HEAD
                   56,
                   69,
-=======
-                  472,
-                  483,
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                 ],
                 "type": "TSTypeReference",
                 "typeName": Object {
@@ -30811,17 +26220,7 @@ Object {
                   ],
                   "type": "Identifier",
                 },
-<<<<<<< HEAD
                 "typeParameters": Object {
-=======
-                "name": "bar",
-                "range": Array [
-                  505,
-                  516,
-                ],
-                "type": "Identifier",
-                "typeAnnotation": Object {
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
                   "loc": Object {
                     "end": Object {
                       "column": 69,
@@ -30876,179 +26275,6 @@ Object {
                   "type": "TypeParameterInstantiation",
                 },
               },
-<<<<<<< HEAD
-=======
-            ],
-            "range": Array [
-              496,
-              524,
-            ],
-            "readonly": false,
-            "static": true,
-            "type": "TSMethodSignature",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 31,
-                  "line": 20,
-                },
-                "start": Object {
-                  "column": 27,
-                  "line": 20,
-                },
-              },
-              "range": Array [
-                519,
-                523,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 31,
-                    "line": 20,
-                  },
-                  "start": Object {
-                    "column": 27,
-                    "line": 20,
-                  },
-                },
-                "range": Array [
-                  519,
-                  523,
-                ],
-                "type": "TSVoidKeyword",
-              },
-            },
-          },
-          Object {
-            "accessibility": null,
-            "computed": false,
-            "export": true,
-            "key": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 12,
-                  "line": 21,
-                },
-                "start": Object {
-                  "column": 11,
-                  "line": 21,
-                },
-              },
-              "name": "k",
-              "range": Array [
-                536,
-                537,
-              ],
-              "type": "Identifier",
-            },
-            "loc": Object {
-              "end": Object {
-                "column": 32,
-                "line": 21,
-              },
-              "start": Object {
-                "column": 4,
-                "line": 21,
-              },
-            },
-            "optional": false,
-            "params": Array [
-              Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 16,
-                    "line": 21,
-                  },
-                  "start": Object {
-                    "column": 13,
-                    "line": 21,
-                  },
-                },
-                "name": "bar",
-                "range": Array [
-                  538,
-                  549,
-                ],
-                "type": "Identifier",
-                "typeAnnotation": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 24,
-                      "line": 21,
-                    },
-                    "start": Object {
-                      "column": 18,
-                      "line": 21,
-                    },
-                  },
-                  "range": Array [
-                    543,
-                    549,
-                  ],
-                  "type": "TypeAnnotation",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 24,
-                        "line": 21,
-                      },
-                      "start": Object {
-                        "column": 18,
-                        "line": 21,
-                      },
-                    },
-                    "range": Array [
-                      543,
-                      549,
-                    ],
-                    "type": "TSStringKeyword",
-                  },
-                },
-              },
-            ],
-            "range": Array [
-              529,
-              557,
-            ],
-            "readonly": false,
-            "static": false,
-            "type": "TSMethodSignature",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 31,
-                  "line": 21,
-                },
-                "start": Object {
-                  "column": 27,
-                  "line": 21,
-                },
-              },
-              "range": Array [
-                552,
-                556,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 31,
-                    "line": 21,
-                  },
-                  "start": Object {
-                    "column": 27,
-                    "line": 21,
-                  },
-                },
-                "range": Array [
-                  552,
-                  556,
-                ],
-                "type": "TSVoidKeyword",
-              },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             },
           },
           "loc": Object {
@@ -31056,107 +26282,9 @@ Object {
               "column": 69,
               "line": 1,
             },
-<<<<<<< HEAD
             "start": Object {
               "column": 48,
               "line": 1,
-=======
-            "optional": false,
-            "params": Array [
-              Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 18,
-                    "line": 22,
-                  },
-                  "start": Object {
-                    "column": 15,
-                    "line": 22,
-                  },
-                },
-                "name": "bar",
-                "range": Array [
-                  573,
-                  584,
-                ],
-                "type": "Identifier",
-                "typeAnnotation": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 26,
-                      "line": 22,
-                    },
-                    "start": Object {
-                      "column": 20,
-                      "line": 22,
-                    },
-                  },
-                  "range": Array [
-                    578,
-                    584,
-                  ],
-                  "type": "TypeAnnotation",
-                  "typeAnnotation": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 26,
-                        "line": 22,
-                      },
-                      "start": Object {
-                        "column": 20,
-                        "line": 22,
-                      },
-                    },
-                    "range": Array [
-                      578,
-                      584,
-                    ],
-                    "type": "TSStringKeyword",
-                  },
-                },
-              },
-            ],
-            "range": Array [
-              562,
-              592,
-            ],
-            "readonly": true,
-            "static": false,
-            "type": "TSMethodSignature",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 33,
-                  "line": 22,
-                },
-                "start": Object {
-                  "column": 29,
-                  "line": 22,
-                },
-              },
-              "range": Array [
-                587,
-                591,
-              ],
-              "type": "TypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 33,
-                    "line": 22,
-                  },
-                  "start": Object {
-                    "column": 29,
-                    "line": 22,
-                  },
-                },
-                "range": Array [
-                  587,
-                  591,
-                ],
-                "type": "TSVoidKeyword",
-              },
->>>>>>> Breaking: Include type annotation range for Identifiers (fixes #314)
             },
           },
           "range": Array [
@@ -32823,7 +27951,7 @@ Object {
               "name": "eee",
               "range": Array [
                 95,
-                98,
+                106,
               ],
               "type": "Identifier",
               "typeAnnotation": Object {
@@ -32931,7 +28059,7 @@ Object {
               "optional": true,
               "range": Array [
                 122,
-                125,
+                134,
               ],
               "type": "Identifier",
               "typeAnnotation": Object {
@@ -37794,7 +32922,7 @@ Object {
                 "optional": true,
                 "range": Array [
                   59,
-                  62,
+                  71,
                 ],
                 "type": "Identifier",
                 "typeAnnotation": Object {
@@ -38655,7 +33783,7 @@ Object {
             "name": "nestedArray",
             "range": Array [
               4,
-              15,
+              44,
             ],
             "type": "Identifier",
             "typeAnnotation": Object {
@@ -38670,7 +33798,7 @@ Object {
                 },
               },
               "range": Array [
-                17,
+                15,
                 44,
               ],
               "type": "TypeAnnotation",
@@ -39432,7 +34560,7 @@ Object {
           "optional": true,
           "range": Array [
             23,
-            24,
+            33,
           ],
           "type": "Identifier",
           "typeAnnotation": Object {
@@ -39951,7 +35079,7 @@ Object {
             "name": "x",
             "range": Array [
               4,
-              5,
+              11,
             ],
             "type": "Identifier",
             "typeAnnotation": Object {
@@ -39966,7 +35094,7 @@ Object {
                 },
               },
               "range": Array [
-                7,
+                5,
                 11,
               ],
               "type": "TypeAnnotation",
@@ -40041,7 +35169,7 @@ Object {
             "name": "y",
             "range": Array [
               17,
-              18,
+              29,
             ],
             "type": "Identifier",
             "typeAnnotation": Object {
@@ -40056,7 +35184,7 @@ Object {
                 },
               },
               "range": Array [
-                20,
+                18,
                 29,
               ],
               "type": "TypeAnnotation",
@@ -42998,7 +38126,7 @@ Object {
           "name": "x",
           "range": Array [
             18,
-            19,
+            24,
           ],
           "type": "Identifier",
           "typeAnnotation": Object {
@@ -44374,7 +39502,7 @@ Object {
                 "name": "onclick",
                 "range": Array [
                   40,
-                  47,
+                  79,
                 ],
                 "type": "Identifier",
                 "typeAnnotation": Object {
@@ -44419,7 +39547,7 @@ Object {
                         "name": "this",
                         "range": Array [
                           50,
-                          54,
+                          60,
                         ],
                         "type": "Identifier",
                         "typeAnnotation": Object {
@@ -44471,7 +39599,7 @@ Object {
                         "name": "e",
                         "range": Array [
                           62,
-                          63,
+                          70,
                         ],
                         "type": "Identifier",
                         "typeAnnotation": Object {
@@ -45122,7 +40250,7 @@ Object {
             "name": "foo",
             "range": Array [
               4,
-              7,
+              14,
             ],
             "type": "Identifier",
             "typeAnnotation": Object {
@@ -45137,7 +40265,7 @@ Object {
                 },
               },
               "range": Array [
-                9,
+                7,
                 14,
               ],
               "type": "TypeAnnotation",
@@ -45487,7 +40615,7 @@ Object {
             "name": "name",
             "range": Array [
               4,
-              8,
+              15,
             ],
             "type": "Identifier",
             "typeAnnotation": Object {
@@ -45502,7 +40630,7 @@ Object {
                 },
               },
               "range": Array [
-                9,
+                8,
                 15,
               ],
               "type": "TypeAnnotation",
@@ -45578,11 +40706,119 @@ Object {
       ],
       "type": "VariableDeclaration",
     },
+    Object {
+      "declarations": Array [
+        Object {
+          "id": Object {
+            "loc": Object {
+              "end": Object {
+                "column": 7,
+                "line": 2,
+              },
+              "start": Object {
+                "column": 4,
+                "line": 2,
+              },
+            },
+            "name": "foo",
+            "range": Array [
+              34,
+              45,
+            ],
+            "type": "Identifier",
+            "typeAnnotation": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 15,
+                  "line": 2,
+                },
+                "start": Object {
+                  "column": 9,
+                  "line": 2,
+                },
+              },
+              "range": Array [
+                37,
+                45,
+              ],
+              "type": "TypeAnnotation",
+              "typeAnnotation": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 15,
+                    "line": 2,
+                  },
+                  "start": Object {
+                    "column": 9,
+                    "line": 2,
+                  },
+                },
+                "range": Array [
+                  39,
+                  45,
+                ],
+                "type": "TSStringKeyword",
+              },
+            },
+          },
+          "init": Object {
+            "loc": Object {
+              "end": Object {
+                "column": 23,
+                "line": 2,
+              },
+              "start": Object {
+                "column": 18,
+                "line": 2,
+              },
+            },
+            "range": Array [
+              48,
+              53,
+            ],
+            "raw": "\\"Bar\\"",
+            "type": "Literal",
+            "value": "Bar",
+          },
+          "loc": Object {
+            "end": Object {
+              "column": 23,
+              "line": 2,
+            },
+            "start": Object {
+              "column": 4,
+              "line": 2,
+            },
+          },
+          "range": Array [
+            34,
+            53,
+          ],
+          "type": "VariableDeclarator",
+        },
+      ],
+      "kind": "var",
+      "loc": Object {
+        "end": Object {
+          "column": 24,
+          "line": 2,
+        },
+        "start": Object {
+          "column": 0,
+          "line": 2,
+        },
+      },
+      "range": Array [
+        30,
+        54,
+      ],
+      "type": "VariableDeclaration",
+    },
   ],
   "loc": Object {
     "end": Object {
-      "column": 29,
-      "line": 1,
+      "column": 24,
+      "line": 2,
     },
     "start": Object {
       "column": 0,
@@ -45591,7 +40827,7 @@ Object {
   },
   "range": Array [
     0,
-    29,
+    54,
   ],
   "sourceType": "script",
   "tokens": Array [
@@ -45717,6 +40953,337 @@ Object {
       "range": Array [
         28,
         29,
+      ],
+      "type": "Punctuator",
+      "value": ";",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 3,
+          "line": 2,
+        },
+        "start": Object {
+          "column": 0,
+          "line": 2,
+        },
+      },
+      "range": Array [
+        30,
+        33,
+      ],
+      "type": "Keyword",
+      "value": "var",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 7,
+          "line": 2,
+        },
+        "start": Object {
+          "column": 4,
+          "line": 2,
+        },
+      },
+      "range": Array [
+        34,
+        37,
+      ],
+      "type": "Identifier",
+      "value": "foo",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 8,
+          "line": 2,
+        },
+        "start": Object {
+          "column": 7,
+          "line": 2,
+        },
+      },
+      "range": Array [
+        37,
+        38,
+      ],
+      "type": "Punctuator",
+      "value": ":",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 15,
+          "line": 2,
+        },
+        "start": Object {
+          "column": 9,
+          "line": 2,
+        },
+      },
+      "range": Array [
+        39,
+        45,
+      ],
+      "type": "Identifier",
+      "value": "string",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 17,
+          "line": 2,
+        },
+        "start": Object {
+          "column": 16,
+          "line": 2,
+        },
+      },
+      "range": Array [
+        46,
+        47,
+      ],
+      "type": "Punctuator",
+      "value": "=",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 23,
+          "line": 2,
+        },
+        "start": Object {
+          "column": 18,
+          "line": 2,
+        },
+      },
+      "range": Array [
+        48,
+        53,
+      ],
+      "type": "String",
+      "value": "\\"Bar\\"",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 24,
+          "line": 2,
+        },
+        "start": Object {
+          "column": 23,
+          "line": 2,
+        },
+      },
+      "range": Array [
+        53,
+        54,
+      ],
+      "type": "Punctuator",
+      "value": ";",
+    },
+  ],
+  "type": "Program",
+}
+`;
+
+exports[`typescript fixtures/basics/variable-declaration-type-annotation-spacing.src 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "declarations": Array [
+        Object {
+          "id": Object {
+            "loc": Object {
+              "end": Object {
+                "column": 5,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 4,
+                "line": 1,
+              },
+            },
+            "name": "x",
+            "range": Array [
+              4,
+              21,
+            ],
+            "type": "Identifier",
+            "typeAnnotation": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 21,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 15,
+                  "line": 1,
+                },
+              },
+              "range": Array [
+                8,
+                21,
+              ],
+              "type": "TypeAnnotation",
+              "typeAnnotation": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 21,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 15,
+                    "line": 1,
+                  },
+                },
+                "range": Array [
+                  15,
+                  21,
+                ],
+                "type": "TSStringKeyword",
+              },
+            },
+          },
+          "init": null,
+          "loc": Object {
+            "end": Object {
+              "column": 21,
+              "line": 1,
+            },
+            "start": Object {
+              "column": 4,
+              "line": 1,
+            },
+          },
+          "range": Array [
+            4,
+            21,
+          ],
+          "type": "VariableDeclarator",
+        },
+      ],
+      "kind": "let",
+      "loc": Object {
+        "end": Object {
+          "column": 22,
+          "line": 1,
+        },
+        "start": Object {
+          "column": 0,
+          "line": 1,
+        },
+      },
+      "range": Array [
+        0,
+        22,
+      ],
+      "type": "VariableDeclaration",
+    },
+  ],
+  "loc": Object {
+    "end": Object {
+      "column": 22,
+      "line": 1,
+    },
+    "start": Object {
+      "column": 0,
+      "line": 1,
+    },
+  },
+  "range": Array [
+    0,
+    22,
+  ],
+  "sourceType": "script",
+  "tokens": Array [
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 3,
+          "line": 1,
+        },
+        "start": Object {
+          "column": 0,
+          "line": 1,
+        },
+      },
+      "range": Array [
+        0,
+        3,
+      ],
+      "type": "Keyword",
+      "value": "let",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 5,
+          "line": 1,
+        },
+        "start": Object {
+          "column": 4,
+          "line": 1,
+        },
+      },
+      "range": Array [
+        4,
+        5,
+      ],
+      "type": "Identifier",
+      "value": "x",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 9,
+          "line": 1,
+        },
+        "start": Object {
+          "column": 8,
+          "line": 1,
+        },
+      },
+      "range": Array [
+        8,
+        9,
+      ],
+      "type": "Punctuator",
+      "value": ":",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 21,
+          "line": 1,
+        },
+        "start": Object {
+          "column": 15,
+          "line": 1,
+        },
+      },
+      "range": Array [
+        15,
+        21,
+      ],
+      "type": "Identifier",
+      "value": "string",
+    },
+    Object {
+      "loc": Object {
+        "end": Object {
+          "column": 22,
+          "line": 1,
+        },
+        "start": Object {
+          "column": 21,
+          "line": 1,
+        },
+      },
+      "range": Array [
+        21,
+        22,
       ],
       "type": "Punctuator",
       "value": ";",
@@ -51271,7 +46838,7 @@ Object {
                   "name": "config",
                   "range": Array [
                     52,
-                    58,
+                    69,
                   ],
                   "type": "Identifier",
                   "typeAnnotation": Object {
@@ -52029,7 +47596,7 @@ Object {
                   "name": "baz",
                   "range": Array [
                     35,
-                    38,
+                    46,
                   ],
                   "type": "Identifier",
                   "typeAnnotation": Object {
@@ -52625,7 +48192,7 @@ Object {
                   "name": "baz",
                   "range": Array [
                     48,
-                    51,
+                    59,
                   ],
                   "type": "Identifier",
                   "typeAnnotation": Object {
@@ -53311,7 +48878,7 @@ Object {
                   "name": "name",
                   "range": Array [
                     36,
-                    40,
+                    48,
                   ],
                   "type": "Identifier",
                   "typeAnnotation": Object {
@@ -54051,7 +49618,7 @@ Object {
                   "name": "name",
                   "range": Array [
                     49,
-                    53,
+                    61,
                   ],
                   "type": "Identifier",
                   "typeAnnotation": Object {
@@ -58426,7 +53993,7 @@ Object {
               "name": "baz",
               "range": Array [
                 190,
-                193,
+                201,
               ],
               "type": "Identifier",
               "typeAnnotation": Object {
@@ -58533,7 +54100,7 @@ Object {
               "name": "baz",
               "range": Array [
                 225,
-                228,
+                236,
               ],
               "type": "Identifier",
               "typeAnnotation": Object {
@@ -58640,7 +54207,7 @@ Object {
               "name": "baz",
               "range": Array [
                 262,
-                265,
+                273,
               ],
               "type": "Identifier",
               "typeAnnotation": Object {
@@ -58747,7 +54314,7 @@ Object {
               "name": "baz",
               "range": Array [
                 296,
-                299,
+                307,
               ],
               "type": "Identifier",
               "typeAnnotation": Object {
@@ -58854,7 +54421,7 @@ Object {
               "name": "baz",
               "range": Array [
                 330,
-                333,
+                341,
               ],
               "type": "Identifier",
               "typeAnnotation": Object {
@@ -58961,7 +54528,7 @@ Object {
               "name": "baz",
               "range": Array [
                 366,
-                369,
+                377,
               ],
               "type": "Identifier",
               "typeAnnotation": Object {
@@ -59099,7 +54666,7 @@ Object {
                 "name": "bar",
                 "range": Array [
                   402,
-                  405,
+                  413,
                 ],
                 "type": "Identifier",
                 "typeAnnotation": Object {
@@ -59228,7 +54795,7 @@ Object {
                 "name": "bar",
                 "range": Array [
                   436,
-                  439,
+                  447,
                 ],
                 "type": "Identifier",
                 "typeAnnotation": Object {
@@ -59357,7 +54924,7 @@ Object {
                 "name": "bar",
                 "range": Array [
                   472,
-                  475,
+                  483,
                 ],
                 "type": "Identifier",
                 "typeAnnotation": Object {
@@ -59486,7 +55053,7 @@ Object {
                 "name": "bar",
                 "range": Array [
                   505,
-                  508,
+                  516,
                 ],
                 "type": "Identifier",
                 "typeAnnotation": Object {
@@ -59615,7 +55182,7 @@ Object {
                 "name": "bar",
                 "range": Array [
                   538,
-                  541,
+                  549,
                 ],
                 "type": "Identifier",
                 "typeAnnotation": Object {
@@ -59744,7 +55311,7 @@ Object {
                 "name": "bar",
                 "range": Array [
                   573,
-                  576,
+                  584,
                 ],
                 "type": "Identifier",
                 "typeAnnotation": Object {
