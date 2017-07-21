@@ -34,14 +34,14 @@ function preprocessBabylonAST(ast) {
         {
             key: "start",
             predicate(val) {
-                // only return the "start" number (not the "start" object within loc)
+                // only remove the "start" number (not the "start" object within loc)
                 return typeof val === "number";
             }
         },
         {
             key: "end",
             predicate(val) {
-                // only return the "end" number (not the "end" object within loc)
+                // only remove the "end" number (not the "end" object within loc)
                 return typeof val === "number";
             }
         },
