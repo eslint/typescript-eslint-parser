@@ -17,6 +17,7 @@ const ACTIVE_TYPESCRIPT_VERSION = ts.version;
 const isRunningSupportedTypeScriptVersion = semver.satisfies(ACTIVE_TYPESCRIPT_VERSION, SUPPORTED_TYPESCRIPT_VERSIONS);
 
 let extra;
+let warnedAboutTSVersion = false;
 
 /**
  * Resets the extra config object
@@ -103,7 +104,7 @@ function parse(code, options) {
 
     }
 
-    if (!isRunningSupportedTypeScriptVersion) {
+    if (!isRunningSupportedTypeScriptVersion && !warnedAboutTSVersion) {
         const border = "=============";
         const versionWarning = [
             border,
@@ -115,6 +116,7 @@ function parse(code, options) {
             border
         ];
         extra.log(versionWarning.join("\n\n"));
+        warnedAboutTSVersion = true;
     }
 
     // Even if jsx option is set in typescript compiler, filename still has to
