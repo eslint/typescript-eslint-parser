@@ -27,7 +27,7 @@ if (!isRunningSupportedTypeScriptVersion) {
         "Please only submit bug reports when using the officially supported version.",
         border
     ];
-    console.log(versionWarning.join("\n\n"));
+    console.log(versionWarning.join("\n\n")); // eslint-disable-line no-console
 }
 
 let extra;
