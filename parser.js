@@ -100,6 +100,9 @@ function parse(code, options) {
          */
         if (typeof options.loggerFn === "function") {
             extra.log = options.loggerFn;
+        } else if (options.loggerFn === false) {
+            /** */ // eslint-disable-line valid-jsdoc
+            extra.log = () => {};
         }
 
     }
