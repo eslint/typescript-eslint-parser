@@ -61,7 +61,8 @@ function createSnapshotTestBlock(code, config) {
              * AST_NODE_TYPE, we rethrow to cause the test to fail
              */
             if (e.message.match("Unknown AST_NODE_TYPE")) {
-                throw new Error(e);
+                e.stack += `\n\nRethrown\n${new Error().stack.split("\n").slice(1).join("\n")}`;
+                throw e;
             }
             expect(parse).toThrowErrorMatchingSnapshot();
         }
