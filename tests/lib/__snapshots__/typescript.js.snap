@@ -52879,6 +52879,24 @@ Object {
           "type": "Decorator",
         },
       ],
+      "id": Object {
+        "loc": Object {
+          "end": Object {
+            "column": 11,
+            "line": 1,
+          },
+          "start": Object {
+            "column": 10,
+            "line": 1,
+          },
+        },
+        "name": "E",
+        "range": Array [
+          10,
+          11,
+        ],
+        "type": "Identifier",
+      },
       "loc": Object {
         "end": Object {
           "column": 14,
