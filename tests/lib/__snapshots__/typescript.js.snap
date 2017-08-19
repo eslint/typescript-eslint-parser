@@ -21336,6 +21336,7 @@ Object {
           },
         },
         "members": Array [],
+        "modifiers": Array [],
         "name": Object {
           "loc": Object {
             "end": Object {
