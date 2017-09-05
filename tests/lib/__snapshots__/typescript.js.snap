@@ -35428,7 +35428,7 @@ Object {
           "id": Object {
             "loc": Object {
               "end": Object {
-                "column": 7,
+                "column": 17,
                 "line": 1,
               },
               "start": Object {
@@ -35449,7 +35449,7 @@ Object {
                   "line": 1,
                 },
                 "start": Object {
-                  "column": 9,
+                  "column": 7,
                   "line": 1,
                 },
               },
