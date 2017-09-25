@@ -67,10 +67,26 @@ Issues and pull requests will be triaged and responded to as quickly as possible
 
 ## Build Commands
 
-* `npm test` - run all linting and tests
-* `npm run lint` - run all linting
+* To run all of the linting, unit tests and AST alignment tests with Babylon:
+```
+npm test
+```
+
+* To run just the linting:
+```
+npm run lint
+```
+
+* To run just the unit tests:
+```
+npm run jest
+```
+
+* To run just the AST alignment tests with Babylon:
+```
+npm run ast-alignment-tests
+```
 
 ## License
 
 TypeScript ESLint Parser is licensed under a permissive BSD 2-clause license.
-

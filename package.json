@@ -19,7 +19,7 @@
   "license": "BSD-2-Clause",
   "devDependencies": {
     "babel-code-frame": "^6.26.0",
-    "babylon": "7.0.0-beta.24",
+    "babylon": "^7.0.0-beta.25",
     "eslint": "4.6.1",
     "eslint-config-eslint": "4.0.0",
     "eslint-plugin-node": "5.1.1",
