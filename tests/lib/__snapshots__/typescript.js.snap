@@ -41737,7 +41737,7 @@ Object {
                 "typeParameters": Object {
                   "loc": Object {
                     "end": Object {
-                      "column": 34,
+                      "column": 50,
                       "line": 2,
                     },
                     "start": Object {
@@ -41766,7 +41766,7 @@ Object {
                   ],
                   "range": Array [
                     53,
-                    58,
+                    74,
                   ],
                   "type": "TypeParameterInstantiation",
                 },
