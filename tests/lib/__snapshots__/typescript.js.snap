@@ -1179,7 +1179,7 @@ Object {
                     },
                   },
                 },
-                "type": "FunctionExpression",
+                "type": "TSAbstractFunctionExpression",
               },
             },
           ],
