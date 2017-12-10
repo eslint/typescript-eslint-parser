@@ -1,6 +1,7 @@
 /**
  * @fileoverview Parser that converts TypeScript into ESTree format.
  * @author Nicholas C. Zakas
+ * @author James Henry <https://github.com/JamesHenry>
  * @copyright jQuery Foundation and other contributors, https://jquery.org/
  * MIT License
  */
@@ -104,6 +105,13 @@ function parse(code, options) {
             extra.log = Function.prototype;
         }
 
+        /**
+         * Provide the context as to whether or not we are parsing for ESLint,
+         * specifically
+         */
+        if (options.parseForESLint) {
+            extra.parseForESLint = true;
+        }
     }
 
     if (!isRunningSupportedTypeScriptVersion && !warnedAboutTSVersion) {
@@ -176,6 +184,12 @@ function parse(code, options) {
 exports.version = require("./package.json").version;
 
 exports.parse = parse;
+
+exports.parseForESLint = function parseForESLint(code, options) {
+    options.parseForESLint = true;
+    const ast = parse(code, options);
+    return { ast };
+};
 
 // Deep copy.
 /* istanbul ignore next */
