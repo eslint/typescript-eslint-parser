@@ -8,7 +8,7 @@ A parser that converts TypeScript into an [ESTree](https://github.com/estree/est
 
 We will always endeavor to support the latest stable version of TypeScript.
 
-The version of TypeScript currently supported by this parser is `~2.5.1`. This is reflected in the `devDependency` requirement within the package.json file, and it is what the tests will be run against. We have an open `peerDependency` requirement in order to allow for experimentation on newer/beta versions of TypeScript.
+The version of TypeScript currently supported by this parser is `~2.6.1`. This is reflected in the `devDependency` requirement within the package.json file, and it is what the tests will be run against. We have an open `peerDependency` requirement in order to allow for experimentation on newer/beta versions of TypeScript.
 
 If you use a non-supported version of TypeScript, the parser will log a warning to the console.
 
@@ -58,8 +58,8 @@ Please check the current list of open and known issues and ensure the bug has no
  - TypeScript version
  - TypeScript parser version
  - ESLint config or rules and plugins currently enabled
- 
-As well include a small code sample that can be used to reproduce the issue. 
+
+As well include a small code sample that can be used to reproduce the issue.
 
 ## Contributing
 
@@ -67,25 +67,10 @@ Issues and pull requests will be triaged and responded to as quickly as possible
 
 ## Build Commands
 
-* To run all of the linting, unit tests and AST alignment tests with Babylon:
-```
-npm test
-```
-
-* To run just the linting:
-```
-npm run lint
-```
-
-* To run just the unit tests:
-```
-npm run jest
-```
-
-* To run just the AST alignment tests with Babylon:
-```
-npm run ast-alignment-tests
-```
+* `npm test` - run all linting and tests
+* `npm run lint` - run all linting
+* `npm run ast-alignment-tests` - run only Babylon AST alignment tests
+* `npm run integration-tests` - run only integration tests
 
 ## License
 

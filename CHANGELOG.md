@@ -1,3 +1,20 @@
+v9.0.1 - November 29, 2017
+
+* 153cdb8 Fix: Calculate end position of TypeInstantiation (fixes #406) (#405) (Lucas Duailibe)
+* 678907b Fix: Explicitly convert AbstractKeyword (fixes #407) (#408) (James Henry)
+
+v9.0.0 - November 10, 2017
+
+* 46479e8 Breaking: Support TypeScript 2.6 (fixes #394) (#397) (James Henry)
+
+v8.0.1 - October 22, 2017
+
+* 0401ffc Fix: Calculate typeArguments loc data correctly if empty (fixes #395) (#396) (James Henry)
+* a214f71 Chore: Add a way to test TSX specific issues (fixes #376) (#398) (James Henry)
+* 9c71a62 Fix: add missing TSSymbolKeyword type (#385) (Ika)
+* e10aab8 Chore: Refactor alignment tests, now on by default (#387) (James Henry)
+* 9e17d0b Chore: Minor cleanup, fix jQuery foundation copyright (#383) (James Henry)
+
 v8.0.0 - September 5, 2017
 
 * 9877e98 Breaking: Support TypeScript 2.5 (fixes #368) (#369) (#370) (James Henry)
