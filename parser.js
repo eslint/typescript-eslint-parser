@@ -46,11 +46,13 @@ function resetExtra() {
 
 /**
  * Parses the given source code to produce a valid AST
- * @param  {mixed} code    TypeScript code
- * @param  {Object} options configuration object for the parser
+ * @param {mixed} code    TypeScript code
+ * @param {Object} options configuration object for the parser
+ * @param {Object} additionalParsingContext additional internal configuration
  * @returns {Object}         the AST
  */
-function parse(code, options) {
+function generateAST(code, options, additionalParsingContext) {
+    additionalParsingContext = additionalParsingContext || {};
 
     const toString = String;
 
@@ -109,7 +111,7 @@ function parse(code, options) {
          * Provide the context as to whether or not we are parsing for ESLint,
          * specifically
          */
-        if (options.parseForESLint) {
+        if (additionalParsingContext.isParseForESLint) {
             extra.parseForESLint = true;
         }
     }
@@ -183,11 +185,12 @@ function parse(code, options) {
 
 exports.version = require("./package.json").version;
 
-exports.parse = parse;
+exports.parse = function parse(code, options) {
+    return generateAST(code, options, { isParseForESLint: false });
+};
 
 exports.parseForESLint = function parseForESLint(code, options) {
-    options.parseForESLint = true;
-    const ast = parse(code, options);
+    const ast = generateAST(code, options, { isParseForESLint: true });
     return { ast };
 };
 
