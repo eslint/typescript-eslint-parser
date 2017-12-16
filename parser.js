@@ -191,7 +191,7 @@ function generateAST(code, options, additionalParsingContext) {
  * @returns {Object}        The `parserServices` object
  */
 function getServices(result) {
-    const typeChecker = this.program.getTypeChecker();
+    const typeChecker = result.program.getTypeChecker();
     return {
         program: result.program,
         getTSNode: nodeUtils.getTSNode,
