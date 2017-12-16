@@ -11,7 +11,8 @@
 const astNodeTypes = require("./lib/ast-node-types"),
     ts = require("typescript"),
     convert = require("./lib/ast-converter"),
-    semver = require("semver");
+    semver = require("semver"),
+    nodeUtils = require("./lib/node-utils");
 
 const SUPPORTED_TYPESCRIPT_VERSIONS = require("./package.json").devDependencies.typescript;
 const ACTIVE_TYPESCRIPT_VERSION = ts.version;
@@ -44,12 +45,14 @@ function resetExtra() {
 // Parser
 //------------------------------------------------------------------------------
 
+/** @typedef {{ ast: Program, program: ts.Program }} Result */
+
 /**
  * Parses the given source code to produce a valid AST
  * @param {mixed} code    TypeScript code
  * @param {Object} options configuration object for the parser
  * @param {Object} additionalParsingContext additional internal configuration
- * @returns {Object}         the AST
+ * @returns {Result} the result
  */
 function generateAST(code, options, additionalParsingContext) {
     additionalParsingContext = additionalParsingContext || {};
@@ -176,7 +179,27 @@ function generateAST(code, options, additionalParsingContext) {
     const ast = program.getSourceFile(FILENAME);
 
     extra.code = code;
-    return convert(ast, extra);
+    return {
+        ast: convert(ast, extra),
+        program
+    };
+}
+
+/**
+ * Generate the `parserServices` object for a parse result
+ * @param   {Result} result The return value of `generateAST`
+ * @returns {Object}        The `parserServices` object
+ */
+function getServices(result) {
+    const typeChecker = this.program.getTypeChecker();
+    return {
+        program: result.program,
+        getTSNode: nodeUtils.getTSNode,
+        typeChecker
+        getType(node) {
+            return typeChecker.getTypeAtLocation(nodeUtils.getTSNode(node));
+        }
+    };
 }
 
 //------------------------------------------------------------------------------
@@ -186,12 +209,15 @@ function generateAST(code, options, additionalParsingContext) {
 exports.version = require("./package.json").version;
 
 exports.parse = function parse(code, options) {
-    return generateAST(code, options, { isParseForESLint: false });
+    return generateAST(code, options, { isParseForESLint: false }).ast;
 };
 
 exports.parseForESLint = function parseForESLint(code, options) {
-    const ast = generateAST(code, options, { isParseForESLint: true });
-    return { ast };
+    const result = generateAST(code, options, { isParseForESLint: true });
+    return {
+        ast: result.ast,
+        services: getServices(result)
+    };
 };
 
 // Deep copy.
