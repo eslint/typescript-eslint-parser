@@ -195,7 +195,7 @@ function getServices(result) {
     return {
         program: result.program,
         getTSNode: nodeUtils.getTSNode,
-        typeChecker
+        typeChecker,
         getType(node) {
             return typeChecker.getTypeAtLocation(nodeUtils.getTSNode(node));
         }
