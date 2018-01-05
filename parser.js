@@ -198,7 +198,7 @@ function getServices(result) {
         getESNode: tsNode => nodeUtils.reverseMap.get(tsNode),
         typeChecker,
         getType(node) {
-            return typeChecker.getTypeAtLocation(nodeUils.map.get(node));
+            return typeChecker.getTypeAtLocation(nodeUtils.map.get(node));
         }
     };
 }
