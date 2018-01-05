@@ -194,10 +194,11 @@ function getServices(result) {
     const typeChecker = result.program.getTypeChecker();
     return {
         program: result.program,
-        getTSNode: nodeUtils.getTSNode,
+        getTSNode: node => nodeUtils.map.get(node),
+        getESNode: tsNode => nodeUtils.reverseMap.get(tsNode),
         typeChecker,
         getType(node) {
-            return typeChecker.getTypeAtLocation(nodeUtils.getTSNode(node));
+            return typeChecker.getTypeAtLocation(nodeUils.map.get(node));
         }
     };
 }
