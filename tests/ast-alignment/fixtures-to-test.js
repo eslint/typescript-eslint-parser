@@ -439,7 +439,15 @@ let fixturePatternConfigsToTest = [
     createFixturePatternConfigFor("typescript/decorators/parameter-decorators", { fileType: "ts" }),
     createFixturePatternConfigFor("typescript/decorators/property-decorators", { fileType: "ts" }),
 
-    createFixturePatternConfigFor("typescript/expressions", { fileType: "ts" }),
+    createFixturePatternConfigFor("typescript/expressions", {
+        fileType: "ts",
+        ignore: [
+            /**
+             * currently babylon not supported
+             */
+            "tagged-template-expression-type-arguments"
+        ]
+    }),
 
     createFixturePatternConfigFor("typescript/errorRecovery", {
         fileType: "ts",
