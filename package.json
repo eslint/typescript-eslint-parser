@@ -31,7 +31,7 @@
     "npm-license": "0.3.3",
     "shelljs": "0.8.1",
     "shelljs-nodecli": "0.1.1",
-    "typescript": "2.9.0-dev.20180405"
+    "typescript": "2.9.0-dev.20180421"
   },
   "keywords": [
     "ast",
