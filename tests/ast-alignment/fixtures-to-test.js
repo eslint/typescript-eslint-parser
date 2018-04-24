@@ -324,7 +324,11 @@ let fixturePatternConfigsToTest = [
             /**
              * AST difference
              */
-            "react-typed-props"
+            "react-typed-props",
+            /**
+             * currently babylon not supported
+             */
+            "generic-jsx-element"
         ]
     }),
 
