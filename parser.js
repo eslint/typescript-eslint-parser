@@ -88,15 +88,14 @@ function generateAST(code, options, additionalParsingContext) {
         }
 
         const hasEcmaFeatures = options.ecmaFeatures && typeof options.ecmaFeatures === "object";
-        const hasFilePath = additionalParsingContext.isParseForESLint ? options.filePath !== DEFAULT_ESLINT_FILEPATH : options.filePath;
-        const hasTsxExtension = hasFilePath && /.tsx$/.test(options.filePath);
 
         // Allows user to parse a string of text passed on the command line in JSX mode.
         if (hasEcmaFeatures) {
-            if (typeof options.ecmaFeatures.jsx !== "undefined") {
-                extra.ecmaFeatures.jsx = options.ecmaFeatures.jsx;
-            }
+            extra.ecmaFeatures.jsx = options.ecmaFeatures.jsx;
         }
+
+        const hasFilePath = additionalParsingContext.isParseForESLint ? options.filePath !== DEFAULT_ESLINT_FILEPATH : options.filePath;
+        const hasTsxExtension = hasFilePath && /.tsx$/.test(options.filePath);
 
         // Infer whether or not the parser should parse in "JSX mode" or not.
         // This will override the parserOptions.ecmaFeatures.jsx config option if a filePath is provided.
