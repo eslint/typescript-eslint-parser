@@ -4,7 +4,7 @@
   "author": "Nicholas C. Zakas <nicholas+npm@nczconsulting.com>",
   "homepage": "https://github.com/eslint/typescript-eslint-parser",
   "main": "parser.js",
-  "version": "16.0.0",
+  "version": "16.0.1",
   "files": [
     "lib",
     "parser.js"
@@ -42,7 +42,7 @@
     "eslint"
   ],
   "scripts": {
-    "test": "node Makefile.js test && npm run integration-tests && npm run ast-alignment-tests",
+    "test": "node Makefile.js test && npm run ast-alignment-tests",
     "jest": "jest",
     "ast-alignment-tests": "jest --config=./tests/ast-alignment/jest.config.js",
     "integration-tests": "docker-compose -f tests/integration/docker-compose.yml up",
