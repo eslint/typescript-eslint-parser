@@ -6883,7 +6883,7 @@ Object {
               5,
               13,
             ],
-            "type": "JSXExpressionContainer",
+            "type": "JSXSpreadChild",
           },
         ],
         "closingElement": Object {
