@@ -5,3 +5,5 @@ npm-debug.log
 _test.js
 .DS_Store
 .vscode
+package-lock.json
+yarn.lock
