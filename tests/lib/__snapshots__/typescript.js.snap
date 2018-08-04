@@ -28967,42 +28967,6 @@ Object {
                       "type": "TSTypeParameterInstantiation",
                     },
                   },
-                  "typeParameters": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 28,
-                        "line": 1,
-                      },
-                      "start": Object {
-                        "column": 23,
-                        "line": 1,
-                      },
-                    },
-                    "params": Array [
-                      Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 27,
-                            "line": 1,
-                          },
-                          "start": Object {
-                            "column": 24,
-                            "line": 1,
-                          },
-                        },
-                        "range": Array [
-                          24,
-                          27,
-                        ],
-                        "type": "TSAnyKeyword",
-                      },
-                    ],
-                    "range": Array [
-                      23,
-                      28,
-                    ],
-                    "type": "TSTypeParameterInstantiation",
-                  },
                 },
               ],
               "range": Array [
