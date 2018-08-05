@@ -28774,7 +28774,7 @@ Object {
 }
 `;
 
-exports[`typescript fixtures/basics/import-type-with-generic-in-generic.src 1`] = `
+exports[`typescript fixtures/basics/import-type-with-type-parameters-in-type-reference.src 1`] = `
 Object {
   "body": Array [
     Object {
@@ -28855,32 +28855,8 @@ Object {
                       "line": 1,
                     },
                   },
-                  "range": Array [
-                    11,
-                    28,
-                  ],
-                  "type": "TSTypeReference",
-                  "typeName": Object {
-                    "argument": Object {
-                      "literal": Object {
-                        "loc": Object {
-                          "end": Object {
-                            "column": 20,
-                            "line": 1,
-                          },
-                          "start": Object {
-                            "column": 18,
-                            "line": 1,
-                          },
-                        },
-                        "range": Array [
-                          18,
-                          20,
-                        ],
-                        "raw": "\\"\\"",
-                        "type": "Literal",
-                        "value": "",
-                      },
+                  "parameter": Object {
+                    "literal": Object {
                       "loc": Object {
                         "end": Object {
                           "column": 20,
@@ -28895,77 +28871,84 @@ Object {
                         18,
                         20,
                       ],
-                      "type": "TSLiteralType",
+                      "raw": "\\"\\"",
+                      "type": "Literal",
+                      "value": "",
                     },
+                    "loc": Object {
+                      "end": Object {
+                        "column": 20,
+                        "line": 1,
+                      },
+                      "start": Object {
+                        "column": 18,
+                        "line": 1,
+                      },
+                    },
+                    "range": Array [
+                      18,
+                      20,
+                    ],
+                    "type": "TSLiteralType",
+                  },
+                  "qualifier": Object {
+                    "loc": Object {
+                      "end": Object {
+                        "column": 23,
+                        "line": 1,
+                      },
+                      "start": Object {
+                        "column": 22,
+                        "line": 1,
+                      },
+                    },
+                    "name": "B",
+                    "range": Array [
+                      22,
+                      23,
+                    ],
+                    "type": "Identifier",
+                  },
+                  "range": Array [
+                    11,
+                    28,
+                  ],
+                  "type": "TSImportType",
+                  "typeParameters": Object {
                     "loc": Object {
                       "end": Object {
                         "column": 28,
                         "line": 1,
                       },
                       "start": Object {
-                        "column": 11,
+                        "column": 23,
                         "line": 1,
                       },
                     },
-                    "qualifier": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 23,
-                          "line": 1,
+                    "params": Array [
+                      Object {
+                        "loc": Object {
+                          "end": Object {
+                            "column": 27,
+                            "line": 1,
+                          },
+                          "start": Object {
+                            "column": 24,
+                            "line": 1,
+                          },
                         },
-                        "start": Object {
-                          "column": 22,
-                          "line": 1,
-                        },
+                        "range": Array [
+                          24,
+                          27,
+                        ],
+                        "type": "TSAnyKeyword",
                       },
-                      "name": "B",
-                      "range": Array [
-                        22,
-                        23,
-                      ],
-                      "type": "Identifier",
-                    },
+                    ],
                     "range": Array [
-                      11,
+                      23,
                       28,
                     ],
-                    "type": "TSLastTypeNode",
-                    "typeParameters": Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 28,
-                          "line": 1,
-                        },
-                        "start": Object {
-                          "column": 23,
-                          "line": 1,
-                        },
-                      },
-                      "params": Array [
-                        Object {
-                          "loc": Object {
-                            "end": Object {
-                              "column": 27,
-                              "line": 1,
-                            },
-                            "start": Object {
-                              "column": 24,
-                              "line": 1,
-                            },
-                          },
-                          "range": Array [
-                            24,
-                            27,
-                          ],
-                          "type": "TSAnyKeyword",
-                        },
-                      ],
-                      "range": Array [
-                        23,
-                        28,
-                      ],
-                      "type": "TSTypeParameterInstantiation",
-                    },
+                    "type": "TSTypeParameterInstantiation",
                   },
                 },
               ],
