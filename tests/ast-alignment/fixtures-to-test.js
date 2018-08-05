@@ -426,6 +426,7 @@ let fixturePatternConfigsToTest = [
             /**
              * Not yet supported in Babylon https://github.com/babel/babel/issues/7749
              */
+            "import-type",
             "import-type-with-type-parameters-in-type-reference"
         ],
         parseWithSourceTypeModule: [
