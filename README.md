@@ -40,7 +40,7 @@ And in your ESLint configuration file:
 
 We will always endeavor to support the latest stable version of TypeScript.
 
-The version of TypeScript currently supported by this parser is `~3.0.0-rc`. This is reflected in the `devDependency` requirement within the package.json file, and it is what the tests will be run against. We have an open `peerDependency` requirement in order to allow for experimentation on newer/beta versions of TypeScript.
+The version of TypeScript currently supported by this parser is `~3.0.1`. This is reflected in the `devDependency` requirement within the package.json file, and it is what the tests will be run against. We have an open `peerDependency` requirement in order to allow for experimentation on newer/beta versions of TypeScript.
 
 If you use a non-supported version of TypeScript, the parser will log a warning to the console.
 
