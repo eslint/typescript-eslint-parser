@@ -17,8 +17,12 @@ const SUPPORTED_TYPESCRIPT_VERSIONS = require("./package.json").devDependencies.
 const ACTIVE_TYPESCRIPT_VERSION = ts.version;
 const isRunningSupportedTypeScriptVersion = semver.satisfies(ACTIVE_TYPESCRIPT_VERSION, SUPPORTED_TYPESCRIPT_VERSIONS);
 
+const WARNING_BORDER = "=============";
+const DEFAULT_ESLINT_FILEPATH = "<text>";
+
 let extra;
 let warnedAboutTSVersion = false;
+let warnedAboutJSXOverride = false;
 
 /**
  * Resets the extra config object
@@ -73,17 +77,30 @@ function generateAST(code, options, additionalParsingContext) {
         if (typeof options.tokens === "boolean" && options.tokens) {
             extra.tokens = [];
         }
+
         if (typeof options.comment === "boolean" && options.comment) {
             extra.comment = true;
             extra.comments = [];
         }
+
         if (typeof options.tolerant === "boolean" && options.tolerant) {
             extra.errors = [];
         }
 
-        if (options.ecmaFeatures && typeof options.ecmaFeatures === "object") {
-            // pass through jsx option
+        const hasEcmaFeatures = options.ecmaFeatures && typeof options.ecmaFeatures === "object";
+
+        // Allows user to parse a string of text passed on the command line in JSX mode.
+        if (hasEcmaFeatures) {
             extra.ecmaFeatures.jsx = options.ecmaFeatures.jsx;
+        }
+
+        const hasFilePath = additionalParsingContext.isParseForESLint ? options.filePath !== DEFAULT_ESLINT_FILEPATH : options.filePath;
+        const hasTsxExtension = hasFilePath && /.tsx$/.test(options.filePath);
+
+        // Infer whether or not the parser should parse in "JSX mode" or not.
+        // This will override the parserOptions.ecmaFeatures.jsx config option if a filePath is provided.
+        if (hasFilePath) {
+            extra.ecmaFeatures.jsx = hasTsxExtension;
         }
 
         /**
@@ -114,18 +131,29 @@ function generateAST(code, options, additionalParsingContext) {
         if (additionalParsingContext.isParseForESLint) {
             extra.parseForESLint = true;
         }
+
+        if (!warnedAboutJSXOverride && hasFilePath && hasEcmaFeatures && typeof options.ecmaFeatures.jsx !== "undefined") {
+            const warning = [
+                WARNING_BORDER,
+                "typescript-eslint-parser will automatically detect whether it should be parsing in JSX mode or not based on file extension.",
+                "Consider removing parserOptions.ecmaFeatures.jsx from your configuration, as it will be overridden by the extension of the file being parsed.",
+                WARNING_BORDER
+            ];
+
+            extra.log(warning.join("\n\n"));
+            warnedAboutJSXOverride = true;
+        }
     }
 
     if (!isRunningSupportedTypeScriptVersion && !warnedAboutTSVersion) {
-        const border = "=============";
         const versionWarning = [
-            border,
+            WARNING_BORDER,
             "WARNING: You are currently running a version of TypeScript which is not officially supported by typescript-eslint-parser.",
             "You may find that it works just fine, or you may not.",
             `SUPPORTED TYPESCRIPT VERSIONS: ${SUPPORTED_TYPESCRIPT_VERSIONS}`,
             `YOUR TYPESCRIPT VERSION: ${ACTIVE_TYPESCRIPT_VERSION}`,
             "Please only submit bug reports when using the officially supported version.",
-            border
+            WARNING_BORDER
         ];
         extra.log(versionWarning.join("\n\n"));
         warnedAboutTSVersion = true;
