@@ -1,6 +1,6 @@
 "use strict";
 
-const isPlainObject = require("lodash.isplainobject");
+const isPlainObject = require("lodash/isPlainObject");
 
 /**
  * By default, pretty-format (within Jest matchers) retains the names/types of nodes from the babylon AST,
