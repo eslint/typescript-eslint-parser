@@ -8,10 +8,11 @@
 
 "use strict";
 
-const astNodeTypes = require("./lib/ast-node-types"),
-    ts = require("typescript"),
+const ts = require("typescript"),
+    semver = require("semver"),
+    astNodeTypes = require("./lib/ast-node-types"),
     convert = require("./lib/ast-converter"),
-    semver = require("semver");
+    visitorKeys = require("./lib/visitor-keys");
 
 const SUPPORTED_TYPESCRIPT_VERSIONS = require("./package.json").devDependencies.typescript;
 const ACTIVE_TYPESCRIPT_VERSION = ts.version;
@@ -191,7 +192,7 @@ exports.parse = function parse(code, options) {
 
 exports.parseForESLint = function parseForESLint(code, options) {
     const ast = generateAST(code, options, { isParseForESLint: true });
-    return { ast };
+    return { ast, visitorKeys };
 };
 
 // Deep copy.
