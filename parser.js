@@ -10,9 +10,7 @@
 
 const parse = require("typescript-estree").parse;
 const astNodeTypes = require("typescript-estree").AST_NODE_TYPES;
-/* eslint-disable */
 const traverser = require("eslint/lib/util/traverser");
-/* eslint-enable */
 
 //------------------------------------------------------------------------------
 // Public

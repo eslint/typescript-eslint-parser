@@ -60,7 +60,7 @@ We run each test within its own docker container, and so each one has complete a
 
 > If you are going to submit an issue related to the usage of this parser with ESLint, please consider creating a failing integration test which clearly demonstrates the behavior. It's honestly super quick!
 
-You just need to duplicate on of the existing test sub-directories found in `tests/integration/`, tweak the dependencies and ESLint config to match what you need, and add a new entry to the docker-compose.yml file which matches the format of the existing ones.
+You just need to duplicate one of the existing test sub-directories found in `tests/integration/`, tweak the dependencies and ESLint config to match what you need, and add a new entry to the docker-compose.yml file which matches the format of the existing ones.
 
 Then run:
 
