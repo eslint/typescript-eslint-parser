@@ -17,6 +17,7 @@
   },
   "license": "BSD-2-Clause",
   "devDependencies": {
+    "eslint": "^4.19.0",
     "eslint-config-eslint": "4.0.0",
     "eslint-plugin-node": "6.0.1",
     "eslint-release": "0.11.1",
@@ -48,10 +49,10 @@
     "betarelease": "eslint-prerelease beta"
   },
   "dependencies": {
-    "eslint": "4.19.1",
     "typescript-estree": "2.1.0"
   },
   "peerDependencies": {
+    "eslint": "^4.19.0",
     "typescript": "*"
   },
   "jest": {
