@@ -52,7 +52,7 @@
     "typescript-estree": "2.1.0"
   },
   "peerDependencies": {
-    "eslint": "^4.19.0",
+    "eslint": ">=4.19.0 <6.0.0",
     "typescript": "*"
   },
   "jest": {
