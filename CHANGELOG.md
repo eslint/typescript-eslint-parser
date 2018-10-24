@@ -1,3 +1,12 @@
+v20.0.0 - October 8, 2018
+
+* f4b9893 Breaking: Support TypeScript 3.1 (fixes #524) (#525) (James Henry)
+
+v19.0.2 - September 29, 2018
+
+* aa0fe13 Fix: Re-expose parse method (fixes #519) (#521) (Kevin Partington)
+* 655359f Chore: Makefile tweaks (#522) (Kevin Partington)
+
 v19.0.1 - September 25, 2018
 
 * 7a367c7 Fix: Remove lib from package.json files (#518) (James Henry)

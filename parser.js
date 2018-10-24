@@ -33,6 +33,10 @@ exports.parseForESLint = function parseForESLint(code, options) {
     return { ast, visitorKeys };
 };
 
+exports.parse = function(code, options) {
+    return this.parseForESLint(code, options).ast;
+};
+
 // Deep copy.
 /* istanbul ignore next */
 exports.Syntax = (function() {
