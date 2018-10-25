@@ -30,6 +30,18 @@ Instead, you also need to make use of one more plugins which will add or extend 
 
 By far the most common case will be installing the [eslint-plugin-typescript](https://github.com/nzakas/eslint-plugin-typescript) plugin, but there are also other relevant options available such a [eslint-plugin-tslint](https://github.com/JamesHenry/eslint-plugin-tslint).
 
+## Options
+
+The following are the available options and their default values:
+
+```js
+parserOptions: {
+  ecmaFeatures: {
+    jsx: false,
+  }
+}
+```
+
 ## Supported TypeScript Version
 
 We will always endeavor to support the latest stable version of TypeScript.
