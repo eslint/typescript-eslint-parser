@@ -6,7 +6,8 @@
   "main": "parser.js",
   "version": "20.0.0",
   "files": [
-    "parser.js"
+    "parser.js",
+    "visitor-keys.js"
   ],
   "engines": {
     "node": ">=6.14.0"
@@ -20,7 +21,7 @@
     "eslint": "^4.19.0",
     "eslint-config-eslint": "4.0.0",
     "eslint-plugin-node": "6.0.1",
-    "eslint-release": "0.11.1",
+    "eslint-release": "1.1.0",
     "jest": "23.1.0",
     "npm-license": "0.3.3",
     "shelljs": "0.8.2",
@@ -42,13 +43,14 @@
     "integration-tests": "docker-compose -f tests/integration/docker-compose.yml up",
     "kill-integration-test-containers": "docker-compose -f tests/integration/docker-compose.yml down -v --rmi local",
     "lint": "node Makefile.js lint",
-    "release": "eslint-release",
-    "ci-release": "eslint-ci-release",
-    "gh-release": "eslint-gh-release",
-    "alpharelease": "eslint-prerelease alpha",
-    "betarelease": "eslint-prerelease beta"
+    "generate-release": "eslint-generate-release",
+    "generate-alpharelease": "eslint-generate-prerelease alpha",
+    "generate-betarelease": "eslint-generate-prerelease beta",
+    "generate-rcrelease": "eslint-generate-prerelease rc",
+    "publish-release": "eslint-publish-release"
   },
   "dependencies": {
+    "eslint-visitor-keys": "^1.0.0",
     "typescript-estree": "2.1.0"
   },
   "peerDependencies": {
