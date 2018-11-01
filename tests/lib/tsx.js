@@ -41,9 +41,7 @@ describe("TSX", () => {
             tokens: true,
             errorOnUnknownASTType: true,
             useJSXTextNode: true,
-            ecmaFeatures: {
-                jsx: true
-            }
+            jsx: true
         };
         test(`fixtures/${filename}.src`, testUtils.createSnapshotTestBlock(code, config));
     });
