@@ -13,6 +13,25 @@ const astNodeTypes = require("typescript-estree").AST_NODE_TYPES;
 const traverser = require("eslint/lib/util/traverser");
 const visitorKeys = require("./visitor-keys");
 
+/**
+ * Formats the parser options object for typescript-estree
+ * @param {Object} options - ESLint parser options object
+ * @returns {Object} formatted typescript-estree options object
+ */
+function formatOptions(options) {
+    const formattedOptions = Object.assign({}, options);
+
+    if (options.ecmaFeatures) {
+        delete formattedOptions.ecmaFeatures;
+
+        if (options.ecmaFeatures.jsx) {
+            formattedOptions.jsx = options.ecmaFeatures.jsx;
+        }
+    }
+
+    return formattedOptions;
+}
+
 //------------------------------------------------------------------------------
 // Public
 //------------------------------------------------------------------------------
@@ -20,7 +39,7 @@ const visitorKeys = require("./visitor-keys");
 exports.version = require("./package.json").version;
 
 exports.parseForESLint = function parseForESLint(code, options) {
-    const ast = parse(code, options);
+    const ast = parse(code, formatOptions(options));
     traverser.traverse(ast, {
         enter: node => {
             if (node.type === "DeclareFunction" || node.type === "FunctionExpression" || node.type === "FunctionDeclaration") {
@@ -34,7 +53,7 @@ exports.parseForESLint = function parseForESLint(code, options) {
 };
 
 exports.parse = function(code, options) {
-    return this.parseForESLint(code, options).ast;
+    return this.parseForESLint(code, formatOptions(options)).ast;
 };
 
 // Deep copy.
