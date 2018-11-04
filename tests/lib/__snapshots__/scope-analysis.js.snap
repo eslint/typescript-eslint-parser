@@ -1,0 +1,2144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/535.ts 1`] = `
+Object {
+  "$id": 5,
+  "block": Object {
+    "range": Array [
+      0,
+      52,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 4,
+      "block": Object {
+        "range": Array [
+          0,
+          51,
+        ],
+        "type": "FunctionDeclaration",
+      },
+      "childScopes": Array [],
+      "functionExpressionScope": false,
+      "isStrict": false,
+      "references": Array [
+        Object {
+          "$id": 3,
+          "from": Object {
+            "$ref": 4,
+          },
+          "identifier": Object {
+            "name": "bar",
+            "range": Array [
+              45,
+              48,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "r",
+          "resolved": Object {
+            "$ref": 2,
+          },
+          "writeExpr": undefined,
+        },
+      ],
+      "throughReferences": Array [],
+      "type": "function",
+      "upperScope": Object {
+        "$ref": 5,
+      },
+      "variableMap": Object {
+        "arguments": Object {
+          "$ref": 1,
+        },
+        "bar": Object {
+          "$ref": 2,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 4,
+      },
+      "variables": Array [
+        Object {
+          "$id": 1,
+          "defs": Array [],
+          "identifiers": Array [],
+          "name": "arguments",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 4,
+          },
+        },
+        Object {
+          "$id": 2,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "bar",
+                "range": Array [
+                  15,
+                  18,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  0,
+                  51,
+                ],
+                "type": "FunctionDeclaration",
+              },
+              "parent": null,
+              "type": "Parameter",
+            },
+          ],
+          "identifiers": Array [
+            Object {
+              "name": "bar",
+              "range": Array [
+                15,
+                18,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "bar",
+          "references": Array [
+            Object {
+              "$ref": 3,
+            },
+          ],
+          "scope": Object {
+            "$ref": 4,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "foo": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 5,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "foo",
+            "range": Array [
+              9,
+              12,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              0,
+              51,
+            ],
+            "type": "FunctionDeclaration",
+          },
+          "parent": null,
+          "type": "FunctionName",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "foo",
+          "range": Array [
+            9,
+            12,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "foo",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 5,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/enum.ts 1`] = `
+Object {
+  "$id": 14,
+  "block": Object {
+    "range": Array [
+      0,
+      71,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 13,
+      "block": Object {
+        "range": Array [
+          20,
+          70,
+        ],
+        "type": "TSEnumDeclaration",
+      },
+      "childScopes": Array [],
+      "functionExpressionScope": false,
+      "isStrict": false,
+      "references": Array [
+        Object {
+          "$id": 6,
+          "from": Object {
+            "$ref": 13,
+          },
+          "identifier": Object {
+            "name": "A",
+            "range": Array [
+              33,
+              34,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "w",
+          "resolved": Object {
+            "$ref": 3,
+          },
+          "writeExpr": Object {
+            "name": "a",
+            "range": Array [
+              37,
+              38,
+            ],
+            "type": "Identifier",
+          },
+        },
+        Object {
+          "$id": 7,
+          "from": Object {
+            "$ref": 13,
+          },
+          "identifier": Object {
+            "name": "a",
+            "range": Array [
+              37,
+              38,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "r",
+          "resolved": Object {
+            "$ref": 0,
+          },
+          "writeExpr": undefined,
+        },
+        Object {
+          "$id": 8,
+          "from": Object {
+            "$ref": 13,
+          },
+          "identifier": Object {
+            "name": "B",
+            "range": Array [
+              44,
+              45,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "w",
+          "resolved": Object {
+            "$ref": 4,
+          },
+          "writeExpr": Object {
+            "range": Array [
+              48,
+              53,
+            ],
+            "type": "BinaryExpression",
+          },
+        },
+        Object {
+          "$id": 9,
+          "from": Object {
+            "$ref": 13,
+          },
+          "identifier": Object {
+            "name": "a",
+            "range": Array [
+              48,
+              49,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "r",
+          "resolved": Object {
+            "$ref": 0,
+          },
+          "writeExpr": undefined,
+        },
+        Object {
+          "$id": 10,
+          "from": Object {
+            "$ref": 13,
+          },
+          "identifier": Object {
+            "name": "C",
+            "range": Array [
+              59,
+              60,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "w",
+          "resolved": Object {
+            "$ref": 5,
+          },
+          "writeExpr": Object {
+            "range": Array [
+              63,
+              68,
+            ],
+            "type": "BinaryExpression",
+          },
+        },
+        Object {
+          "$id": 11,
+          "from": Object {
+            "$ref": 13,
+          },
+          "identifier": Object {
+            "name": "A",
+            "range": Array [
+              63,
+              64,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "r",
+          "resolved": Object {
+            "$ref": 3,
+          },
+          "writeExpr": undefined,
+        },
+        Object {
+          "$id": 12,
+          "from": Object {
+            "$ref": 13,
+          },
+          "identifier": Object {
+            "name": "B",
+            "range": Array [
+              67,
+              68,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "r",
+          "resolved": Object {
+            "$ref": 4,
+          },
+          "writeExpr": undefined,
+        },
+      ],
+      "throughReferences": Array [
+        Object {
+          "$ref": 7,
+        },
+        Object {
+          "$ref": 9,
+        },
+      ],
+      "type": "enum",
+      "upperScope": Object {
+        "$ref": 14,
+      },
+      "variableMap": Object {
+        "A": Object {
+          "$ref": 3,
+        },
+        "B": Object {
+          "$ref": 4,
+        },
+        "C": Object {
+          "$ref": 5,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 14,
+      },
+      "variables": Array [
+        Object {
+          "$id": 3,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "A",
+                "range": Array [
+                  33,
+                  34,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  33,
+                  38,
+                ],
+                "type": "TSEnumMember",
+              },
+              "parent": undefined,
+              "type": "EnumMemberName",
+            },
+          ],
+          "identifiers": Array [
+            Object {
+              "name": "A",
+              "range": Array [
+                33,
+                34,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "A",
+          "references": Array [
+            Object {
+              "$ref": 6,
+            },
+            Object {
+              "$ref": 11,
+            },
+          ],
+          "scope": Object {
+            "$ref": 13,
+          },
+        },
+        Object {
+          "$id": 4,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "B",
+                "range": Array [
+                  44,
+                  45,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  44,
+                  53,
+                ],
+                "type": "TSEnumMember",
+              },
+              "parent": undefined,
+              "type": "EnumMemberName",
+            },
+          ],
+          "identifiers": Array [
+            Object {
+              "name": "B",
+              "range": Array [
+                44,
+                45,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "B",
+          "references": Array [
+            Object {
+              "$ref": 8,
+            },
+            Object {
+              "$ref": 12,
+            },
+          ],
+          "scope": Object {
+            "$ref": 13,
+          },
+        },
+        Object {
+          "$id": 5,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "C",
+                "range": Array [
+                  59,
+                  60,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  59,
+                  68,
+                ],
+                "type": "TSEnumMember",
+              },
+              "parent": undefined,
+              "type": "EnumMemberName",
+            },
+          ],
+          "identifiers": Array [
+            Object {
+              "name": "C",
+              "range": Array [
+                59,
+                60,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "C",
+          "references": Array [
+            Object {
+              "$ref": 10,
+            },
+          ],
+          "scope": Object {
+            "$ref": 13,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 2,
+      "from": Object {
+        "$ref": 14,
+      },
+      "identifier": Object {
+        "name": "a",
+        "range": Array [
+          6,
+          15,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": Object {
+        "range": Array [
+          18,
+          19,
+        ],
+        "type": "Literal",
+      },
+    },
+  ],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "E": Object {
+      "$ref": 1,
+    },
+    "a": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 14,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "a",
+            "range": Array [
+              6,
+              15,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              6,
+              19,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              0,
+              19,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "a",
+          "range": Array [
+            6,
+            15,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "a",
+      "references": Array [
+        Object {
+          "$ref": 2,
+        },
+        Object {
+          "$ref": 7,
+        },
+        Object {
+          "$ref": 9,
+        },
+      ],
+      "scope": Object {
+        "$ref": 14,
+      },
+    },
+    Object {
+      "$id": 1,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "E",
+            "range": Array [
+              25,
+              26,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              20,
+              70,
+            ],
+            "type": "TSEnumDeclaration",
+          },
+          "parent": undefined,
+          "type": "EnumName",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "E",
+          "range": Array [
+            25,
+            26,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "E",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 14,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/ignore-type-only-stuff.ts 1`] = `
+Object {
+  "$id": 1,
+  "block": Object {
+    "range": Array [
+      0,
+      115,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "a": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 1,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "a",
+            "range": Array [
+              110,
+              114,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              110,
+              114,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              106,
+              114,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "a",
+          "range": Array [
+            110,
+            114,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "a",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 1,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/type-annotations.ts 1`] = `
+Object {
+  "$id": 7,
+  "block": Object {
+    "range": Array [
+      0,
+      103,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 6,
+      "block": Object {
+        "range": Array [
+          32,
+          102,
+        ],
+        "type": "ClassDeclaration",
+      },
+      "childScopes": Array [
+        Object {
+          "$id": 5,
+          "block": Object {
+            "range": Array [
+              47,
+              100,
+            ],
+            "type": "FunctionExpression",
+          },
+          "childScopes": Array [],
+          "functionExpressionScope": false,
+          "isStrict": true,
+          "references": Array [],
+          "throughReferences": Array [],
+          "type": "function",
+          "upperScope": Object {
+            "$ref": 6,
+          },
+          "variableMap": Object {
+            "a": Object {
+              "$ref": 4,
+            },
+            "arguments": Object {
+              "$ref": 3,
+            },
+          },
+          "variableScope": Object {
+            "$ref": 5,
+          },
+          "variables": Array [
+            Object {
+              "$id": 3,
+              "defs": Array [],
+              "identifiers": Array [],
+              "name": "arguments",
+              "references": Array [],
+              "scope": Object {
+                "$ref": 5,
+              },
+            },
+            Object {
+              "$id": 4,
+              "defs": Array [
+                Object {
+                  "name": Object {
+                    "name": "a",
+                    "range": Array [
+                      48,
+                      59,
+                    ],
+                    "type": "Identifier",
+                  },
+                  "node": Object {
+                    "range": Array [
+                      47,
+                      100,
+                    ],
+                    "type": "FunctionExpression",
+                  },
+                  "parent": null,
+                  "type": "Parameter",
+                },
+              ],
+              "identifiers": Array [
+                Object {
+                  "name": "a",
+                  "range": Array [
+                    48,
+                    59,
+                  ],
+                  "type": "Identifier",
+                },
+              ],
+              "name": "a",
+              "references": Array [],
+              "scope": Object {
+                "$ref": 5,
+              },
+            },
+          ],
+        },
+      ],
+      "functionExpressionScope": false,
+      "isStrict": true,
+      "references": Array [],
+      "throughReferences": Array [],
+      "type": "class",
+      "upperScope": Object {
+        "$ref": 7,
+      },
+      "variableMap": Object {
+        "C": Object {
+          "$ref": 2,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 7,
+      },
+      "variables": Array [
+        Object {
+          "$id": 2,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "C",
+                "range": Array [
+                  38,
+                  39,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  32,
+                  102,
+                ],
+                "type": "ClassDeclaration",
+              },
+              "parent": undefined,
+              "type": "ClassName",
+            },
+          ],
+          "identifiers": Array [
+            Object {
+              "name": "C",
+              "range": Array [
+                38,
+                39,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "C",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 6,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "C": Object {
+      "$ref": 1,
+    },
+    "a": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 7,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "a",
+            "range": Array [
+              20,
+              31,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              20,
+              31,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              16,
+              31,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "a",
+          "range": Array [
+            20,
+            31,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "a",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 7,
+      },
+    },
+    Object {
+      "$id": 1,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "C",
+            "range": Array [
+              38,
+              39,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              32,
+              102,
+            ],
+            "type": "ClassDeclaration",
+          },
+          "parent": null,
+          "type": "ClassName",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "C",
+          "range": Array [
+            38,
+            39,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "C",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 7,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/type-assertions.ts 1`] = `
+Object {
+  "$id": 4,
+  "block": Object {
+    "range": Array [
+      0,
+      40,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 0,
+      "from": Object {
+        "$ref": 4,
+      },
+      "identifier": Object {
+        "name": "a",
+        "range": Array [
+          17,
+          18,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": null,
+      "writeExpr": Object {
+        "range": Array [
+          21,
+          26,
+        ],
+        "type": "TSTypeAssertionExpression",
+      },
+    },
+    Object {
+      "$id": 1,
+      "from": Object {
+        "$ref": 4,
+      },
+      "identifier": Object {
+        "name": "b",
+        "range": Array [
+          25,
+          26,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": null,
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 2,
+      "from": Object {
+        "$ref": 4,
+      },
+      "identifier": Object {
+        "name": "a",
+        "range": Array [
+          28,
+          29,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": null,
+      "writeExpr": Object {
+        "range": Array [
+          32,
+          38,
+        ],
+        "type": "TSAsExpression",
+      },
+    },
+    Object {
+      "$id": 3,
+      "from": Object {
+        "$ref": 4,
+      },
+      "identifier": Object {
+        "name": "b",
+        "range": Array [
+          32,
+          33,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": null,
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [
+    Object {
+      "$ref": 0,
+    },
+    Object {
+      "$ref": 1,
+    },
+    Object {
+      "$ref": 2,
+    },
+    Object {
+      "$ref": 3,
+    },
+  ],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {},
+  "variableScope": Object {
+    "$ref": 4,
+  },
+  "variables": Array [],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/typeof.ts 1`] = `
+Object {
+  "$id": 3,
+  "block": Object {
+    "range": Array [
+      0,
+      43,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 1,
+      "from": Object {
+        "$ref": 3,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          4,
+          7,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": Object {
+        "range": Array [
+          10,
+          22,
+        ],
+        "type": "ObjectExpression",
+      },
+    },
+    Object {
+      "$id": 2,
+      "from": Object {
+        "$ref": 3,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          39,
+          42,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "obj": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 3,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "obj",
+            "range": Array [
+              4,
+              7,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              4,
+              22,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              0,
+              22,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "obj",
+          "range": Array [
+            4,
+            7,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "obj",
+      "references": Array [
+        Object {
+          "$ref": 1,
+        },
+        Object {
+          "$ref": 2,
+        },
+      ],
+      "scope": Object {
+        "$ref": 3,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/typeof-in-assertions.ts 1`] = `
+Object {
+  "$id": 8,
+  "block": Object {
+    "range": Array [
+      0,
+      63,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 1,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          4,
+          7,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": Object {
+        "range": Array [
+          10,
+          22,
+        ],
+        "type": "ObjectExpression",
+      },
+    },
+    Object {
+      "$id": 2,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "a",
+        "range": Array [
+          23,
+          24,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": null,
+      "writeExpr": Object {
+        "range": Array [
+          27,
+          40,
+        ],
+        "type": "TSTypeAssertionExpression",
+      },
+    },
+    Object {
+      "$id": 3,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          35,
+          38,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 4,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "b",
+        "range": Array [
+          39,
+          40,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": null,
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 5,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "a",
+        "range": Array [
+          42,
+          43,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": null,
+      "writeExpr": Object {
+        "range": Array [
+          46,
+          61,
+        ],
+        "type": "TSAsExpression",
+      },
+    },
+    Object {
+      "$id": 6,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "b",
+        "range": Array [
+          46,
+          47,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": null,
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 7,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          58,
+          61,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [
+    Object {
+      "$ref": 2,
+    },
+    Object {
+      "$ref": 4,
+    },
+    Object {
+      "$ref": 5,
+    },
+    Object {
+      "$ref": 6,
+    },
+  ],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "obj": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 8,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "obj",
+            "range": Array [
+              4,
+              7,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              4,
+              22,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              0,
+              22,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "obj",
+          "range": Array [
+            4,
+            7,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "obj",
+      "references": Array [
+        Object {
+          "$ref": 1,
+        },
+        Object {
+          "$ref": 3,
+        },
+        Object {
+          "$ref": 7,
+        },
+      ],
+      "scope": Object {
+        "$ref": 8,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/typeof-in-return-type.ts 1`] = `
+Object {
+  "$id": 5,
+  "block": Object {
+    "range": Array [
+      0,
+      83,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 4,
+      "block": Object {
+        "range": Array [
+          0,
+          82,
+        ],
+        "type": "FunctionDeclaration",
+      },
+      "childScopes": Array [],
+      "functionExpressionScope": false,
+      "isStrict": false,
+      "references": Array [
+        Object {
+          "$id": 3,
+          "from": Object {
+            "$ref": 4,
+          },
+          "identifier": Object {
+            "name": "a",
+            "range": Array [
+              30,
+              31,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "r",
+          "resolved": Object {
+            "$ref": 2,
+          },
+          "writeExpr": undefined,
+        },
+      ],
+      "throughReferences": Array [],
+      "type": "function",
+      "upperScope": Object {
+        "$ref": 5,
+      },
+      "variableMap": Object {
+        "a": Object {
+          "$ref": 2,
+        },
+        "arguments": Object {
+          "$ref": 1,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 4,
+      },
+      "variables": Array [
+        Object {
+          "$id": 1,
+          "defs": Array [],
+          "identifiers": Array [],
+          "name": "arguments",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 4,
+          },
+        },
+        Object {
+          "$id": 2,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "a",
+                "range": Array [
+                  11,
+                  20,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  0,
+                  82,
+                ],
+                "type": "FunctionDeclaration",
+              },
+              "parent": null,
+              "type": "Parameter",
+            },
+          ],
+          "identifiers": Array [
+            Object {
+              "name": "a",
+              "range": Array [
+                11,
+                20,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "a",
+          "references": Array [
+            Object {
+              "$ref": 3,
+            },
+          ],
+          "scope": Object {
+            "$ref": 4,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "f": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 5,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "f",
+            "range": Array [
+              9,
+              10,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              0,
+              82,
+            ],
+            "type": "FunctionDeclaration",
+          },
+          "parent": null,
+          "type": "FunctionName",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "f",
+          "range": Array [
+            9,
+            10,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "f",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 5,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/typeof-in-type-parameters.ts 1`] = `
+Object {
+  "$id": 5,
+  "block": Object {
+    "range": Array [
+      0,
+      62,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 4,
+      "block": Object {
+        "range": Array [
+          0,
+          61,
+        ],
+        "type": "FunctionDeclaration",
+      },
+      "childScopes": Array [],
+      "functionExpressionScope": false,
+      "isStrict": false,
+      "references": Array [],
+      "throughReferences": Array [],
+      "type": "function",
+      "upperScope": Object {
+        "$ref": 5,
+      },
+      "variableMap": Object {
+        "arguments": Object {
+          "$ref": 2,
+        },
+        "g": Object {
+          "$ref": 3,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 4,
+      },
+      "variables": Array [
+        Object {
+          "$id": 2,
+          "defs": Array [],
+          "identifiers": Array [],
+          "name": "arguments",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 4,
+          },
+        },
+        Object {
+          "$id": 3,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "g",
+                "range": Array [
+                  31,
+                  35,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  0,
+                  61,
+                ],
+                "type": "FunctionDeclaration",
+              },
+              "parent": null,
+              "type": "Parameter",
+            },
+          ],
+          "identifiers": Array [
+            Object {
+              "name": "g",
+              "range": Array [
+                31,
+                35,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "g",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 4,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 1,
+      "from": Object {
+        "$ref": 5,
+      },
+      "identifier": Object {
+        "name": "g",
+        "range": Array [
+          28,
+          29,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "g": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 5,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "g",
+            "range": Array [
+              9,
+              10,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              0,
+              61,
+            ],
+            "type": "FunctionDeclaration",
+          },
+          "parent": null,
+          "type": "FunctionName",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "g",
+          "range": Array [
+            9,
+            10,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "g",
+      "references": Array [
+        Object {
+          "$ref": 1,
+        },
+      ],
+      "scope": Object {
+        "$ref": 5,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/typeof-in-var.ts 1`] = `
+Object {
+  "$id": 8,
+  "block": Object {
+    "range": Array [
+      0,
+      100,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 3,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          4,
+          7,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": Object {
+        "range": Array [
+          10,
+          22,
+        ],
+        "type": "ObjectExpression",
+      },
+    },
+    Object {
+      "$id": 4,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj2",
+        "range": Array [
+          27,
+          43,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": Object {
+        "$ref": 1,
+      },
+      "writeExpr": Object {
+        "range": Array [
+          46,
+          58,
+        ],
+        "type": "ObjectExpression",
+      },
+    },
+    Object {
+      "$id": 5,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          40,
+          43,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 6,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "value",
+        "range": Array [
+          65,
+          70,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": Object {
+        "$ref": 2,
+      },
+      "writeExpr": Object {
+        "range": Array [
+          87,
+          99,
+        ],
+        "type": "ObjectExpression",
+      },
+    },
+    Object {
+      "$id": 7,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          81,
+          84,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "obj": Object {
+      "$ref": 0,
+    },
+    "obj2": Object {
+      "$ref": 1,
+    },
+    "value": Object {
+      "$ref": 2,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 8,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "obj",
+            "range": Array [
+              4,
+              7,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              4,
+              22,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              0,
+              22,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "obj",
+          "range": Array [
+            4,
+            7,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "obj",
+      "references": Array [
+        Object {
+          "$ref": 3,
+        },
+        Object {
+          "$ref": 5,
+        },
+        Object {
+          "$ref": 7,
+        },
+      ],
+      "scope": Object {
+        "$ref": 8,
+      },
+    },
+    Object {
+      "$id": 1,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "obj2",
+            "range": Array [
+              27,
+              43,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              27,
+              58,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              23,
+              58,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "obj2",
+          "range": Array [
+            27,
+            43,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "obj2",
+      "references": Array [
+        Object {
+          "$ref": 4,
+        },
+      ],
+      "scope": Object {
+        "$ref": 8,
+      },
+    },
+    Object {
+      "$id": 2,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "value",
+            "range": Array [
+              65,
+              70,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              63,
+              99,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              59,
+              99,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "value",
+          "range": Array [
+            65,
+            70,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "value",
+      "references": Array [
+        Object {
+          "$ref": 6,
+        },
+      ],
+      "scope": Object {
+        "$ref": 8,
+      },
+    },
+  ],
+}
+`;
