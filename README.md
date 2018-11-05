@@ -32,12 +32,12 @@ By far the most common case will be installing the [eslint-plugin-typescript](ht
 
 ## Options
 
-The following are the available options and their default values:
+The full list of options can be found in the [typescript-estree README](https://github.com/JamesHenry/typescript-estree#parsecode-options). Use them like this in your eslintrc:
 
 ```js
 parserOptions: {
   ecmaFeatures: {
-    jsx: false,
+    jsx: true,
   }
 }
 ```
