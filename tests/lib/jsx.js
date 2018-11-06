@@ -56,14 +56,8 @@ describe("JSX", () => {
             const code = shelljs.cat(`${path.resolve(fixturesDir, filename)}.src.js`);
 
             const config = {
-                loc: true,
-                range: true,
-                tokens: true,
-                errorOnUnknownASTType: true,
                 useJSXTextNode,
-                ecmaFeatures: {
-                    jsx: true
-                }
+                jsx: true
             };
 
             test(`fixtures/${filename}.src`, testUtils.createSnapshotTestBlock(code, config));

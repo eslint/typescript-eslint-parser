@@ -37,19 +37,10 @@ describe("ecmaFeatures", () => {
 
         // Uncomment and fill in filename to focus on a single file
         // var filename = "jsx/invalid-matching-placeholder-in-closing-tag";
-        const feature = path.dirname(filename),
-            code = shelljs.cat(`${path.resolve(FIXTURES_DIR, filename)}.src.js`),
-            config = {
-                loc: true,
-                range: true,
-                tokens: true,
-                ecmaFeatures: {},
-                errorOnUnknownASTType: true
-            };
+        const code = shelljs.cat(`${path.resolve(FIXTURES_DIR, filename)}.src.js`);
 
         test(`fixtures/${filename}.src`, () => {
-            config.ecmaFeatures[feature] = true;
-            testUtils.createSnapshotTestBlock(code, config)();
+            testUtils.createSnapshotTestBlock(code)();
         });
     });
 });
