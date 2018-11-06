@@ -105,9 +105,7 @@ class Referencer extends OriginalReferencer {
         }
 
         // Process the type parameters
-        if (typeParameters) {
-            this.visit(typeParameters);
-        }
+        this.visit(typeParameters);
 
         // Open the function scope.
         scopeManager.__nestFunctionScope(node, this.isInnerMethodDefinition);
@@ -139,9 +137,7 @@ class Referencer extends OriginalReferencer {
         }
 
         // Process the return type.
-        if (returnType) {
-            this.visit(returnType);
-        }
+        this.visit(returnType);
 
         // Process the body.
         if (body.type === "BlockStatement") {
@@ -156,15 +152,15 @@ class Referencer extends OriginalReferencer {
 
     /**
      * Override.
-     * Ignore it in the type mode.
+     * Don't create the reference object in the type mode.
      * @param {Identifier} node The Identifier node to visit.
      * @returns {void}
      */
     Identifier(node) {
-        if (this.typeMode) {
-            return;
+        if (!this.typeMode) {
+            super.Identifier(node);
         }
-        super.Identifier(node);
+        this.visit(node.typeAnnotation);
     }
 
     /**
@@ -193,8 +189,9 @@ class Referencer extends OriginalReferencer {
      * @returns {void}
      */
     TSEmptyBodyFunctionDeclaration(node) {
-        const { id } = node;
+        const upperTypeMode = this.typeMode;
         const scope = this.currentScope();
+        const { id, typeParameters, params, returnType } = node;
 
         // Ignore this if other overloadings have already existed.
         const variable = scope.set.get(id.name);
@@ -206,6 +203,29 @@ class Referencer extends OriginalReferencer {
                 new Definition("FunctionName", id, node, null, null, null)
             );
         }
+
+        // Find `typeof` expressions.
+        this.typeMode = true;
+        this.visit(typeParameters);
+        params.forEach(this.visit, this);
+        this.visit(returnType);
+        this.typeMode = upperTypeMode;
+    }
+
+    /**
+     * Create reference objects for the references in parameters and return type.
+     * @param {TSEmptyBodyFunctionExpression} node The TSEmptyBodyFunctionExpression node to visit.
+     * @returns {void}
+     */
+    TSEmptyBodyFunctionExpression(node) {
+        const upperTypeMode = this.typeMode;
+        const { typeParameters, params, returnType } = node;
+
+        this.typeMode = true;
+        this.visit(typeParameters);
+        params.forEach(this.visit, this);
+        this.visit(returnType);
+        this.typeMode = upperTypeMode;
     }
 
     /**
@@ -299,7 +319,7 @@ class Referencer extends OriginalReferencer {
      */
     TSMethodSignature(node) {
         const upperTypeMode = this.typeMode;
-        const { computed, key, params, typeAnnotation } = node;
+        const { computed, key, typeParameters, params, typeAnnotation } = node;
 
         if (computed) {
             this.typeMode = false;
@@ -309,8 +329,9 @@ class Referencer extends OriginalReferencer {
             this.typeMode = true;
             this.visit(key);
         }
-        this.visit(params);
-        this.visit(typeAnnotation);
+        this.visit(typeParameters);
+        params.forEach(this.visit, this);
+        this.visit(typeAnnotation); // Maybe returnType?
 
         this.typeMode = upperTypeMode;
     }

@@ -1488,6 +1488,352 @@ Object {
 }
 `;
 
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/method-overload.ts 1`] = `
+Object {
+  "$id": 10,
+  "block": Object {
+    "range": Array [
+      0,
+      124,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 9,
+      "block": Object {
+        "range": Array [
+          19,
+          123,
+        ],
+        "type": "ClassDeclaration",
+      },
+      "childScopes": Array [
+        Object {
+          "$id": 8,
+          "block": Object {
+            "range": Array [
+              73,
+              121,
+            ],
+            "type": "FunctionExpression",
+          },
+          "childScopes": Array [],
+          "functionExpressionScope": false,
+          "isStrict": true,
+          "references": Array [],
+          "throughReferences": Array [],
+          "type": "function",
+          "upperScope": Object {
+            "$ref": 9,
+          },
+          "variableMap": Object {
+            "a": Object {
+              "$ref": 7,
+            },
+            "arguments": Object {
+              "$ref": 6,
+            },
+          },
+          "variableScope": Object {
+            "$ref": 8,
+          },
+          "variables": Array [
+            Object {
+              "$id": 6,
+              "defs": Array [],
+              "identifiers": Array [],
+              "name": "arguments",
+              "references": Array [],
+              "scope": Object {
+                "$ref": 8,
+              },
+            },
+            Object {
+              "$id": 7,
+              "defs": Array [
+                Object {
+                  "name": Object {
+                    "name": "a",
+                    "range": Array [
+                      74,
+                      81,
+                    ],
+                    "type": "Identifier",
+                  },
+                  "node": Object {
+                    "range": Array [
+                      73,
+                      121,
+                    ],
+                    "type": "FunctionExpression",
+                  },
+                  "parent": null,
+                  "type": "Parameter",
+                },
+              ],
+              "identifiers": Array [
+                Object {
+                  "name": "a",
+                  "range": Array [
+                    74,
+                    81,
+                  ],
+                  "type": "Identifier",
+                },
+              ],
+              "name": "a",
+              "references": Array [],
+              "scope": Object {
+                "$ref": 8,
+              },
+            },
+          ],
+        },
+      ],
+      "functionExpressionScope": false,
+      "isStrict": true,
+      "references": Array [
+        Object {
+          "$id": 5,
+          "from": Object {
+            "$ref": 9,
+          },
+          "identifier": Object {
+            "name": "s",
+            "range": Array [
+              59,
+              60,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "r",
+          "resolved": Object {
+            "$ref": 0,
+          },
+          "writeExpr": undefined,
+        },
+      ],
+      "throughReferences": Array [
+        Object {
+          "$ref": 5,
+        },
+      ],
+      "type": "class",
+      "upperScope": Object {
+        "$ref": 10,
+      },
+      "variableMap": Object {
+        "A": Object {
+          "$ref": 4,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 10,
+      },
+      "variables": Array [
+        Object {
+          "$id": 4,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "A",
+                "range": Array [
+                  25,
+                  26,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  19,
+                  123,
+                ],
+                "type": "ClassDeclaration",
+              },
+              "parent": undefined,
+              "type": "ClassName",
+            },
+          ],
+          "identifiers": Array [
+            Object {
+              "name": "A",
+              "range": Array [
+                25,
+                26,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "A",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 9,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 2,
+      "from": Object {
+        "$ref": 10,
+      },
+      "identifier": Object {
+        "name": "s",
+        "range": Array [
+          6,
+          7,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": Object {
+        "range": Array [
+          10,
+          18,
+        ],
+        "type": "CallExpression",
+      },
+    },
+    Object {
+      "$id": 3,
+      "from": Object {
+        "$ref": 10,
+      },
+      "identifier": Object {
+        "name": "Symbol",
+        "range": Array [
+          10,
+          16,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": null,
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [
+    Object {
+      "$ref": 3,
+    },
+  ],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "A": Object {
+      "$ref": 1,
+    },
+    "s": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 10,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "s",
+            "range": Array [
+              6,
+              7,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              6,
+              18,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              0,
+              18,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "s",
+          "range": Array [
+            6,
+            7,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "s",
+      "references": Array [
+        Object {
+          "$ref": 2,
+        },
+        Object {
+          "$ref": 5,
+        },
+      ],
+      "scope": Object {
+        "$ref": 10,
+      },
+    },
+    Object {
+      "$id": 1,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "A",
+            "range": Array [
+              25,
+              26,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              19,
+              123,
+            ],
+            "type": "ClassDeclaration",
+          },
+          "parent": null,
+          "type": "ClassName",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "A",
+          "range": Array [
+            25,
+            26,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "A",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 10,
+      },
+    },
+  ],
+}
+`;
+
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/type-annotations.ts 1`] = `
 Object {
   "$id": 7,
