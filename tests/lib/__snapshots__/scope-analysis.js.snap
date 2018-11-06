@@ -1193,6 +1193,226 @@ Object {
 }
 `;
 
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/function-overload.ts 1`] = `
+Object {
+  "$id": 4,
+  "block": Object {
+    "range": Array [
+      0,
+      101,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 3,
+      "block": Object {
+        "range": Array [
+          47,
+          100,
+        ],
+        "type": "FunctionDeclaration",
+      },
+      "childScopes": Array [],
+      "functionExpressionScope": false,
+      "isStrict": false,
+      "references": Array [],
+      "throughReferences": Array [],
+      "type": "function",
+      "upperScope": Object {
+        "$ref": 4,
+      },
+      "variableMap": Object {
+        "a": Object {
+          "$ref": 2,
+        },
+        "arguments": Object {
+          "$ref": 1,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 3,
+      },
+      "variables": Array [
+        Object {
+          "$id": 1,
+          "defs": Array [],
+          "identifiers": Array [],
+          "name": "arguments",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 3,
+          },
+        },
+        Object {
+          "$id": 2,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "a",
+                "range": Array [
+                  58,
+                  68,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  47,
+                  100,
+                ],
+                "type": "FunctionDeclaration",
+              },
+              "parent": null,
+              "type": "Parameter",
+            },
+          ],
+          "identifiers": Array [
+            Object {
+              "name": "a",
+              "range": Array [
+                58,
+                68,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "a",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 3,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "f": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 4,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "f",
+            "range": Array [
+              56,
+              57,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              47,
+              100,
+            ],
+            "type": "FunctionDeclaration",
+          },
+          "parent": null,
+          "type": "FunctionName",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "f",
+          "range": Array [
+            56,
+            57,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "f",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 4,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/function-overload-2.ts 1`] = `
+Object {
+  "$id": 1,
+  "block": Object {
+    "range": Array [
+      0,
+      47,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "f": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 1,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "f",
+            "range": Array [
+              9,
+              10,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              0,
+              18,
+            ],
+            "type": "TSEmptyBodyFunctionDeclaration",
+          },
+          "parent": null,
+          "type": "FunctionName",
+        },
+      ],
+      "identifiers": Array [
+        Object {
+          "name": "f",
+          "range": Array [
+            9,
+            10,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "f",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 1,
+      },
+    },
+  ],
+}
+`;
+
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/ignore-type-only-stuff.ts 1`] = `
 Object {
   "$id": 1,

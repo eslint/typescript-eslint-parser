@@ -89,6 +89,17 @@ class Referencer extends OriginalReferencer {
                 id,
                 new Definition("FunctionName", id, node, null, null, null)
             );
+
+            // Remove overload definition to avoid confusion of no-redeclare rule.
+            const { defs, identifiers } = upperScope.set.get(id.name);
+            for (let i = 0; i < defs.length; ++i) {
+                const def = defs[i];
+                if (def.type === "FunctionName" && def.node.type === "TSEmptyBodyFunctionDeclaration") {
+                    defs.splice(i, 1);
+                    identifiers.splice(i, 1);
+                    break;
+                }
+            }
         } else if (type === "FunctionExpression" && id) {
             scopeManager.__nestFunctionExpressionNameScope(node);
         }
@@ -133,12 +144,10 @@ class Referencer extends OriginalReferencer {
         }
 
         // Process the body.
-        if (body) {
-            if (body.type === "BlockStatement") {
-                this.visitChildren(body);
-            } else {
-                this.visit(body);
-            }
+        if (body.type === "BlockStatement") {
+            this.visitChildren(body);
+        } else {
+            this.visit(body);
         }
 
         // Close the function scope.
@@ -175,6 +184,28 @@ class Referencer extends OriginalReferencer {
         this.typeMode = true;
         this.visitChildren(node);
         this.typeMode = false;
+    }
+
+    /**
+     * Define the variable of this function declaration only once.
+     * Because to avoid confusion of `no-redeclare` rule by overloading.
+     * @param {TSEmptyBodyFunctionDeclaration} node The TSEmptyBodyFunctionDeclaration node to visit.
+     * @returns {void}
+     */
+    TSEmptyBodyFunctionDeclaration(node) {
+        const { id } = node;
+        const scope = this.currentScope();
+
+        // Ignore this if other overloadings have already existed.
+        const variable = scope.set.get(id.name);
+        const defs = variable && variable.defs;
+        const existed = defs && defs.some(d => d.type === "FunctionName");
+        if (!existed) {
+            scope.__define(
+                id,
+                new Definition("FunctionName", id, node, null, null, null)
+            );
+        }
     }
 
     /**
