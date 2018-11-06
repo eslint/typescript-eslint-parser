@@ -152,6 +152,17 @@ class Referencer extends OriginalReferencer {
 
     /**
      * Override.
+     * Visit decorators.
+     * @param {ClassDeclaration|ClassExpression} node The class node to visit.
+     * @returns {void}
+     */
+    visitClass(node) {
+        this.visitDecorators(node.decorators);
+        super.visitClass(node);
+    }
+
+    /**
+     * Override.
      * Don't create the reference object in the type mode.
      * @param {Identifier} node The Identifier node to visit.
      * @returns {void}
@@ -161,6 +172,17 @@ class Referencer extends OriginalReferencer {
             super.Identifier(node);
         }
         this.visit(node.typeAnnotation);
+    }
+
+    /**
+     * Override.
+     * Visit decorators.
+     * @param {MethodDefinition} node The MethodDefinition node to visit.
+     * @returns {void}
+     */
+    MethodDefinition(node) {
+        this.visitDecorators(node.decorators);
+        super.MethodDefinition(node);
     }
 
     /**
@@ -189,10 +211,11 @@ class Referencer extends OriginalReferencer {
      */
     ClassProperty(node) {
         const upperTypeMode = this.typeMode;
-        const { computed, key, typeAnnotation, value } = node;
+        const { computed, decorators, key, typeAnnotation, value } = node;
 
+        this.typeMode = false;
+        this.visitDecorators(decorators);
         if (computed) {
-            this.typeMode = false;
             this.visit(key);
         }
         this.typeMode = true;
@@ -413,6 +436,17 @@ class Referencer extends OriginalReferencer {
                 true
             );
             this.visit(initializer);
+        }
+    }
+
+    /**
+     * Process decorators.
+     * @param {Decorator[]|undefined} decorators The decorator nodes to visit.
+     * @returns {void}
+     */
+    visitDecorators(decorators) {
+        if (decorators) {
+            decorators.forEach(this.visit, this);
         }
     }
 }
