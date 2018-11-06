@@ -224,7 +224,7 @@ class Referencer extends OriginalReferencer {
     }
 
     /**
-     * Create reference objects for the references are in `typeof` expression.
+     * Create reference objects for the references in `typeof` expression.
      * @param {TSTypeQuery} node The TSTypeQuery node to visit.
      * @returns {void}
      */
@@ -236,6 +236,52 @@ class Referencer extends OriginalReferencer {
         } else {
             this.visitChildren(node);
         }
+    }
+
+    /**
+     * Create reference objects for the references in computed keys.
+     * @param {TSPropertySignature} node The TSPropertySignature node to visit.
+     * @returns {void}
+     */
+    TSPropertySignature(node) {
+        const upperTypeMode = this.typeMode;
+        const { computed, key, typeAnnotation, initializer } = node;
+
+        if (computed) {
+            this.typeMode = false;
+            this.visit(key);
+            this.typeMode = true;
+        } else {
+            this.typeMode = true;
+            this.visit(key);
+        }
+        this.visit(typeAnnotation);
+        this.visit(initializer);
+
+        this.typeMode = upperTypeMode;
+    }
+
+    /**
+     * Create reference objects for the references in computed keys.
+     * @param {TSMethodSignature} node The TSMethodSignature node to visit.
+     * @returns {void}
+     */
+    TSMethodSignature(node) {
+        const upperTypeMode = this.typeMode;
+        const { computed, key, params, typeAnnotation } = node;
+
+        if (computed) {
+            this.typeMode = false;
+            this.visit(key);
+            this.typeMode = true;
+        } else {
+            this.typeMode = true;
+            this.visit(key);
+        }
+        this.visit(params);
+        this.visit(typeAnnotation);
+
+        this.typeMode = upperTypeMode;
     }
 
     /**
