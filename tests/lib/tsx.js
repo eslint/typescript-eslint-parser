@@ -32,8 +32,6 @@ const testFiles = shelljs.find(TSX_FIXTURES_DIR)
 
 describe("TSX", () => {
     testFiles.forEach(filename => {
-        // Uncomment and fill in filename to focus on a single file
-        // var filename = "jsx/invalid-matching-placeholder-in-closing-tag";
         const code = shelljs.cat(`${path.resolve(TSX_FIXTURES_DIR, filename)}.src.tsx`);
         const config = {
             useJSXTextNode: true,

@@ -32,7 +32,6 @@ const testFiles = shelljs.find(FIXTURES_DIR)
 //------------------------------------------------------------------------------
 
 describe("Comments", () => {
-
     testFiles.forEach(filename => {
         const code = shelljs.cat(`${path.resolve(FIXTURES_DIR, filename)}.src.js`);
         const config = {
@@ -40,5 +39,4 @@ describe("Comments", () => {
         };
         test(`fixtures/${filename}.src`, testUtils.createSnapshotTestBlock(code, config));
     });
-
 });

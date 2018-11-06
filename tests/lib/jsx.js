@@ -51,15 +51,11 @@ describe("JSX", () => {
     function testFixture(fixturesDir, useJSXTextNode) {
 
         return filename => {
-            // Uncomment and fill in filename to focus on a single file
-            // var filename = "jsx/invalid-matching-placeholder-in-closing-tag";
             const code = shelljs.cat(`${path.resolve(fixturesDir, filename)}.src.js`);
-
             const config = {
                 useJSXTextNode,
                 jsx: true
             };
-
             test(`fixtures/${filename}.src`, testUtils.createSnapshotTestBlock(code, config));
         };
     }
