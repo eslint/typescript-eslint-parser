@@ -183,6 +183,27 @@ class Referencer extends OriginalReferencer {
     }
 
     /**
+     * Don't create the reference object for the key if not computed.
+     * @param {TSEmptyBodyFunctionDeclaration} node The TSEmptyBodyFunctionDeclaration node to visit.
+     * @returns {void}
+     */
+    ClassProperty(node) {
+        const upperTypeMode = this.typeMode;
+        const { computed, key, typeAnnotation, value } = node;
+
+        if (computed) {
+            this.typeMode = false;
+            this.visit(key);
+        }
+        this.typeMode = true;
+        this.visit(typeAnnotation);
+        this.typeMode = false;
+        this.visit(value);
+
+        this.typeMode = upperTypeMode;
+    }
+
+    /**
      * Define the variable of this function declaration only once.
      * Because to avoid confusion of `no-redeclare` rule by overloading.
      * @param {TSEmptyBodyFunctionDeclaration} node The TSEmptyBodyFunctionDeclaration node to visit.
