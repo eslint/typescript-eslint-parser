@@ -32,13 +32,16 @@ By far the most common case will be installing the [eslint-plugin-typescript](ht
 
 ## Options
 
-The full list of options can be found in the [typescript-estree README](https://github.com/JamesHenry/typescript-estree#parsecode-options). Use them like this in your eslintrc:
+**`jsx`** - default `false`. Enable parsing JSX when `true`. More details can be found [here](https://www.typescriptlang.org/docs/handbook/jsx.html).
 
-```js
-parserOptions: {
-  ecmaFeatures: {
-    jsx: true,
-  }
+**`useJSXTextNode`** - default `false`. The JSX AST changed the node type for string literals inside a JSX Element from `Literal` to `JSXText`. When value is `true`, these nodes will be parsed as type `JSXText`. When value is `false`, these nodes will be parsed as type `Literal`.
+
+```json
+{
+    "parserOptions": {
+        "jsx": true,
+        "useJSXTextNode": true
+    }
 }
 ```
 
