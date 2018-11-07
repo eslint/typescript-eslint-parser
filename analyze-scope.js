@@ -132,7 +132,7 @@ class Referencer extends OriginalReferencer {
         const upperScope = this.currentScope();
 
         // Process the name.
-        if (type === "FunctionDeclaration") {
+        if (type === "FunctionDeclaration" && id) {
             upperScope.__define(
                 id,
                 new Definition("FunctionName", id, node, null, null, null)
