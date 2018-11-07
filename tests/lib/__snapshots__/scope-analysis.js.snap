@@ -178,6 +178,101 @@ Object {
 }
 `;
 
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/abstract-class.ts 1`] = `
+Object {
+  "$id": 2,
+  "block": Object {
+    "range": Array [
+      0,
+      69,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 1,
+      "block": Object {
+        "range": Array [
+          0,
+          68,
+        ],
+        "type": "TSAbstractClassDeclaration",
+      },
+      "childScopes": Array [],
+      "functionExpressionScope": false,
+      "isStrict": true,
+      "references": Array [],
+      "throughReferences": Array [],
+      "type": "class",
+      "upperScope": Object {
+        "$ref": 2,
+      },
+      "variableMap": Object {
+        "A": Object {
+          "$ref": 0,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 2,
+      },
+      "variables": Array [
+        Object {
+          "$id": 0,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "A",
+                "range": Array [
+                  15,
+                  16,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  0,
+                  68,
+                ],
+                "type": "TSAbstractClassDeclaration",
+              },
+              "parent": undefined,
+              "type": "ClassName",
+            },
+          ],
+          "eslintUsed": undefined,
+          "identifiers": Array [
+            Object {
+              "name": "A",
+              "range": Array [
+                15,
+                16,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "A",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 1,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {},
+  "variableScope": Object {
+    "$ref": 2,
+  },
+  "variables": Array [],
+}
+`;
+
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/class-properties.ts 1`] = `
 Object {
   "$id": 8,

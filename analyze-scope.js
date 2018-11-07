@@ -526,6 +526,16 @@ class Referencer extends OriginalReferencer {
         this.close(node);
     }
 
+    TSAbstractClassDeclaration(node) {
+        this.ClassDeclaration(node);
+    }
+    TSAbstractClassProperty(node) {
+        this.ClassProperty(node);
+    }
+    TSAbstractMethodDefinition(node) {
+        this.MethodDefinition(node);
+    }
+
     /**
      * Process the global augmentation.
      * 1. Set the global scope as the current scope.
