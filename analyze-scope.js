@@ -487,15 +487,40 @@ class Referencer extends OriginalReferencer {
         }
     }
 
+    /**
+     * Create the variable object for the module name, and visit children.
+     * @param {TSModuleDeclaration} node The TSModuleDeclaration node to visit.
+     * @returns {void}
+     */
     TSModuleDeclaration(node) {
         const astRoot = this.scopeManager.globalScope.block;
+        const scope = this.currentScope();
+        const { id, body } = node;
 
         // https://github.com/JamesHenry/typescript-estree/issues/27
         if (isGlobalAugmentation(node, astRoot.tokens)) {
             this.visitGlobalAugmentation(node);
-        } else {
-            // TODO: module/namespace
+            return;
         }
+
+        if (id && id.type === "Identifier") {
+            scope.__define(
+                id,
+                new Definition("NamespaceName", id, node, null, null, null)
+            );
+        }
+        this.visit(body);
+    }
+
+    /**
+     * Process the module block.
+     * @param {TSModuleBlock} node The TSModuleBlock node to visit.
+     * @returns {void}
+     */
+    TSModuleBlock(node) {
+        this.scopeManager.__nestBlockScope(node);
+        this.visitChildren(node);
+        this.close(node);
     }
 
     /**
@@ -514,6 +539,7 @@ class Referencer extends OriginalReferencer {
         globalScope.__define = overrideDefine(originalDefine);
         scopeManager.__currentScope = globalScope;
 
+        // Skip TSModuleBlock to avoid to create that block scope.
         for (const moduleItem of node.body.body) {
             this.visit(moduleItem);
         }
