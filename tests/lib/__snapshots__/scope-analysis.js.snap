@@ -3984,11 +3984,11 @@ Object {
 
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/typeof-in-var.ts 1`] = `
 Object {
-  "$id": 8,
+  "$id": 11,
   "block": Object {
     "range": Array [
       0,
-      100,
+      147,
     ],
     "type": "Program",
   },
@@ -3997,9 +3997,9 @@ Object {
   "isStrict": false,
   "references": Array [
     Object {
-      "$id": 3,
+      "$id": 4,
       "from": Object {
-        "$ref": 8,
+        "$ref": 11,
       },
       "identifier": Object {
         "name": "obj",
@@ -4022,9 +4022,9 @@ Object {
       },
     },
     Object {
-      "$id": 4,
+      "$id": 5,
       "from": Object {
-        "$ref": 8,
+        "$ref": 11,
       },
       "identifier": Object {
         "name": "obj2",
@@ -4047,9 +4047,9 @@ Object {
       },
     },
     Object {
-      "$id": 5,
+      "$id": 6,
       "from": Object {
-        "$ref": 8,
+        "$ref": 11,
       },
       "identifier": Object {
         "name": "obj",
@@ -4066,9 +4066,9 @@ Object {
       "writeExpr": undefined,
     },
     Object {
-      "$id": 6,
+      "$id": 7,
       "from": Object {
-        "$ref": 8,
+        "$ref": 11,
       },
       "identifier": Object {
         "name": "value",
@@ -4091,9 +4091,9 @@ Object {
       },
     },
     Object {
-      "$id": 7,
+      "$id": 8,
       "from": Object {
-        "$ref": 8,
+        "$ref": 11,
       },
       "identifier": Object {
         "name": "obj",
@@ -4109,11 +4109,58 @@ Object {
       },
       "writeExpr": undefined,
     },
+    Object {
+      "$id": 9,
+      "from": Object {
+        "$ref": 11,
+      },
+      "identifier": Object {
+        "name": "element",
+        "range": Array [
+          105,
+          112,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": Object {
+        "$ref": 3,
+      },
+      "writeExpr": Object {
+        "range": Array [
+          132,
+          146,
+        ],
+        "type": "ArrayExpression",
+      },
+    },
+    Object {
+      "$id": 10,
+      "from": Object {
+        "$ref": 11,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          123,
+          126,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
   ],
   "throughReferences": Array [],
   "type": "global",
   "upperScope": null,
   "variableMap": Object {
+    "element": Object {
+      "$ref": 3,
+    },
     "obj": Object {
       "$ref": 0,
     },
@@ -4125,7 +4172,7 @@ Object {
     },
   },
   "variableScope": Object {
-    "$ref": 8,
+    "$ref": 11,
   },
   "variables": Array [
     Object {
@@ -4171,17 +4218,20 @@ Object {
       "name": "obj",
       "references": Array [
         Object {
-          "$ref": 3,
+          "$ref": 4,
         },
         Object {
-          "$ref": 5,
+          "$ref": 6,
         },
         Object {
-          "$ref": 7,
+          "$ref": 8,
+        },
+        Object {
+          "$ref": 10,
         },
       ],
       "scope": Object {
-        "$ref": 8,
+        "$ref": 11,
       },
     },
     Object {
@@ -4227,11 +4277,11 @@ Object {
       "name": "obj2",
       "references": Array [
         Object {
-          "$ref": 4,
+          "$ref": 5,
         },
       ],
       "scope": Object {
-        "$ref": 8,
+        "$ref": 11,
       },
     },
     Object {
@@ -4277,11 +4327,61 @@ Object {
       "name": "value",
       "references": Array [
         Object {
-          "$ref": 6,
+          "$ref": 7,
         },
       ],
       "scope": Object {
-        "$ref": 8,
+        "$ref": 11,
+      },
+    },
+    Object {
+      "$id": 3,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "element",
+            "range": Array [
+              105,
+              112,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              104,
+              146,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              100,
+              146,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "eslintUsed": undefined,
+      "identifiers": Array [
+        Object {
+          "name": "element",
+          "range": Array [
+            105,
+            112,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "element",
+      "references": Array [
+        Object {
+          "$ref": 9,
+        },
+      ],
+      "scope": Object {
+        "$ref": 11,
       },
     },
   ],
