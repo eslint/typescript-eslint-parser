@@ -34,6 +34,7 @@ module.exports = Evk.unionWith({
     TSConstructorType: ["typeAnnotation", "parameters"],
     TSConstructSignature: ["typeAnnotation", "typeParameters"],
     TSDeclareKeyword: [],
+    TSEmptyBodyDeclareFunction: ["id", "typeParameters", "params", "returnType"],
     TSEmptyBodyFunctionDeclaration: ["id", "typeParameters", "params", "returnType"],
     TSEmptyBodyFunctionExpression: ["id", "typeParameters", "params", "returnType"],
     TSEnumDeclaration: ["members"],

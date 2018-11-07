@@ -303,6 +303,9 @@ class Referencer extends OriginalReferencer {
         this.visit(returnType);
         this.typeMode = upperTypeMode;
     }
+    TSEmptyBodyDeclareFunction(node) {
+        this.TSEmptyBodyFunctionDeclaration(node);
+    }
 
     /**
      * Create reference objects for the references in parameters and return type.

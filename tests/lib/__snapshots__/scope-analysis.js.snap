@@ -1008,6 +1008,100 @@ Object {
 }
 `;
 
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/declare-function.ts 1`] = `
+Object {
+  "$id": 2,
+  "block": Object {
+    "range": Array [
+      0,
+      40,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 1,
+      "from": Object {
+        "$ref": 2,
+      },
+      "identifier": Object {
+        "name": "f",
+        "range": Array [
+          38,
+          39,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "f": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 2,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "f",
+            "range": Array [
+              17,
+              18,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              0,
+              37,
+            ],
+            "type": "TSEmptyBodyDeclareFunction",
+          },
+          "parent": null,
+          "type": "FunctionName",
+        },
+      ],
+      "eslintUsed": undefined,
+      "identifiers": Array [
+        Object {
+          "name": "f",
+          "range": Array [
+            17,
+            18,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "f",
+      "references": Array [
+        Object {
+          "$ref": 1,
+        },
+      ],
+      "scope": Object {
+        "$ref": 2,
+      },
+    },
+  ],
+}
+`;
+
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/declare-global.ts 1`] = `
 Object {
   "$id": 3,
