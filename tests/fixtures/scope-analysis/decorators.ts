@@ -1,7 +1,7 @@
 function dec(target: any) {
 }
 function gec() {
-    return (target: any, proeprtyKey: string) => {}
+    return (target: any, propertyKey: string) => {}
 }
 
 @dec

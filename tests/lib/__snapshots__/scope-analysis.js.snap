@@ -1266,7 +1266,7 @@ Object {
             "$ref": 11,
           },
           "variableMap": Object {
-            "proeprtyKey": Object {
+            "propertyKey": Object {
               "$ref": 9,
             },
             "target": Object {
@@ -1322,7 +1322,7 @@ Object {
               "defs": Array [
                 Object {
                   "name": Object {
-                    "name": "proeprtyKey",
+                    "name": "propertyKey",
                     "range": Array [
                       72,
                       91,
@@ -1343,7 +1343,7 @@ Object {
               "eslintUsed": undefined,
               "identifiers": Array [
                 Object {
-                  "name": "proeprtyKey",
+                  "name": "propertyKey",
                   "range": Array [
                     72,
                     91,
@@ -1351,7 +1351,7 @@ Object {
                   "type": "Identifier",
                 },
               ],
-              "name": "proeprtyKey",
+              "name": "propertyKey",
               "references": Array [],
               "scope": Object {
                 "$ref": 10,
