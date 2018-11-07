@@ -64,6 +64,7 @@ Object {
         Object {
           "$id": 1,
           "defs": Array [],
+          "eslintUsed": undefined,
           "identifiers": Array [],
           "name": "arguments",
           "references": Array [],
@@ -94,6 +95,7 @@ Object {
               "type": "Parameter",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "bar",
@@ -155,6 +157,7 @@ Object {
           "type": "FunctionName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "foo",
@@ -282,6 +285,7 @@ Object {
               "type": "ClassName",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "A",
@@ -395,6 +399,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "s",
@@ -444,6 +449,7 @@ Object {
           "type": "ClassName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "A",
@@ -652,6 +658,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "s1",
@@ -704,6 +711,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "s2",
@@ -919,6 +927,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "s1",
@@ -971,6 +980,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "s2",
@@ -992,6 +1002,141 @@ Object {
       ],
       "scope": Object {
         "$ref": 8,
+      },
+    },
+  ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/declare-global.ts 1`] = `
+Object {
+  "$id": 3,
+  "block": Object {
+    "range": Array [
+      0,
+      55,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 2,
+      "block": Object {
+        "range": Array [
+          0,
+          55,
+        ],
+        "type": "Program",
+      },
+      "childScopes": Array [],
+      "functionExpressionScope": false,
+      "isStrict": true,
+      "references": Array [
+        Object {
+          "$id": 1,
+          "from": Object {
+            "$ref": 2,
+          },
+          "identifier": Object {
+            "name": "C",
+            "range": Array [
+              38,
+              39,
+            ],
+            "type": "Identifier",
+          },
+          "kind": "w",
+          "resolved": Object {
+            "$ref": 0,
+          },
+          "writeExpr": Object {
+            "range": Array [
+              42,
+              43,
+            ],
+            "type": "Literal",
+          },
+        },
+      ],
+      "throughReferences": Array [
+        Object {
+          "$ref": 1,
+        },
+      ],
+      "type": "module",
+      "upperScope": Object {
+        "$ref": 3,
+      },
+      "variableMap": Object {},
+      "variableScope": Object {
+        "$ref": 2,
+      },
+      "variables": Array [],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "C": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 3,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "C",
+            "range": Array [
+              25,
+              34,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              25,
+              34,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              21,
+              34,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "eslintUsed": true,
+      "identifiers": Array [
+        Object {
+          "name": "C",
+          "range": Array [
+            25,
+            34,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "C",
+      "references": Array [
+        Object {
+          "$ref": 1,
+        },
+      ],
+      "scope": Object {
+        "$ref": 3,
       },
     },
   ],
@@ -1042,6 +1187,7 @@ Object {
         Object {
           "$id": 4,
           "defs": Array [],
+          "eslintUsed": undefined,
           "identifiers": Array [],
           "name": "arguments",
           "references": Array [],
@@ -1072,6 +1218,7 @@ Object {
               "type": "Parameter",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "target",
@@ -1153,6 +1300,7 @@ Object {
                   "type": "Parameter",
                 },
               ],
+              "eslintUsed": undefined,
               "identifiers": Array [
                 Object {
                   "name": "target",
@@ -1192,6 +1340,7 @@ Object {
                   "type": "Parameter",
                 },
               ],
+              "eslintUsed": undefined,
               "identifiers": Array [
                 Object {
                   "name": "proeprtyKey",
@@ -1231,6 +1380,7 @@ Object {
         Object {
           "$id": 7,
           "defs": Array [],
+          "eslintUsed": undefined,
           "identifiers": Array [],
           "name": "arguments",
           "references": Array [],
@@ -1280,6 +1430,7 @@ Object {
             Object {
               "$id": 15,
               "defs": Array [],
+              "eslintUsed": undefined,
               "identifiers": Array [],
               "name": "arguments",
               "references": Array [],
@@ -1376,6 +1527,7 @@ Object {
               "type": "ClassName",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "C",
@@ -1459,6 +1611,7 @@ Object {
           "type": "FunctionName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "dec",
@@ -1502,6 +1655,7 @@ Object {
           "type": "FunctionName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "gec",
@@ -1548,6 +1702,7 @@ Object {
           "type": "ClassName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "C",
@@ -1795,6 +1950,7 @@ Object {
               "type": "EnumMemberName",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "A",
@@ -1841,6 +1997,7 @@ Object {
               "type": "EnumMemberName",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "B",
@@ -1887,6 +2044,7 @@ Object {
               "type": "EnumMemberName",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "C",
@@ -1983,6 +2141,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "a",
@@ -2032,6 +2191,7 @@ Object {
           "type": "EnumName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "E",
@@ -2096,6 +2256,7 @@ Object {
         Object {
           "$id": 1,
           "defs": Array [],
+          "eslintUsed": undefined,
           "identifiers": Array [],
           "name": "arguments",
           "references": Array [],
@@ -2126,6 +2287,7 @@ Object {
               "type": "Parameter",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "a",
@@ -2183,6 +2345,7 @@ Object {
           "type": "FunctionName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "f",
@@ -2252,6 +2415,7 @@ Object {
           "type": "FunctionName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "f",
@@ -2327,6 +2491,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "a",
@@ -2401,6 +2566,7 @@ Object {
             Object {
               "$id": 6,
               "defs": Array [],
+              "eslintUsed": undefined,
               "identifiers": Array [],
               "name": "arguments",
               "references": Array [],
@@ -2431,6 +2597,7 @@ Object {
                   "type": "Parameter",
                 },
               ],
+              "eslintUsed": undefined,
               "identifiers": Array [
                 Object {
                   "name": "a",
@@ -2514,6 +2681,7 @@ Object {
               "type": "ClassName",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "A",
@@ -2627,6 +2795,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "s",
@@ -2673,6 +2842,7 @@ Object {
           "type": "ClassName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "A",
@@ -2747,6 +2917,7 @@ Object {
             Object {
               "$id": 3,
               "defs": Array [],
+              "eslintUsed": undefined,
               "identifiers": Array [],
               "name": "arguments",
               "references": Array [],
@@ -2777,6 +2948,7 @@ Object {
                   "type": "Parameter",
                 },
               ],
+              "eslintUsed": undefined,
               "identifiers": Array [
                 Object {
                   "name": "a",
@@ -2836,6 +3008,7 @@ Object {
               "type": "ClassName",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "C",
@@ -2902,6 +3075,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "a",
@@ -2941,6 +3115,7 @@ Object {
           "type": "ClassName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "C",
@@ -3180,6 +3355,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "obj",
@@ -3419,6 +3595,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "obj",
@@ -3513,6 +3690,7 @@ Object {
         Object {
           "$id": 1,
           "defs": Array [],
+          "eslintUsed": undefined,
           "identifiers": Array [],
           "name": "arguments",
           "references": Array [],
@@ -3543,6 +3721,7 @@ Object {
               "type": "Parameter",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "a",
@@ -3604,6 +3783,7 @@ Object {
           "type": "FunctionName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "f",
@@ -3668,6 +3848,7 @@ Object {
         Object {
           "$id": 2,
           "defs": Array [],
+          "eslintUsed": undefined,
           "identifiers": Array [],
           "name": "arguments",
           "references": Array [],
@@ -3698,6 +3879,7 @@ Object {
               "type": "Parameter",
             },
           ],
+          "eslintUsed": undefined,
           "identifiers": Array [
             Object {
               "name": "g",
@@ -3775,6 +3957,7 @@ Object {
           "type": "FunctionName",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "g",
@@ -3974,6 +4157,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "obj",
@@ -4029,6 +4213,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "obj2",
@@ -4078,6 +4263,7 @@ Object {
           "type": "Variable",
         },
       ],
+      "eslintUsed": undefined,
       "identifiers": Array [
         Object {
           "name": "value",

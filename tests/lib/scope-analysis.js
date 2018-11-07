@@ -59,7 +59,7 @@ function nodeToJSON(node) {
  * @returns {Object} The object that can be used for JSON.stringify.
  */
 function variableToJSON(variable, resolver) {
-    const { name } = variable;
+    const { name, eslintUsed } = variable;
     const defs = variable.defs.map(d => ({
         type: d.type,
         name: nodeToJSON(d.name),
@@ -75,7 +75,8 @@ function variableToJSON(variable, resolver) {
         defs,
         identifiers,
         references,
-        scope
+        scope,
+        eslintUsed
     });
 }
 
@@ -144,9 +145,9 @@ describe("TypeScript scope analysis", () => {
         test(filePath, () => {
             const code = fs.readFileSync(filePath, "utf8");
             const { scopeManager } = parseForESLint(code, {
-                loc: false,
+                loc: true,
                 range: true,
-                tokens: false,
+                tokens: true,
                 ecmaFeatures: {}
             });
             const { globalScope } = scopeManager;

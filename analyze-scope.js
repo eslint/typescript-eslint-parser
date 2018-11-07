@@ -9,7 +9,55 @@ const Reference = require("eslint-scope/lib/reference");
 const OriginalReferencer = require("eslint-scope/lib/referencer");
 const Scope = require("eslint-scope/lib/scope").Scope;
 const fallback = require("eslint-visitor-keys").getKeys;
+const lodash = require("lodash");
 const childVisitorKeys = require("./visitor-keys");
+
+/**
+ * Get `.range[0]` of a given object.
+ * @param {{range: number[]}} x The object to get.
+ * @returns {number} The gotten value.
+ */
+function byRange0(x) {
+    return x.range[0];
+}
+
+/**
+ * Check the TSModuleDeclaration node is `declare global {}` or not.
+ * @param {TSModuleDeclaration} node The TSModuleDeclaration node to check.
+ * @param {Token[]} tokens The token list.
+ * @returns {boolean} `true` if the node is `declare global {}`.
+ */
+function isGlobalAugmentation(node, tokens) {
+    const i = lodash.sortedIndexBy(tokens, node, byRange0);
+    const token1 = tokens[i];
+    const token2 = tokens[i + 1];
+
+    return Boolean(
+        token1 &&
+        token2 &&
+        (token1.type === "Keyword" || token1.type === "Identifier") &&
+        token1.value === "declare" &&
+        (token2.type === "Keyword" || token2.type === "Identifier") &&
+        token2.value === "global"
+    );
+}
+
+/**
+ * Define the override function of `Scope#__define` for global augmentation.
+ * @param {Function} define The original Scope#__define method.
+ * @returns {Function} The override function.
+ */
+function overrideDefine(define) {
+    return /* @this {Scope} */ function(node, definition) {
+        define.call(this, node, definition);
+
+        // Set `variable.eslintUsed` to tell ESLint that the variable is exported.
+        const variable = this.set.get(node.name);
+        if (variable) {
+            variable.eslintUsed = true;
+        }
+    };
+}
 
 /** The scope class for enum. */
 class EnumScope extends Scope {
@@ -437,6 +485,41 @@ class Referencer extends OriginalReferencer {
             );
             this.visit(initializer);
         }
+    }
+
+    TSModuleDeclaration(node) {
+        const astRoot = this.scopeManager.globalScope.block;
+
+        // https://github.com/JamesHenry/typescript-estree/issues/27
+        if (isGlobalAugmentation(node, astRoot.tokens)) {
+            this.visitGlobalAugmentation(node);
+        } else {
+            // TODO: module/namespace
+        }
+    }
+
+    /**
+     * Process the global augmentation.
+     * 1. Set the global scope as the current scope.
+     * 2. Configure the global scope to set `variable.eslintUsed = true` for all defined variables. This means `no-unused-vars` doesn't warn those.
+     * @param {TSModuleDeclaration} node The TSModuleDeclaration node to visit.
+     * @returns {void}
+     */
+    visitGlobalAugmentation(node) {
+        const scopeManager = this.scopeManager;
+        const currentScope = this.currentScope();
+        const globalScope = scopeManager.globalScope;
+        const originalDefine = globalScope.__define;
+
+        globalScope.__define = overrideDefine(originalDefine);
+        scopeManager.__currentScope = globalScope;
+
+        for (const moduleItem of node.body.body) {
+            this.visit(moduleItem);
+        }
+
+        scopeManager.__currentScope = currentScope;
+        globalScope.__define = originalDefine;
     }
 
     /**
