@@ -48,7 +48,7 @@ describe("TSX", () => {
         const linter = new Linter();
         linter.defineParser("typescript-eslint-parser", parser);
 
-        test("anonymous", () => {
+        test("filePath was not provided", () => {
             const code = "const element = <T/>";
             const config = {
                 parser: "typescript-eslint-parser"
@@ -67,6 +67,19 @@ describe("TSX", () => {
                     source: "const element = <T/>"
                 }]
             );
+        });
+
+        test("filePath was not provided and 'jsx:true' option", () => {
+            const code = "const element = <T/>";
+            const config = {
+                parser: "typescript-eslint-parser",
+                parserOptions: {
+                    jsx: true
+                }
+            };
+            const messages = linter.verify(code, config);
+
+            assert.deepStrictEqual(messages, []);
         });
 
         test("test.ts", () => {
@@ -90,7 +103,7 @@ describe("TSX", () => {
             );
         });
 
-        test("test.ts with 'jsx' option", () => {
+        test("test.ts with 'jsx:true' option", () => {
             const code = "const element = <T/>";
             const config = {
                 parser: "typescript-eslint-parser",
@@ -100,13 +113,37 @@ describe("TSX", () => {
             };
             const messages = linter.verify(code, config, { filename: "test.ts" });
 
-            assert.deepStrictEqual(messages, []);
+            assert.deepStrictEqual(
+                messages,
+                [{
+                    column: 18,
+                    fatal: true,
+                    line: 1,
+                    message: "Parsing error: '>' expected.",
+                    ruleId: null,
+                    severity: 2,
+                    source: "const element = <T/>"
+                }]
+            );
         });
 
         test("test.tsx", () => {
             const code = "const element = <T/>";
             const config = {
                 parser: "typescript-eslint-parser"
+            };
+            const messages = linter.verify(code, config, { filename: "test.tsx" });
+
+            assert.deepStrictEqual(messages, []);
+        });
+
+        test("test.tsx with 'jsx:false' option", () => {
+            const code = "const element = <T/>";
+            const config = {
+                parser: "typescript-eslint-parser",
+                parserOptions: {
+                    jsx: false
+                }
             };
             const messages = linter.verify(code, config, { filename: "test.tsx" });
 
