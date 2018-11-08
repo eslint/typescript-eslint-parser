@@ -2162,6 +2162,8 @@ Object {
 }
 `;
 
+exports[`basics fixtures/solo-const.src 1`] = `"'const' declarations require one or more declarator(s)."`;
+
 exports[`basics fixtures/typeof-expression.src 1`] = `
 Object {
   "body": Array [

@@ -63,6 +63,15 @@
     "collectCoverage": true,
     "coverageReporters": [
       "text-summary"
+    ],
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/tests/**",
+      "!**/tools/**",
+      "!**/Makefile.js",
+      "!**/test.js"
     ]
   }
 }
