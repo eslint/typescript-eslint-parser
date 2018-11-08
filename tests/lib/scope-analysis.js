@@ -312,4 +312,22 @@ export default class Test {
 
         assert.deepStrictEqual(messages, []);
     });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/535", () => {
+        const code = `
+function foo({ bar }: { bar: string }) {
+    console.log(bar);
+}
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-dupe-args": "error",
+                "no-redeclare": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
 });
