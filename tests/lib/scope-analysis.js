@@ -243,4 +243,20 @@ type Foo = 1;
 
         assert.deepStrictEqual(messages, []);
     });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/459", () => {
+        const code = `
+type foo = any;
+function bar(foo: any) {}
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-shadow": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
 });
