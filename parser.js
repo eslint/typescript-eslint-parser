@@ -20,6 +20,12 @@ const visitorKeys = require("./visitor-keys");
 exports.version = require("./package.json").version;
 
 exports.parseForESLint = function parseForESLint(code, options) {
+    if (typeof options !== "object" || options === null) {
+        options = { useJSXTextNode: true };
+    } else if (typeof options.useJSXTextNode !== "boolean") {
+        options = Object.assign({}, options, { useJSXTextNode: true });
+    }
+
     const ast = parse(code, options);
     traverser.traverse(ast, {
         enter: node => {
