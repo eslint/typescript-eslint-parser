@@ -4464,6 +4464,244 @@ Object {
 }
 `;
 
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/typeof-in-call-signature.ts 1`] = `
+Object {
+  "$id": 8,
+  "block": Object {
+    "range": Array [
+      0,
+      165,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 1,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          6,
+          9,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "w",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": Object {
+        "range": Array [
+          12,
+          24,
+        ],
+        "type": "ObjectExpression",
+      },
+    },
+    Object {
+      "$id": 2,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          61,
+          64,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 3,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          76,
+          79,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 4,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          95,
+          98,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 5,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          125,
+          128,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 6,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          140,
+          143,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+    Object {
+      "$id": 7,
+      "from": Object {
+        "$ref": 8,
+      },
+      "identifier": Object {
+        "name": "obj",
+        "range": Array [
+          159,
+          162,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": Object {
+        "$ref": 0,
+      },
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "obj": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 8,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "obj",
+            "range": Array [
+              6,
+              9,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              6,
+              24,
+            ],
+            "type": "VariableDeclarator",
+          },
+          "parent": Object {
+            "range": Array [
+              0,
+              24,
+            ],
+            "type": "VariableDeclaration",
+          },
+          "type": "Variable",
+        },
+      ],
+      "eslintUsed": undefined,
+      "identifiers": Array [
+        Object {
+          "name": "obj",
+          "range": Array [
+            6,
+            9,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "obj",
+      "references": Array [
+        Object {
+          "$ref": 1,
+        },
+        Object {
+          "$ref": 2,
+        },
+        Object {
+          "$ref": 3,
+        },
+        Object {
+          "$ref": 4,
+        },
+        Object {
+          "$ref": 5,
+        },
+        Object {
+          "$ref": 6,
+        },
+        Object {
+          "$ref": 7,
+        },
+      ],
+      "scope": Object {
+        "$ref": 8,
+      },
+    },
+  ],
+}
+`;
+
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/typeof-in-return-type.ts 1`] = `
 Object {
   "$id": 5,
