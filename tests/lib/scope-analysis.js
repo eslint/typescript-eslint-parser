@@ -4,9 +4,11 @@
  */
 "use strict";
 
+const assert = require("assert");
 const fs = require("fs");
 const path = require("path");
-const { parseForESLint } = require("../..");
+const { Linter } = require("eslint");
+const parser = require("../..");
 
 /** Reference resolver. */
 class ReferenceResolver {
@@ -144,7 +146,7 @@ describe("TypeScript scope analysis", () => {
     for (const filePath of files) {
         test(filePath, () => {
             const code = fs.readFileSync(filePath, "utf8");
-            const { scopeManager } = parseForESLint(code, {
+            const { scopeManager } = parser.parseForESLint(code, {
                 loc: true,
                 range: true,
                 tokens: true,
@@ -169,4 +171,24 @@ describe("TypeScript scope analysis", () => {
             expect(scopeTree).toMatchSnapshot();
         });
     }
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/416", () => {
+        const linter = new Linter();
+        linter.defineParser("typescript-eslint-parser", parser);
+
+        const code = `
+export type SomeThing = {
+    id: string;
+}
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-undef": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue416.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
 });
