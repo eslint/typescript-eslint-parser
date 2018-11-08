@@ -20,6 +20,10 @@ const visitorKeys = require("./visitor-keys");
 exports.version = require("./package.json").version;
 
 exports.parseForESLint = function parseForESLint(code, options) {
+    if (options && typeof options.filePath === "string" && options.filePath.endsWith(".tsx")) {
+        options.jsx = true;
+    }
+
     const ast = parse(code, options);
     traverser.traverse(ast, {
         enter: node => {

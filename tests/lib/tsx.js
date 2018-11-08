@@ -11,8 +11,12 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-const path = require("path"),
+const
+    assert = require("assert"),
+    path = require("path"),
+    { Linter } = require("eslint"),
     shelljs = require("shelljs"),
+    parser = require("../../"),
     testUtils = require("../../tools/test-utils");
 
 //------------------------------------------------------------------------------
@@ -38,5 +42,75 @@ describe("TSX", () => {
             jsx: true
         };
         test(`fixtures/${filename}.src`, testUtils.createSnapshotTestBlock(code, config));
+    });
+
+    describe("if the filename ends with '.tsx', enable jsx option automatically.", () => {
+        const linter = new Linter();
+        linter.defineParser("typescript-eslint-parser", parser);
+
+        test("anonymous", () => {
+            const code = "const element = <T/>";
+            const config = {
+                parser: "typescript-eslint-parser"
+            };
+            const messages = linter.verify(code, config);
+
+            assert.deepStrictEqual(
+                messages,
+                [{
+                    column: 18,
+                    fatal: true,
+                    line: 1,
+                    message: "Parsing error: '>' expected.",
+                    ruleId: null,
+                    severity: 2,
+                    source: "const element = <T/>"
+                }]
+            );
+        });
+
+        test("test.ts", () => {
+            const code = "const element = <T/>";
+            const config = {
+                parser: "typescript-eslint-parser"
+            };
+            const messages = linter.verify(code, config, { filename: "test.ts" });
+
+            assert.deepStrictEqual(
+                messages,
+                [{
+                    column: 18,
+                    fatal: true,
+                    line: 1,
+                    message: "Parsing error: '>' expected.",
+                    ruleId: null,
+                    severity: 2,
+                    source: "const element = <T/>"
+                }]
+            );
+        });
+
+        test("test.ts with 'jsx' option", () => {
+            const code = "const element = <T/>";
+            const config = {
+                parser: "typescript-eslint-parser",
+                parserOptions: {
+                    jsx: true
+                }
+            };
+            const messages = linter.verify(code, config, { filename: "test.ts" });
+
+            assert.deepStrictEqual(messages, []);
+        });
+
+        test("test.tsx", () => {
+            const code = "const element = <T/>";
+            const config = {
+                parser: "typescript-eslint-parser"
+            };
+            const messages = linter.verify(code, config, { filename: "test.tsx" });
+
+            assert.deepStrictEqual(messages, []);
+        });
     });
 });
