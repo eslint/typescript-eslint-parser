@@ -227,4 +227,20 @@ interface Runnable {
 
         assert.deepStrictEqual(messages, []);
     });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/443", () => {
+        const code = `
+const Foo = 1;
+type Foo = 1;
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-redeclare": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue443.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
 });
