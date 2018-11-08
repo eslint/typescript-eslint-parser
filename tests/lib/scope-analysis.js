@@ -209,4 +209,22 @@ const bar = 'blah'
 
         assert.deepStrictEqual(messages, []);
     });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/437", () => {
+        const code = `
+interface Runnable {
+  run (): Result
+  toString (): string
+}
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-undef": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue437.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
 });
