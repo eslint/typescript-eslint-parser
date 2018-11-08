@@ -292,4 +292,24 @@ class X {
 
         assert.deepStrictEqual(messages, []);
     });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/487", () => {
+        const code = `
+export default class Test {
+    private status: string;
+    getStatus() {
+        return this.status;
+    }
+}
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-restricted-globals": ["error", "status"]
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
 });
