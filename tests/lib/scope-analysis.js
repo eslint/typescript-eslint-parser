@@ -259,4 +259,20 @@ function bar(foo: any) {}
 
         assert.deepStrictEqual(messages, []);
     });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/466", () => {
+        const code = `
+/*globals document, selector */
+const links = document.querySelectorAll( selector ) as NodeListOf<HTMLElement>
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-undef": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
 });
