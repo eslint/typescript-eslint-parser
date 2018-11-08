@@ -21,7 +21,7 @@ exports.version = require("./package.json").version;
 
 exports.parseForESLint = function parseForESLint(code, options) {
     if (options && typeof options.filePath === "string" && options.filePath.endsWith(".tsx")) {
-        options.jsx = true;
+        options = Object.assign({}, options, { jsx: true });
     }
 
     const ast = parse(code, options);
