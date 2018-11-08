@@ -275,4 +275,21 @@ const links = document.querySelectorAll( selector ) as NodeListOf<HTMLElement>
 
         assert.deepStrictEqual(messages, []);
     });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/471", () => {
+        const code = `
+class X {
+  field = {}
+}
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-undef": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
 });
