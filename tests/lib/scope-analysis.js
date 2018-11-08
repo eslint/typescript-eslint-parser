@@ -172,10 +172,10 @@ describe("TypeScript scope analysis", () => {
         });
     }
 
-    test("https://github.com/eslint/typescript-eslint-parser/issues/416", () => {
-        const linter = new Linter();
-        linter.defineParser("typescript-eslint-parser", parser);
+    const linter = new Linter();
+    linter.defineParser("typescript-eslint-parser", parser);
 
+    test("https://github.com/eslint/typescript-eslint-parser/issues/416", () => {
         const code = `
 export type SomeThing = {
     id: string;
@@ -188,6 +188,24 @@ export type SomeThing = {
             }
         };
         const messages = linter.verify(code, config, { filename: "issue416.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/435", () => {
+        const code = `
+interface Foo {
+    bar: string
+}
+const bar = 'blah'
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-use-before-define": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue435.ts" });
 
         assert.deepStrictEqual(messages, []);
     });
