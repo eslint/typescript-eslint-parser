@@ -38,7 +38,7 @@ The following additional configuration options are available by specifying them 
 
 **`jsx`** - default `false`. Enable parsing JSX when `true`. More details can be found [here](https://www.typescriptlang.org/docs/handbook/jsx.html).
 
-**`useJSXTextNode`** - default `true`. The JSX AST changed the node type for string literals inside a JSX Element from `Literal` to `JSXText`. When value is `true`, these nodes will be parsed as type `JSXText`. When value is `false`, these nodes will be parsed as type `Literal`. Please set `false` if you use this parser on ESLint v4.
+**`useJSXTextNode`** - default `true`. Please set `false` if you use this parser on ESLint v4. If this is `false`, the parser creates the AST of JSX texts as the legacy style.
 
 ### .eslintrc.json
 
