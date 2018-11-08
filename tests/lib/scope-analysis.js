@@ -330,4 +330,26 @@ function foo({ bar }: { bar: string }) {
 
         assert.deepStrictEqual(messages, []);
     });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/535", () => {
+        const code = `
+import {
+  observable,
+} from 'mobx';
+
+export default class ListModalStore {
+  @observable
+  orderList: IObservableArray<BizPurchaseOrderTO> = observable([]);
+}
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-unused-vars": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue.ts" });
+
+        assert.deepStrictEqual(messages, []);
+    });
 });
