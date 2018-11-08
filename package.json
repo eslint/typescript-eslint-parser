@@ -54,7 +54,7 @@
     "eslint-scope": "^4.0.0",
     "eslint-visitor-keys": "^1.0.0",
     "lodash": "^4.17.11",
-    "typescript-estree": "2.1.0"
+    "typescript-estree": "5.0.0"
   },
   "peerDependencies": {
     "typescript": "*"
