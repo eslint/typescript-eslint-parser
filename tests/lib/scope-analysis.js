@@ -4,7 +4,6 @@
  */
 "use strict";
 
-const assert = require("assert");
 const fs = require("fs");
 const path = require("path");
 const { Linter } = require("eslint");
@@ -189,7 +188,7 @@ export type SomeThing = {
         };
         const messages = linter.verify(code, config, { filename: "issue416.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 
     test("https://github.com/eslint/typescript-eslint-parser/issues/435", () => {
@@ -207,7 +206,7 @@ const bar = 'blah'
         };
         const messages = linter.verify(code, config, { filename: "issue435.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 
     test("https://github.com/eslint/typescript-eslint-parser/issues/437", () => {
@@ -225,7 +224,7 @@ interface Runnable {
         };
         const messages = linter.verify(code, config, { filename: "issue437.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 
     test("https://github.com/eslint/typescript-eslint-parser/issues/443", () => {
@@ -241,7 +240,7 @@ type Foo = 1;
         };
         const messages = linter.verify(code, config, { filename: "issue443.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 
     test("https://github.com/eslint/typescript-eslint-parser/issues/459", () => {
@@ -257,7 +256,7 @@ function bar(foo: any) {}
         };
         const messages = linter.verify(code, config, { filename: "issue.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 
     test("https://github.com/eslint/typescript-eslint-parser/issues/466", () => {
@@ -273,7 +272,7 @@ const links = document.querySelectorAll( selector ) as NodeListOf<HTMLElement>
         };
         const messages = linter.verify(code, config, { filename: "issue.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 
     test("https://github.com/eslint/typescript-eslint-parser/issues/471", () => {
@@ -290,7 +289,7 @@ class X {
         };
         const messages = linter.verify(code, config, { filename: "issue.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 
     test("https://github.com/eslint/typescript-eslint-parser/issues/487", () => {
@@ -310,7 +309,7 @@ export default class Test {
         };
         const messages = linter.verify(code, config, { filename: "issue.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 
     test("https://github.com/eslint/typescript-eslint-parser/issues/535", () => {
@@ -328,7 +327,7 @@ function foo({ bar }: { bar: string }) {
         };
         const messages = linter.verify(code, config, { filename: "issue.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 
     test("https://github.com/eslint/typescript-eslint-parser/issues/535", () => {
@@ -350,6 +349,6 @@ export default class ListModalStore {
         };
         const messages = linter.verify(code, config, { filename: "issue.ts" });
 
-        assert.deepStrictEqual(messages, []);
+        expect(messages).toStrictEqual([]);
     });
 });

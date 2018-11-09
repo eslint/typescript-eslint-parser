@@ -13,7 +13,6 @@
 //------------------------------------------------------------------------------
 
 const
-    assert = require("assert"),
     path = require("path"),
     { Linter } = require("eslint"),
     shelljs = require("shelljs"),
@@ -67,7 +66,7 @@ export const Price: React.SFC<PriceProps> = function Price(props) {}
 
         const messages = linter.verify(code, config, { filename: "issue.ts" });
 
-        assert.deepStrictEqual(messages, [
+        expect(messages).toStrictEqual([
             {
                 column: 21,
                 endColumn: 42,
