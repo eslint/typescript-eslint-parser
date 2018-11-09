@@ -12,7 +12,6 @@
 //------------------------------------------------------------------------------
 
 const
-    assert = require("assert"),
     path = require("path"),
     { Linter } = require("eslint"),
     shelljs = require("shelljs"),
@@ -55,18 +54,15 @@ describe("TSX", () => {
             };
             const messages = linter.verify(code, config);
 
-            assert.deepStrictEqual(
-                messages,
-                [{
-                    column: 18,
-                    fatal: true,
-                    line: 1,
-                    message: "Parsing error: '>' expected.",
-                    ruleId: null,
-                    severity: 2,
-                    source: "const element = <T/>"
-                }]
-            );
+            expect(messages).toStrictEqual([{
+                column: 18,
+                fatal: true,
+                line: 1,
+                message: "Parsing error: '>' expected.",
+                ruleId: null,
+                severity: 2,
+                source: "const element = <T/>"
+            }]);
         });
 
         test("filePath was not provided and 'jsx:true' option", () => {
@@ -79,7 +75,7 @@ describe("TSX", () => {
             };
             const messages = linter.verify(code, config);
 
-            assert.deepStrictEqual(messages, []);
+            expect(messages).toStrictEqual([]);
         });
 
         test("test.ts", () => {
@@ -89,18 +85,15 @@ describe("TSX", () => {
             };
             const messages = linter.verify(code, config, { filename: "test.ts" });
 
-            assert.deepStrictEqual(
-                messages,
-                [{
-                    column: 18,
-                    fatal: true,
-                    line: 1,
-                    message: "Parsing error: '>' expected.",
-                    ruleId: null,
-                    severity: 2,
-                    source: "const element = <T/>"
-                }]
-            );
+            expect(messages).toStrictEqual([{
+                column: 18,
+                fatal: true,
+                line: 1,
+                message: "Parsing error: '>' expected.",
+                ruleId: null,
+                severity: 2,
+                source: "const element = <T/>"
+            }]);
         });
 
         test("test.ts with 'jsx:true' option", () => {
@@ -113,18 +106,15 @@ describe("TSX", () => {
             };
             const messages = linter.verify(code, config, { filename: "test.ts" });
 
-            assert.deepStrictEqual(
-                messages,
-                [{
-                    column: 18,
-                    fatal: true,
-                    line: 1,
-                    message: "Parsing error: '>' expected.",
-                    ruleId: null,
-                    severity: 2,
-                    source: "const element = <T/>"
-                }]
-            );
+            expect(messages).toStrictEqual([{
+                column: 18,
+                fatal: true,
+                line: 1,
+                message: "Parsing error: '>' expected.",
+                ruleId: null,
+                severity: 2,
+                source: "const element = <T/>"
+            }]);
         });
 
         test("test.tsx", () => {
@@ -134,7 +124,7 @@ describe("TSX", () => {
             };
             const messages = linter.verify(code, config, { filename: "test.tsx" });
 
-            assert.deepStrictEqual(messages, []);
+            expect(messages).toStrictEqual([]);
         });
 
         test("test.tsx with 'jsx:false' option", () => {
@@ -147,7 +137,7 @@ describe("TSX", () => {
             };
             const messages = linter.verify(code, config, { filename: "test.tsx" });
 
-            assert.deepStrictEqual(messages, []);
+            expect(messages).toStrictEqual([]);
         });
     });
 });
