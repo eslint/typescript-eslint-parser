@@ -25,6 +25,12 @@ exports.parseForESLint = function parseForESLint(code, options) {
     } else if (typeof options.useJSXTextNode !== "boolean") {
         options = Object.assign({}, options, { useJSXTextNode: true });
     }
+    if (typeof options.filePath === "string") {
+        const tsx = options.filePath.endsWith(".tsx");
+        if (tsx || options.filePath.endsWith(".ts")) {
+            options = Object.assign({}, options, { jsx: tsx });
+        }
+    }
 
     const ast = parse(code, options);
     traverser.traverse(ast, {
