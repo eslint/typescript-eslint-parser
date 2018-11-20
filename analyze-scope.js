@@ -216,9 +216,12 @@ class Referencer extends OriginalReferencer {
      * @returns {void}
      */
     Identifier(node) {
+        this.visitDecorators(node.decorators);
+
         if (!this.typeMode) {
             super.Identifier(node);
         }
+
         this.visit(node.typeAnnotation);
     }
 
