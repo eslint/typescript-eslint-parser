@@ -46,7 +46,7 @@ module.exports = Evk.unionWith({
     TSLiteralType: ["literal"],
     TSIndexSignature: ["typeAnnotation", "index"],
     TSInterfaceBody: ["body"],
-    TSInterfaceDeclaration: ["body", "id", "heritage", "typeParameters"],
+    TSInterfaceDeclaration: ["id", "typeParameters", "heritage", "body"],
     TSInterfaceHeritage: ["id", "typeParameters"],
     TSFunctionType: ["parameters", "typeAnnotation"],
     TSMethodSignature: ["typeAnnotation", "typeParameters", "key", "params"],
