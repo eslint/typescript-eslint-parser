@@ -2929,7 +2929,7 @@ Object {
 
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/identifier-decorators.ts 1`] = `
 Object {
-  "$id": 7,
+  "$id": 8,
   "block": Object {
     "range": Array [
       0,
@@ -2939,7 +2939,7 @@ Object {
   },
   "childScopes": Array [
     Object {
-      "$id": 6,
+      "$id": 7,
       "block": Object {
         "range": Array [
           0,
@@ -2949,7 +2949,7 @@ Object {
       },
       "childScopes": Array [
         Object {
-          "$id": 5,
+          "$id": 6,
           "block": Object {
             "range": Array [
               7,
@@ -2959,7 +2959,7 @@ Object {
           },
           "childScopes": Array [
             Object {
-              "$id": 4,
+              "$id": 5,
               "block": Object {
                 "range": Array [
                   35,
@@ -2970,11 +2970,33 @@ Object {
               "childScopes": Array [],
               "functionExpressionScope": false,
               "isStrict": true,
-              "references": Array [],
-              "throughReferences": Array [],
+              "references": Array [
+                Object {
+                  "$id": 4,
+                  "from": Object {
+                    "$ref": 5,
+                  },
+                  "identifier": Object {
+                    "name": "Decorator",
+                    "range": Array [
+                      37,
+                      46,
+                    ],
+                    "type": "Identifier",
+                  },
+                  "kind": "r",
+                  "resolved": null,
+                  "writeExpr": undefined,
+                },
+              ],
+              "throughReferences": Array [
+                Object {
+                  "$ref": 4,
+                },
+              ],
               "type": "function",
               "upperScope": Object {
-                "$ref": 5,
+                "$ref": 6,
               },
               "variableMap": Object {
                 "arguments": Object {
@@ -2985,7 +3007,7 @@ Object {
                 },
               },
               "variableScope": Object {
-                "$ref": 4,
+                "$ref": 5,
               },
               "variables": Array [
                 Object {
@@ -2996,7 +3018,7 @@ Object {
                   "name": "arguments",
                   "references": Array [],
                   "scope": Object {
-                    "$ref": 4,
+                    "$ref": 5,
                   },
                 },
                 Object {
@@ -3036,7 +3058,7 @@ Object {
                   "name": "config",
                   "references": Array [],
                   "scope": Object {
-                    "$ref": 4,
+                    "$ref": 5,
                   },
                 },
               ],
@@ -3045,10 +3067,14 @@ Object {
           "functionExpressionScope": false,
           "isStrict": true,
           "references": Array [],
-          "throughReferences": Array [],
+          "throughReferences": Array [
+            Object {
+              "$ref": 4,
+            },
+          ],
           "type": "class",
           "upperScope": Object {
-            "$ref": 6,
+            "$ref": 7,
           },
           "variableMap": Object {
             "Test": Object {
@@ -3056,7 +3082,7 @@ Object {
             },
           },
           "variableScope": Object {
-            "$ref": 6,
+            "$ref": 7,
           },
           "variables": Array [
             Object {
@@ -3096,7 +3122,7 @@ Object {
               "name": "Test",
               "references": Array [],
               "scope": Object {
-                "$ref": 5,
+                "$ref": 6,
               },
             },
           ],
@@ -3105,10 +3131,14 @@ Object {
       "functionExpressionScope": false,
       "isStrict": true,
       "references": Array [],
-      "throughReferences": Array [],
+      "throughReferences": Array [
+        Object {
+          "$ref": 4,
+        },
+      ],
       "type": "module",
       "upperScope": Object {
-        "$ref": 7,
+        "$ref": 8,
       },
       "variableMap": Object {
         "Test": Object {
@@ -3116,7 +3146,7 @@ Object {
         },
       },
       "variableScope": Object {
-        "$ref": 6,
+        "$ref": 7,
       },
       "variables": Array [
         Object {
@@ -3156,7 +3186,7 @@ Object {
           "name": "Test",
           "references": Array [],
           "scope": Object {
-            "$ref": 6,
+            "$ref": 7,
           },
         },
       ],
@@ -3165,12 +3195,16 @@ Object {
   "functionExpressionScope": false,
   "isStrict": false,
   "references": Array [],
-  "throughReferences": Array [],
+  "throughReferences": Array [
+    Object {
+      "$ref": 4,
+    },
+  ],
   "type": "global",
   "upperScope": null,
   "variableMap": Object {},
   "variableScope": Object {
-    "$ref": 7,
+    "$ref": 8,
   },
   "variables": Array [],
 }

@@ -69,6 +69,9 @@ class EnumScope extends Scope {
 class PatternVisitor extends OriginalPatternVisitor {
     Identifier(node) {
         super.Identifier(node);
+        if (node.decorators) {
+            this.rightHandNodes.push(...node.decorators);
+        }
         if (node.typeAnnotation) {
             this.rightHandNodes.push(node.typeAnnotation);
         }
@@ -76,6 +79,9 @@ class PatternVisitor extends OriginalPatternVisitor {
 
     ArrayPattern(node) {
         node.elements.forEach(this.visit, this);
+        if (node.decorators) {
+            this.rightHandNodes.push(...node.decorators);
+        }
         if (node.typeAnnotation) {
             this.rightHandNodes.push(node.typeAnnotation);
         }
@@ -83,6 +89,9 @@ class PatternVisitor extends OriginalPatternVisitor {
 
     ObjectPattern(node) {
         node.properties.forEach(this.visit, this);
+        if (node.decorators) {
+            this.rightHandNodes.push(...node.decorators);
+        }
         if (node.typeAnnotation) {
             this.rightHandNodes.push(node.typeAnnotation);
         }
