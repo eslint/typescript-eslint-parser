@@ -370,4 +370,22 @@ function test(file: Blob) {
 
         expect(messages).toStrictEqual([]);
     });
+
+    test("https://github.com/eslint/typescript-eslint-parser/issues/553", () => {
+        const code = `
+enum Foo {
+    BAR = 'bar'
+}
+Foo
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            rules: {
+                "no-unused-vars": "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue.ts" });
+
+        expect(messages).toStrictEqual([]);
+    });
 });

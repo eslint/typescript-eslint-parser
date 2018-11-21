@@ -498,6 +498,11 @@ class Referencer extends OriginalReferencer {
         const scope = this.currentScope();
 
         scope.__define(id, new Definition("EnumMemberName", id, node));
+
+        // Set `eslintUsed` flag to the defined variable because the enum member is obviously exported.
+        const variable = scope.set.get(id.name);
+        variable.eslintUsed = true;
+
         if (initializer) {
             scope.__referencing(
                 id,

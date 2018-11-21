@@ -2441,7 +2441,7 @@ Object {
               "type": "EnumMemberName",
             },
           ],
-          "eslintUsed": undefined,
+          "eslintUsed": true,
           "identifiers": Array [
             Object {
               "name": "A",
@@ -2488,7 +2488,7 @@ Object {
               "type": "EnumMemberName",
             },
           ],
-          "eslintUsed": undefined,
+          "eslintUsed": true,
           "identifiers": Array [
             Object {
               "name": "B",
@@ -2535,7 +2535,7 @@ Object {
               "type": "EnumMemberName",
             },
           ],
-          "eslintUsed": undefined,
+          "eslintUsed": true,
           "identifiers": Array [
             Object {
               "name": "C",
@@ -2790,7 +2790,7 @@ Object {
               "type": "EnumMemberName",
             },
           ],
-          "eslintUsed": undefined,
+          "eslintUsed": true,
           "identifiers": Array [
             Object {
               "name": "BAR",
