@@ -12,8 +12,8 @@ module.exports = Evk.unionWith({
     // Additional Properties.
     ArrayPattern: ["elements", "typeAnnotation"],
     ArrowFunctionExpression: ["typeParameters", "params", "returnType", "body"],
-    ClassDeclaration: ["decorators", "id", "typeParameters", "superClass", "body"],
-    ClassExpression: ["decorators", "id", "typeParameters", "superClass", "body"],
+    ClassDeclaration: ["decorators", "id", "typeParameters", "superClass", "implements", "body"],
+    ClassExpression: ["decorators", "id", "typeParameters", "superClass", "implements", "body"],
     FunctionDeclaration: ["id", "typeParameters", "params", "returnType", "body"],
     FunctionExpression: ["id", "typeParameters", "params", "returnType", "body"],
     Identifier: ["decorators", "typeAnnotation"],

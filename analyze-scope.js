@@ -210,11 +210,19 @@ class Referencer extends OriginalReferencer {
     /**
      * Override.
      * Visit decorators.
-     * @param {ClassDeclaration|ClassExpression} node The class node to visit.
+     * @param {ClassDeclaration|ClassExpression|TSAbstractClassDeclaration} node The class node to visit.
      * @returns {void}
      */
     visitClass(node) {
         this.visitDecorators(node.decorators);
+
+        const upperTypeMode = this.typeMode;
+        this.typeMode = true;
+        if (node.implements) {
+            this.visit(node.implements);
+        }
+        this.typeMode = upperTypeMode;
+
         super.visitClass(node);
     }
 
@@ -315,6 +323,7 @@ class Referencer extends OriginalReferencer {
         this.visit(returnType);
         this.typeMode = upperTypeMode;
     }
+
     TSEmptyBodyDeclareFunction(node) {
         this.TSEmptyBodyFunctionDeclaration(node);
     }
@@ -550,9 +559,11 @@ class Referencer extends OriginalReferencer {
     TSAbstractClassDeclaration(node) {
         this.ClassDeclaration(node);
     }
+
     TSAbstractClassProperty(node) {
         this.ClassProperty(node);
     }
+
     TSAbstractMethodDefinition(node) {
         this.MethodDefinition(node);
     }
