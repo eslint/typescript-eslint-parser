@@ -322,13 +322,6 @@ class Referencer extends OriginalReferencer {
     CallExpression(node) {
         this.visitTypeParameters(node);
 
-        // Check this is direct call to eval
-        if (!this.scopeManager.__ignoreEval() && node.callee.type === "Identifier" && node.callee.name === "eval") {
-
-            // NOTE: This should be `variableScope`. Since direct eval call always creates Lexical environment and
-            // let / const should be enclosed into it. Only VariableDeclaration affects on the caller's environment.
-            this.currentScope().variableScope.__detectEval();
-        }
         this.visit(node.callee);
         if (node.arguments) {
             node.arguments.forEach(this.visit, this);
