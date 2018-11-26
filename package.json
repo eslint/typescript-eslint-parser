@@ -58,7 +58,7 @@
     "npm-license": "0.3.3",
     "shelljs": "0.8.2",
     "shelljs-nodecli": "0.1.1",
-    "typescript": "^3.1.6"
+    "typescript": "~3.1.1"
   },
   "jest": {
     "testEnvironment": "node",
