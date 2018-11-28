@@ -218,12 +218,29 @@ class Referencer extends OriginalReferencer {
 
         const upperTypeMode = this.typeMode;
         this.typeMode = true;
+        if (node.superTypeParameters) {
+            this.visit(node.superTypeParameters);
+        }
         if (node.implements) {
             this.visit(node.implements);
         }
         this.typeMode = upperTypeMode;
 
         super.visitClass(node);
+    }
+
+    /**
+     * Visit typeParameters.
+     * @param {*} node The node to visit.
+     * @returns {void}
+     */
+    visitTypeParameters(node) {
+        if (node.typeParameters) {
+            const upperTypeMode = this.typeMode;
+            this.typeMode = true;
+            this.visit(node.typeParameters);
+            this.typeMode = upperTypeMode;
+        }
     }
 
     /**
@@ -295,6 +312,34 @@ class Referencer extends OriginalReferencer {
     }
 
     /**
+     * Visit new expression.
+     * @param {NewExpression} node The NewExpression node to visit.
+     * @returns {void}
+     */
+    NewExpression(node) {
+        this.visitTypeParameters(node);
+        this.visit(node.callee);
+        if (node.arguments) {
+            node.arguments.forEach(this.visit, this);
+        }
+    }
+
+    /**
+     * Override.
+     * Visit call expression.
+     * @param {CallExpression} node The CallExpression node to visit.
+     * @returns {void}
+     */
+    CallExpression(node) {
+        this.visitTypeParameters(node);
+
+        this.visit(node.callee);
+        if (node.arguments) {
+            node.arguments.forEach(this.visit, this);
+        }
+    }
+
+    /**
      * Define the variable of this function declaration only once.
      * Because to avoid confusion of `no-redeclare` rule by overloading.
      * @param {TSEmptyBodyFunctionDeclaration} node The TSEmptyBodyFunctionDeclaration node to visit.
@@ -323,7 +368,6 @@ class Referencer extends OriginalReferencer {
         this.visit(returnType);
         this.typeMode = upperTypeMode;
     }
-
     TSEmptyBodyDeclareFunction(node) {
         this.TSEmptyBodyFunctionDeclaration(node);
     }
@@ -559,11 +603,9 @@ class Referencer extends OriginalReferencer {
     TSAbstractClassDeclaration(node) {
         this.ClassDeclaration(node);
     }
-
     TSAbstractClassProperty(node) {
         this.ClassProperty(node);
     }
-
     TSAbstractMethodDefinition(node) {
         this.MethodDefinition(node);
     }
