@@ -8,7 +8,7 @@
 
 "use strict";
 
-const converter = require("typescript-estree");
+const parse = require("typescript-estree").parseAndGenerateServices;
 const astNodeTypes = require("typescript-estree").AST_NODE_TYPES;
 const traverser = require("eslint/lib/util/traverser");
 const analyzeScope = require("./analyze-scope");
@@ -21,7 +21,6 @@ const visitorKeys = require("./visitor-keys");
 exports.version = require("./package.json").version;
 
 exports.parseForESLint = function parseForESLint(code, options) {
-    let generateServices = false;
     if (typeof options !== "object" || options === null) {
         options = { useJSXTextNode: true };
     } else if (typeof options.useJSXTextNode !== "boolean") {
@@ -33,11 +32,8 @@ exports.parseForESLint = function parseForESLint(code, options) {
             options = Object.assign({}, options, { jsx: tsx });
         }
     }
-    if (typeof options.generateServices === "boolean" && options.generateServices) {
-        generateServices = true;
-    }
 
-    const { ast, services } = generateServices ? converter.parseAndGenerateServices(code, options) : { ast: converter.parse(code, options) };
+    const { ast, services } = parse(code, options);
     const extraOptions = {
         sourceType: ast.sourceType
     };
