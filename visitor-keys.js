@@ -23,6 +23,7 @@ module.exports = Evk.unionWith({
     CallExpression: ["callee", "typeParameters", "arguments"],
 
     // Additional Nodes.
+    BigIntLiteral: [],
     ClassProperty: ["decorators", "key", "typeAnnotation", "value"],
     Decorator: ["expression"],
     TSAbstractClassProperty: ["decorators", "key", "typeAnnotation", "value"],
