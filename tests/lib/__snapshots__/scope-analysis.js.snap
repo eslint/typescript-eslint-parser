@@ -5690,6 +5690,31 @@ Object {
 }
 `;
 
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/type-generic.ts 1`] = `
+Object {
+  "$id": 0,
+  "block": Object {
+    "range": Array [
+      0,
+      21,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {},
+  "variableScope": Object {
+    "$ref": 0,
+  },
+  "variables": Array [],
+}
+`;
+
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/typeof.ts 1`] = `
 Object {
   "$id": 3,
