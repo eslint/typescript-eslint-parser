@@ -21,7 +21,7 @@ module.exports = Evk.unionWith({
     ObjectPattern: ["properties", "typeAnnotation"],
     NewExpression: ["callee", "typeParameters", "arguments"],
     CallExpression: ["callee", "typeParameters", "arguments"],
-    // typeParameters are preset only when kind='type'
+    // typeParameters are present only when kind='type'
     VariableDeclarator: ["id", "typeParameters", "init"],
 
     // Additional Nodes.
