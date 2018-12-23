@@ -370,4 +370,26 @@ function test(file: Blob) {
 
         expect(messages).toStrictEqual([]);
     });
+
+    test("https://github.com/bradzacher/eslint-plugin-typescript/issues/255", () => {
+        const code = `
+window.whatevs = {
+  myFunc() {
+    console.log('yep');
+  }
+};
+`;
+        const config = {
+            parser: "typescript-eslint-parser",
+            parserOptions: {
+                sourceType: "module",
+            },
+            rules: {
+                strict: "error"
+            }
+        };
+        const messages = linter.verify(code, config, { filename: "issue255.ts" });
+
+        expect(messages).toStrictEqual([]);
+    });
 });

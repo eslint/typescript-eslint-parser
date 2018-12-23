@@ -34,6 +34,10 @@ exports.parseForESLint = function parseForESLint(code, options) {
     }
 
     const ast = parse(code, options);
+    if (options.sourceType && ast && ast.type === "Program") {
+        ast.sourceType = options.sourceType;
+    }
+
     const extraOptions = {
         sourceType: ast.sourceType
     };
