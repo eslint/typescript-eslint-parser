@@ -382,7 +382,7 @@ window.whatevs = {
         const config = {
             parser: "typescript-eslint-parser",
             parserOptions: {
-                sourceType: "module",
+                sourceType: "module"
             },
             rules: {
                 strict: "error"
