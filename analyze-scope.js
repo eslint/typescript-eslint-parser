@@ -240,25 +240,6 @@ class Referencer extends OriginalReferencer {
     }
 
     /**
-     * Override.
-     * Don't make variable if `kind === "type"`.
-     * It doesn't declare variables but declare types.
-     * @param {VariableDeclaration} node The VariableDeclaration node to visit.
-     * @returns {void}
-     */
-    VariableDeclaration(node) {
-        if (node.kind !== "type") {
-            super.VariableDeclaration(node);
-            return;
-        }
-
-        // To detect typeof.
-        this.typeMode = true;
-        this.visitChildren(node);
-        this.typeMode = false;
-    }
-
-    /**
      * Don't create the reference object for the key if not computed.
      * @param {TSEmptyBodyFunctionDeclaration} node The TSEmptyBodyFunctionDeclaration node to visit.
      * @returns {void}
@@ -337,6 +318,7 @@ class Referencer extends OriginalReferencer {
         this.visit(returnType);
         this.typeMode = upperTypeMode;
     }
+
     TSEmptyBodyDeclareFunction(node) {
         this.TSEmptyBodyFunctionDeclaration(node);
     }
@@ -554,6 +536,12 @@ class Referencer extends OriginalReferencer {
             );
         }
         this.visit(body);
+    }
+
+    TSTypeAliasDeclaration(node) {
+        this.typeMode = true;
+        this.visitChildren(node);
+        this.typeMode = false;
     }
 
     /**

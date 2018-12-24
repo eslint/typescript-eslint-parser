@@ -75,6 +75,7 @@ module.exports = Evk.unionWith({
     TSStringKeyword: [],
     TSSymbolKeyword: [],
     TSTypeAnnotation: ["typeAnnotation"],
+    TSTypeAliasDeclaration: ["id", "typeParameters", "typeAnnotation"],
     TSTypeLiteral: ["members"],
     TSTypeOperator: ["typeAnnotation"],
     TSTypeParameter: ["constraint", "default"],

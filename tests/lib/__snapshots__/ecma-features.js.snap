@@ -102029,7 +102029,6 @@ Object {
   "body": Array [
     Object {
       "async": false,
-      "body": null,
       "expression": false,
       "generator": false,
       "id": Object {
@@ -102347,7 +102346,6 @@ Object {
   "body": Array [
     Object {
       "async": false,
-      "body": null,
       "expression": false,
       "generator": false,
       "id": Object {

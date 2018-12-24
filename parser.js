@@ -42,9 +42,9 @@ exports.parseForESLint = function parseForESLint(code, options) {
         enter: node => {
             switch (node.type) {
                 // Just for backward compatibility.
-                case "DeclareFunction":
+                case "TSDeclareFunction":
                     if (!node.body) {
-                        node.type = `TSEmptyBody${node.type}`;
+                        node.type = "TSEmptyBodyDeclareFunction";
                     }
                     break;
 

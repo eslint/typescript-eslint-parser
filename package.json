@@ -46,7 +46,7 @@
   "dependencies": {
     "eslint-scope": "^4.0.0",
     "eslint-visitor-keys": "^1.0.0",
-    "typescript-estree": "^6.0.0"
+    "typescript-estree": "^7.0.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
