@@ -5304,7 +5304,7 @@ Object {
   "block": Object {
     "range": Array [
       0,
-      19,
+      18,
     ],
     "type": "Program",
   },
