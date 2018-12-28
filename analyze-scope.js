@@ -401,8 +401,96 @@ class Referencer extends OriginalReferencer {
     }
 
     /**
+     * @param {TSTypeReference} node The TSTypeReference node to visit.
+     * @returns {void}
+     */
+    TSTypeReference(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSTypeLiteral} node The TSTypeLiteral node to visit.
+     * @returns {void}
+     */
+    TSTypeLiteral(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSLiteralType} node The TSLiteralType node to visit.
+     * @returns {void}
+     */
+    TSLiteralType(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSIntersectionType} node The TSIntersectionType node to visit.
+     * @returns {void}
+     */
+    TSIntersectionType(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSConditionalType} node The TSConditionalType node to visit.
+     * @returns {void}
+     */
+    TSConditionalType(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSIndexedAccessType} node The TSIndexedAccessType node to visit.
+     * @returns {void}
+     */
+    TSIndexedAccessType(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSMappedType} node The TSMappedType node to visit.
+     * @returns {void}
+     */
+    TSMappedType(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSOptionalType} node The TSOptionalType node to visit.
+     * @returns {void}
+     */
+    TSOptionalType(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSParenthesizedType} node The TSParenthesizedType node to visit.
+     * @returns {void}
+     */
+    TSParenthesizedType(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSRestType} node The TSRestType node to visit.
+     * @returns {void}
+     */
+    TSRestType(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * @param {TSTupleType} node The TSTupleType node to visit.
+     * @returns {void}
+     */
+    TSTupleType(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
      * Create reference objects for the object part. (This is `obj.prop`)
-     * @param {TSTypeQuery} node The TSTypeQuery node to visit.
+     * @param {TSQualifiedName} node The TSQualifiedName node to visit.
      * @returns {void}
      */
     TSQualifiedName(node) {
@@ -614,6 +702,21 @@ class Referencer extends OriginalReferencer {
     visitDecorators(decorators) {
         if (decorators) {
             decorators.forEach(this.visit, this);
+        }
+    }
+
+    /**
+     * Process all child of type nodes
+     * @param {any} node node to be processed
+     * @returns {void}
+     */
+    visitTypeNodes(node) {
+        if (this.typeMode) {
+            this.visitChildren(node);
+        } else {
+            this.typeMode = true;
+            this.visitChildren(node);
+            this.typeMode = false;
         }
     }
 }

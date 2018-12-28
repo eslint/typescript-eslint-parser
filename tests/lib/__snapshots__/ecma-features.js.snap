@@ -2375,6 +2375,7 @@ exports[`ecmaFeatures fixtures/arrowFunctions/error-strict-default-param-eval.sr
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -2730,6 +2731,7 @@ exports[`ecmaFeatures fixtures/arrowFunctions/error-strict-dup-params.src 1`] = 
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -3072,6 +3074,7 @@ Object {
         "body": Object {
           "body": Array [
             Object {
+              "directive": "use strict",
               "expression": Object {
                 "loc": Object {
                   "end": Object {
@@ -3404,6 +3407,7 @@ exports[`ecmaFeatures fixtures/arrowFunctions/error-strict-eval-return.src 1`] =
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -3669,6 +3673,7 @@ exports[`ecmaFeatures fixtures/arrowFunctions/error-strict-octal.src 1`] = `
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -3952,6 +3957,7 @@ exports[`ecmaFeatures fixtures/arrowFunctions/error-strict-param-arguments.src 1
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -4289,6 +4295,7 @@ exports[`ecmaFeatures fixtures/arrowFunctions/error-strict-param-eval.src 1`] = 
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -4626,6 +4633,7 @@ exports[`ecmaFeatures fixtures/arrowFunctions/error-strict-param-names.src 1`] =
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -4963,6 +4971,7 @@ exports[`ecmaFeatures fixtures/arrowFunctions/error-strict-param-no-paren-argume
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -5210,6 +5219,7 @@ exports[`ecmaFeatures fixtures/arrowFunctions/error-strict-param-no-paren-eval.s
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -93424,6 +93434,7 @@ exports[`ecmaFeatures fixtures/objectLiteralDuplicateProperties/error-proto-prop
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -94125,6 +94136,7 @@ exports[`ecmaFeatures fixtures/objectLiteralDuplicateProperties/error-proto-stri
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -94828,6 +94840,7 @@ exports[`ecmaFeatures fixtures/objectLiteralDuplicateProperties/strict-duplicate
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -95350,6 +95363,7 @@ exports[`ecmaFeatures fixtures/objectLiteralDuplicateProperties/strict-duplicate
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -99632,6 +99646,7 @@ exports[`ecmaFeatures fixtures/octalLiterals/strict-uppercase.src 1`] = `
 Object {
   "body": Array [
     Object {
+      "directive": "use strict",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -107763,6 +107778,7 @@ exports[`ecmaFeatures fixtures/unicodeCodePointEscapes/basic-string-literal.src 
 Object {
   "body": Array [
     Object {
+      "directive": "\\\\u{714E}\\\\u{8336}",
       "expression": Object {
         "loc": Object {
           "end": Object {
@@ -107861,6 +107877,7 @@ exports[`ecmaFeatures fixtures/unicodeCodePointEscapes/complex-string-literal.sr
 Object {
   "body": Array [
     Object {
+      "directive": "\\\\u{20BB7}\\\\u{10FFFF}\\\\u{1}",
       "expression": Object {
         "loc": Object {
           "end": Object {
