@@ -356,6 +356,23 @@ class Referencer extends OriginalReferencer {
     }
 
     /**
+     * Visit as expression.
+     * @param {TSAsExpression} node The TSAsExpression node to visit.
+     * @returns {void}
+     */
+    TSAsExpression(node) {
+        this.visit(node.expression);
+
+        if (this.typeMode) {
+            this.visit(node.typeAnnotation);
+        } else {
+            this.typeMode = true;
+            this.visit(node.typeAnnotation);
+            this.typeMode = false;
+        }
+    }
+
+    /**
      * Switch to the type mode and visit child nodes to find `typeof x` expression in type declarations.
      * @param {TSTypeAnnotation} node The TSTypeAnnotation node to visit.
      * @returns {void}
@@ -398,6 +415,14 @@ class Referencer extends OriginalReferencer {
         } else {
             this.visitChildren(node);
         }
+    }
+
+    /**
+     * @param {TSInferType} node The TSInferType node to visit.
+     * @returns {void}
+     */
+    TSInferType(node) {
+        this.visitTypeNodes(node);
     }
 
     /**
@@ -659,11 +684,11 @@ class Referencer extends OriginalReferencer {
      * @returns {void}
      */
     TSImportEqualsDeclaration(node) {
-        const { name, moduleReference } = node;
-        if (name && name.type === "Identifier") {
+        const { id, moduleReference } = node;
+        if (id && id.type === "Identifier") {
             this.currentScope().__define(
-                name,
-                new Definition("ImportBinding", name, node, null, null, null)
+                id,
+                new Definition("ImportBinding", id, node, null, null, null)
             );
         }
         this.visit(moduleReference);

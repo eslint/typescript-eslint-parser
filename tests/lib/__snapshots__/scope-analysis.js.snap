@@ -3396,6 +3396,53 @@ Object {
 }
 `;
 
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/expression-as.ts 1`] = `
+Object {
+  "$id": 1,
+  "block": Object {
+    "range": Array [
+      0,
+      27,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 0,
+      "from": Object {
+        "$ref": 1,
+      },
+      "identifier": Object {
+        "name": "a",
+        "range": Array [
+          1,
+          2,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": null,
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [
+    Object {
+      "$ref": 0,
+    },
+  ],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {},
+  "variableScope": Object {
+    "$ref": 1,
+  },
+  "variables": Array [],
+}
+`;
+
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/expression-type-parameters.ts 1`] = `
 Object {
   "$id": 14,
@@ -7336,6 +7383,31 @@ Object {
       },
     },
   ],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/types-infer.ts 1`] = `
+Object {
+  "$id": 0,
+  "block": Object {
+    "range": Array [
+      0,
+      147,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {},
+  "variableScope": Object {
+    "$ref": 0,
+  },
+  "variables": Array [],
 }
 `;
 
