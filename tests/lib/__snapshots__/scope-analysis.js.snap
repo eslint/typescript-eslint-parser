@@ -3396,6 +3396,53 @@ Object {
 }
 `;
 
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/export-as-namespace.ts 1`] = `
+Object {
+  "$id": 1,
+  "block": Object {
+    "range": Array [
+      0,
+      23,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [
+    Object {
+      "$id": 0,
+      "from": Object {
+        "$ref": 1,
+      },
+      "identifier": Object {
+        "name": "a",
+        "range": Array [
+          20,
+          21,
+        ],
+        "type": "Identifier",
+      },
+      "kind": "r",
+      "resolved": null,
+      "writeExpr": undefined,
+    },
+  ],
+  "throughReferences": Array [
+    Object {
+      "$ref": 0,
+    },
+  ],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {},
+  "variableScope": Object {
+    "$ref": 1,
+  },
+  "variables": Array [],
+}
+`;
+
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/expression-as.ts 1`] = `
 Object {
   "$id": 1,
@@ -5677,7 +5724,7 @@ Object {
           21,
           26,
         ],
-        "type": "TSTypeAssertionExpression",
+        "type": "TSTypeAssertion",
       },
     },
     Object {
@@ -5949,7 +5996,7 @@ Object {
           27,
           40,
         ],
-        "type": "TSTypeAssertionExpression",
+        "type": "TSTypeAssertion",
       },
     },
     Object {

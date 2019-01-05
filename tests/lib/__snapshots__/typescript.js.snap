@@ -31746,8 +31746,7 @@ Object {
               245,
               265,
             ],
-            "type": "TSConstructSignature",
-            "typeAnnotation": Object {
+            "returnType": Object {
               "loc": Object {
                 "end": Object {
                   "column": 23,
@@ -31781,6 +31780,7 @@ Object {
                 "type": "TSStringKeyword",
               },
             },
+            "type": "TSConstructSignatureDeclaration",
           },
           Object {
             "loc": Object {
@@ -31836,8 +31836,7 @@ Object {
               270,
               293,
             ],
-            "type": "TSConstructSignature",
-            "typeAnnotation": Object {
+            "returnType": Object {
               "loc": Object {
                 "end": Object {
                   "column": 26,
@@ -31871,6 +31870,7 @@ Object {
                 "type": "TSStringKeyword",
               },
             },
+            "type": "TSConstructSignatureDeclaration",
             "typeParameters": Object {
               "loc": Object {
                 "end": Object {
@@ -34095,8 +34095,7 @@ Object {
               21,
               47,
             ],
-            "type": "TSConstructSignature",
-            "typeAnnotation": null,
+            "type": "TSConstructSignatureDeclaration",
           },
         ],
         "loc": Object {

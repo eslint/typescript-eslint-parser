@@ -346,13 +346,24 @@ class Referencer extends OriginalReferencer {
      * @returns {void}
      */
     TSInterfaceDeclaration(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * Visit type assertion.
+     * @param {TSTypeAssertion} node The TSTypeAssertion node to visit.
+     * @returns {void}
+     */
+    TSTypeAssertion(node) {
         if (this.typeMode) {
-            this.visitChildren(node);
+            this.visit(node.typeAnnotation);
         } else {
             this.typeMode = true;
-            this.visitChildren(node);
+            this.visit(node.typeAnnotation);
             this.typeMode = false;
         }
+
+        this.visit(node.expression);
     }
 
     /**
@@ -378,13 +389,7 @@ class Referencer extends OriginalReferencer {
      * @returns {void}
      */
     TSTypeAnnotation(node) {
-        if (this.typeMode) {
-            this.visitChildren(node);
-        } else {
-            this.typeMode = true;
-            this.visitChildren(node);
-            this.typeMode = false;
-        }
+        this.visitTypeNodes(node);
     }
 
     /**
@@ -393,13 +398,7 @@ class Referencer extends OriginalReferencer {
      * @returns {void}
      */
     TSTypeParameterDeclaration(node) {
-        if (this.typeMode) {
-            this.visitChildren(node);
-        } else {
-            this.typeMode = true;
-            this.visitChildren(node);
-            this.typeMode = false;
-        }
+        this.visitTypeNodes(node);
     }
 
     /**
