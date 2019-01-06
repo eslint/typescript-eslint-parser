@@ -120,7 +120,7 @@ class Referencer extends OriginalReferencer {
             const { defs, identifiers } = upperScope.set.get(id.name);
             for (let i = 0; i < defs.length; ++i) {
                 const def = defs[i];
-                if (def.type === "FunctionName" && def.node.type === "TSEmptyBodyFunctionDeclaration") {
+                if (def.type === "FunctionName" && def.node.type === "TSDeclareFunction") {
                     defs.splice(i, 1);
                     identifiers.splice(i, 1);
                     break;
@@ -292,10 +292,10 @@ class Referencer extends OriginalReferencer {
     /**
      * Define the variable of this function declaration only once.
      * Because to avoid confusion of `no-redeclare` rule by overloading.
-     * @param {TSEmptyBodyFunctionDeclaration} node The TSEmptyBodyFunctionDeclaration node to visit.
+     * @param {TSDeclareFunction} node The TSDeclareFunction node to visit.
      * @returns {void}
      */
-    TSEmptyBodyFunctionDeclaration(node) {
+    TSDeclareFunction(node) {
         const upperTypeMode = this.typeMode;
         const scope = this.currentScope();
         const { id, typeParameters, params, returnType } = node;
@@ -317,10 +317,6 @@ class Referencer extends OriginalReferencer {
         params.forEach(this.visit, this);
         this.visit(returnType);
         this.typeMode = upperTypeMode;
-    }
-
-    TSEmptyBodyDeclareFunction(node) {
-        this.TSEmptyBodyFunctionDeclaration(node);
     }
 
     /**

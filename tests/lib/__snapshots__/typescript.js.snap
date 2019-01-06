@@ -10822,7 +10822,7 @@ Object {
             "line": 9,
           },
         },
-        "parameters": Array [
+        "params": Array [
           Object {
             "argument": Object {
               "loc": Object {
@@ -10914,20 +10914,19 @@ Object {
           180,
           205,
         ],
-        "type": "TSConstructorType",
-        "typeAnnotation": Object {
+        "returnType": Object {
           "loc": Object {
             "end": Object {
               "column": 47,
               "line": 9,
             },
             "start": Object {
-              "column": 44,
+              "column": 43,
               "line": 9,
             },
           },
           "range": Array [
-            202,
+            201,
             205,
           ],
           "type": "TSTypeAnnotation",
@@ -10967,7 +10966,7 @@ Object {
             },
           },
         },
-        "typeParameters": null,
+        "type": "TSConstructorType",
       },
       "typeParameters": Object {
         "loc": Object {
@@ -20726,7 +20725,7 @@ Object {
           "type": "TSStringKeyword",
         },
       },
-      "type": "TSEmptyBodyDeclareFunction",
+      "type": "TSDeclareFunction",
     },
   ],
   "comments": Array [],
@@ -23686,7 +23685,7 @@ Object {
               "line": 1,
             },
           },
-          "parameters": Array [
+          "params": Array [
             Object {
               "loc": Object {
                 "end": Object {
@@ -23744,20 +23743,19 @@ Object {
             27,
             46,
           ],
-          "type": "TSFunctionType",
-          "typeAnnotation": Object {
+          "returnType": Object {
             "loc": Object {
               "end": Object {
                 "column": 46,
                 "line": 1,
               },
               "start": Object {
-                "column": 40,
+                "column": 39,
                 "line": 1,
               },
             },
             "range": Array [
-              40,
+              39,
               46,
             ],
             "type": "TSTypeAnnotation",
@@ -23779,7 +23777,7 @@ Object {
               "type": "TSVoidKeyword",
             },
           },
-          "typeParameters": null,
+          "type": "TSFunctionType",
         },
       },
       "loc": Object {
@@ -43967,7 +43965,7 @@ Object {
                         "line": 2,
                       },
                     },
-                    "parameters": Array [
+                    "params": Array [
                       Object {
                         "loc": Object {
                           "end": Object {
@@ -44095,20 +44093,19 @@ Object {
                       49,
                       79,
                     ],
-                    "type": "TSFunctionType",
-                    "typeAnnotation": Object {
+                    "returnType": Object {
                       "loc": Object {
                         "end": Object {
                           "column": 57,
                           "line": 2,
                         },
                         "start": Object {
-                          "column": 51,
+                          "column": 50,
                           "line": 2,
                         },
                       },
                       "range": Array [
-                        73,
+                        72,
                         79,
                       ],
                       "type": "TSTypeAnnotation",
@@ -44130,7 +44127,7 @@ Object {
                         "type": "TSVoidKeyword",
                       },
                     },
-                    "typeParameters": null,
+                    "type": "TSFunctionType",
                   },
                 },
               },
@@ -66021,7 +66018,7 @@ Object {
                   },
                 },
               },
-              "type": "TSEmptyBodyFunctionDeclaration",
+              "type": "TSDeclareFunction",
             },
             "loc": Object {
               "end": Object {
