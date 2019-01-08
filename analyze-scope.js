@@ -241,7 +241,7 @@ class Referencer extends OriginalReferencer {
 
     /**
      * Don't create the reference object for the key if not computed.
-     * @param {TSEmptyBodyFunctionDeclaration} node The TSEmptyBodyFunctionDeclaration node to visit.
+     * @param {ClassProperty} node The ClassProperty node to visit.
      * @returns {void}
      */
     ClassProperty(node) {
@@ -301,14 +301,16 @@ class Referencer extends OriginalReferencer {
         const { id, typeParameters, params, returnType } = node;
 
         // Ignore this if other overloadings have already existed.
-        const variable = scope.set.get(id.name);
-        const defs = variable && variable.defs;
-        const existed = defs && defs.some(d => d.type === "FunctionName");
-        if (!existed) {
-            scope.__define(
-                id,
-                new Definition("FunctionName", id, node, null, null, null)
-            );
+        if (id) {
+            const variable = scope.set.get(id.name);
+            const defs = variable && variable.defs;
+            const existed = defs && defs.some(d => d.type === "FunctionName");
+            if (!existed) {
+                scope.__define(
+                    id,
+                    new Definition("FunctionName", id, node, null, null, null)
+                );
+            }
         }
 
         // Find `typeof` expressions.
