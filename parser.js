@@ -32,7 +32,7 @@ exports.parseForESLint = function parseForESLint(code, options) {
             options = Object.assign({}, options, { jsx: tsx });
         }
     }
-    if (options.ecmaFeatures && options.ecmaFeatures.jsx) {
+    if (options.ecmaFeatures && typeof options.ecmaFeatures.jsx === "boolean") {
         // allow the user to override the jsx setting
         options.jsx = options.ecmaFeatures.jsx
     }
