@@ -34,7 +34,7 @@ exports.parseForESLint = function parseForESLint(code, options) {
     }
     if (options.ecmaFeatures && typeof options.ecmaFeatures.jsx === "boolean") {
         // allow the user to override the jsx setting
-        options.jsx = options.ecmaFeatures.jsx
+        options.jsx = options.ecmaFeatures.jsx;
     }
 
     const ast = parse(code, options);
