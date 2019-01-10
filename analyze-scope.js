@@ -65,6 +65,13 @@ class PatternVisitor extends OriginalPatternVisitor {
             this.rightHandNodes.push(node.typeAnnotation);
         }
     }
+
+    RestElement(node) {
+        super.RestElement(node);
+        if (node.typeAnnotation) {
+            this.rightHandNodes.push(node.typeAnnotation);
+        }
+    }
 }
 
 class Referencer extends OriginalReferencer {
@@ -412,6 +419,14 @@ class Referencer extends OriginalReferencer {
         } else {
             this.visitChildren(node);
         }
+    }
+
+    /**
+     * @param {TSTypeParameter} node The TSTypeParameter node to visit.
+     * @returns {void}
+     */
+    TSTypeParameter(node) {
+        this.visitTypeNodes(node);
     }
 
     /**

@@ -19,6 +19,7 @@ module.exports = Evk.unionWith({
     Identifier: ["decorators", "typeAnnotation"],
     MethodDefinition: ["decorators", "key", "value"],
     ObjectPattern: ["properties", "typeAnnotation"],
+    RestElement: ["argument", "typeAnnotation"],
     NewExpression: ["callee", "typeParameters", "arguments"],
     CallExpression: ["callee", "typeParameters", "arguments"],
 
@@ -90,7 +91,7 @@ module.exports = Evk.unionWith({
     TSTypeAssertion: ["typeAnnotation", "expression"],
     TSTypeLiteral: ["members"],
     TSTypeOperator: ["typeAnnotation"],
-    TSTypeParameter: ["constraint", "default"],
+    TSTypeParameter: ["name", "constraint", "default"],
     TSTypeParameterDeclaration: ["params"],
     TSTypeParameterInstantiation: ["params"],
     TSTypePredicate: ["typeAnnotation", "parameterName"],

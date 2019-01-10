@@ -5392,6 +5392,160 @@ Object {
 }
 `;
 
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/rest-element.ts 1`] = `
+Object {
+  "$id": 4,
+  "block": Object {
+    "range": Array [
+      0,
+      36,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 3,
+      "block": Object {
+        "range": Array [
+          0,
+          34,
+        ],
+        "type": "FunctionDeclaration",
+      },
+      "childScopes": Array [],
+      "functionExpressionScope": false,
+      "isStrict": false,
+      "references": Array [],
+      "throughReferences": Array [],
+      "type": "function",
+      "upperScope": Object {
+        "$ref": 4,
+      },
+      "variableMap": Object {
+        "args": Object {
+          "$ref": 2,
+        },
+        "arguments": Object {
+          "$ref": 1,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 3,
+      },
+      "variables": Array [
+        Object {
+          "$id": 1,
+          "defs": Array [],
+          "eslintUsed": undefined,
+          "identifiers": Array [],
+          "name": "arguments",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 3,
+          },
+        },
+        Object {
+          "$id": 2,
+          "defs": Array [
+            Object {
+              "name": Object {
+                "name": "args",
+                "range": Array [
+                  16,
+                  20,
+                ],
+                "type": "Identifier",
+              },
+              "node": Object {
+                "range": Array [
+                  0,
+                  34,
+                ],
+                "type": "FunctionDeclaration",
+              },
+              "parent": null,
+              "type": "Parameter",
+            },
+          ],
+          "eslintUsed": undefined,
+          "identifiers": Array [
+            Object {
+              "name": "args",
+              "range": Array [
+                16,
+                20,
+              ],
+              "type": "Identifier",
+            },
+          ],
+          "name": "args",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 3,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "foo": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 4,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "foo",
+            "range": Array [
+              9,
+              12,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              0,
+              34,
+            ],
+            "type": "FunctionDeclaration",
+          },
+          "parent": null,
+          "type": "FunctionName",
+        },
+      ],
+      "eslintUsed": undefined,
+      "identifiers": Array [
+        Object {
+          "name": "foo",
+          "range": Array [
+            9,
+            12,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "foo",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 4,
+      },
+    },
+  ],
+}
+`;
+
 exports[`TypeScript scope analysis tests/fixtures/scope-analysis/type-alias.ts 1`] = `
 Object {
   "$id": 0,
@@ -5806,6 +5960,117 @@ Object {
     "$ref": 4,
   },
   "variables": Array [],
+}
+`;
+
+exports[`TypeScript scope analysis tests/fixtures/scope-analysis/type-parameter.ts 1`] = `
+Object {
+  "$id": 3,
+  "block": Object {
+    "range": Array [
+      0,
+      20,
+    ],
+    "type": "Program",
+  },
+  "childScopes": Array [
+    Object {
+      "$id": 2,
+      "block": Object {
+        "range": Array [
+          0,
+          18,
+        ],
+        "type": "FunctionDeclaration",
+      },
+      "childScopes": Array [],
+      "functionExpressionScope": false,
+      "isStrict": false,
+      "references": Array [],
+      "throughReferences": Array [],
+      "type": "function",
+      "upperScope": Object {
+        "$ref": 3,
+      },
+      "variableMap": Object {
+        "arguments": Object {
+          "$ref": 1,
+        },
+      },
+      "variableScope": Object {
+        "$ref": 2,
+      },
+      "variables": Array [
+        Object {
+          "$id": 1,
+          "defs": Array [],
+          "eslintUsed": undefined,
+          "identifiers": Array [],
+          "name": "arguments",
+          "references": Array [],
+          "scope": Object {
+            "$ref": 2,
+          },
+        },
+      ],
+    },
+  ],
+  "functionExpressionScope": false,
+  "isStrict": false,
+  "references": Array [],
+  "throughReferences": Array [],
+  "type": "global",
+  "upperScope": null,
+  "variableMap": Object {
+    "f": Object {
+      "$ref": 0,
+    },
+  },
+  "variableScope": Object {
+    "$ref": 3,
+  },
+  "variables": Array [
+    Object {
+      "$id": 0,
+      "defs": Array [
+        Object {
+          "name": Object {
+            "name": "f",
+            "range": Array [
+              9,
+              10,
+            ],
+            "type": "Identifier",
+          },
+          "node": Object {
+            "range": Array [
+              0,
+              18,
+            ],
+            "type": "FunctionDeclaration",
+          },
+          "parent": null,
+          "type": "FunctionName",
+        },
+      ],
+      "eslintUsed": undefined,
+      "identifiers": Array [
+        Object {
+          "name": "f",
+          "range": Array [
+            9,
+            10,
+          ],
+          "type": "Identifier",
+        },
+      ],
+      "name": "f",
+      "references": Array [],
+      "scope": Object {
+        "$ref": 3,
+      },
+    },
+  ],
 }
 `;
 

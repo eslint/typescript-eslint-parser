@@ -82,7 +82,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 14,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 13,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                13,
+                14,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               13,
               14,
@@ -398,7 +415,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 12,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 11,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                11,
+                12,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               11,
               36,
@@ -3301,7 +3335,24 @@ Object {
                   "line": 1,
                 },
               },
-              "name": "X",
+              "name": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 2,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 1,
+                    "line": 1,
+                  },
+                },
+                "name": "X",
+                "range": Array [
+                  1,
+                  2,
+                ],
+                "type": "Identifier",
+              },
               "range": Array [
                 1,
                 2,
@@ -7241,7 +7292,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "A",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 11,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 10,
+                  "line": 1,
+                },
+              },
+              "name": "A",
+              "range": Array [
+                10,
+                11,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               10,
               11,
@@ -7715,7 +7783,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "A",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 11,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 10,
+                  "line": 1,
+                },
+              },
+              "name": "A",
+              "range": Array [
+                10,
+                11,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               10,
               21,
@@ -8146,7 +8231,24 @@ Object {
                         "line": 2,
                       },
                     },
-                    "name": "T",
+                    "name": Object {
+                      "loc": Object {
+                        "end": Object {
+                          "column": 10,
+                          "line": 2,
+                        },
+                        "start": Object {
+                          "column": 9,
+                          "line": 2,
+                        },
+                      },
+                      "name": "T",
+                      "range": Array [
+                        21,
+                        22,
+                      ],
+                      "type": "Identifier",
+                    },
                     "range": Array [
                       21,
                       22,
@@ -8593,7 +8695,24 @@ Object {
                         "line": 2,
                       },
                     },
-                    "name": "T",
+                    "name": Object {
+                      "loc": Object {
+                        "end": Object {
+                          "column": 10,
+                          "line": 2,
+                        },
+                        "start": Object {
+                          "column": 9,
+                          "line": 2,
+                        },
+                      },
+                      "name": "T",
+                      "range": Array [
+                        21,
+                        22,
+                      ],
+                      "type": "Identifier",
+                    },
                     "range": Array [
                       21,
                       28,
@@ -10473,7 +10592,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 12,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 11,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                11,
+                12,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               11,
               36,
@@ -10827,7 +10963,7 @@ Object {
             "argument": Object {
               "loc": Object {
                 "end": Object {
-                  "column": 41,
+                  "column": 34,
                   "line": 9,
                 },
                 "start": Object {
@@ -10838,60 +10974,9 @@ Object {
               "name": "args",
               "range": Array [
                 188,
-                199,
+                192,
               ],
               "type": "Identifier",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 41,
-                    "line": 9,
-                  },
-                  "start": Object {
-                    "column": 34,
-                    "line": 9,
-                  },
-                },
-                "range": Array [
-                  192,
-                  199,
-                ],
-                "type": "TSTypeAnnotation",
-                "typeAnnotation": Object {
-                  "elementType": Object {
-                    "loc": Object {
-                      "end": Object {
-                        "column": 39,
-                        "line": 9,
-                      },
-                      "start": Object {
-                        "column": 36,
-                        "line": 9,
-                      },
-                    },
-                    "range": Array [
-                      194,
-                      197,
-                    ],
-                    "type": "TSAnyKeyword",
-                  },
-                  "loc": Object {
-                    "end": Object {
-                      "column": 41,
-                      "line": 9,
-                    },
-                    "start": Object {
-                      "column": 36,
-                      "line": 9,
-                    },
-                  },
-                  "range": Array [
-                    194,
-                    199,
-                  ],
-                  "type": "TSArrayType",
-                },
-              },
             },
             "loc": Object {
               "end": Object {
@@ -10908,6 +10993,57 @@ Object {
               199,
             ],
             "type": "RestElement",
+            "typeAnnotation": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 41,
+                  "line": 9,
+                },
+                "start": Object {
+                  "column": 34,
+                  "line": 9,
+                },
+              },
+              "range": Array [
+                192,
+                199,
+              ],
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": Object {
+                "elementType": Object {
+                  "loc": Object {
+                    "end": Object {
+                      "column": 39,
+                      "line": 9,
+                    },
+                    "start": Object {
+                      "column": 36,
+                      "line": 9,
+                    },
+                  },
+                  "range": Array [
+                    194,
+                    197,
+                  ],
+                  "type": "TSAnyKeyword",
+                },
+                "loc": Object {
+                  "end": Object {
+                    "column": 41,
+                    "line": 9,
+                  },
+                  "start": Object {
+                    "column": 36,
+                    "line": 9,
+                  },
+                },
+                "range": Array [
+                  194,
+                  199,
+                ],
+                "type": "TSArrayType",
+              },
+            },
           },
         ],
         "range": Array [
@@ -10991,7 +11127,24 @@ Object {
                 "line": 9,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 18,
+                  "line": 9,
+                },
+                "start": Object {
+                  "column": 17,
+                  "line": 9,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                175,
+                176,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               175,
               176,
@@ -19149,7 +19302,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 11,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 10,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                10,
+                11,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               10,
               11,
@@ -19427,7 +19597,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 11,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 10,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                10,
+                11,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               10,
               17,
@@ -19706,7 +19893,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "__P",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 11,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 8,
+                  "line": 1,
+                },
+              },
+              "name": "__P",
+              "range": Array [
+                8,
+                11,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               8,
               11,
@@ -21921,7 +22125,24 @@ Object {
                   "line": 1,
                 },
               },
-              "name": "T",
+              "name": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 22,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 21,
+                    "line": 1,
+                  },
+                },
+                "name": "T",
+                "range": Array [
+                  21,
+                  22,
+                ],
+                "type": "Identifier",
+              },
               "range": Array [
                 21,
                 22,
@@ -22182,7 +22403,24 @@ Object {
                   "line": 1,
                 },
               },
-              "name": "T",
+              "name": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 22,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 21,
+                    "line": 1,
+                  },
+                },
+                "name": "T",
+                "range": Array [
+                  21,
+                  22,
+                ],
+                "type": "Identifier",
+              },
               "range": Array [
                 21,
                 22,
@@ -22200,7 +22438,24 @@ Object {
                   "line": 1,
                 },
               },
-              "name": "U",
+              "name": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 25,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 24,
+                    "line": 1,
+                  },
+                },
+                "name": "U",
+                "range": Array [
+                  24,
+                  25,
+                ],
+                "type": "Identifier",
+              },
               "range": Array [
                 24,
                 25,
@@ -22514,7 +22769,24 @@ Object {
                   "line": 1,
                 },
               },
-              "name": "T",
+              "name": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 18,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 17,
+                    "line": 1,
+                  },
+                },
+                "name": "T",
+                "range": Array [
+                  17,
+                  18,
+                ],
+                "type": "Identifier",
+              },
               "range": Array [
                 17,
                 18,
@@ -22794,7 +23066,24 @@ Object {
                   "line": 1,
                 },
               },
-              "name": "T",
+              "name": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 18,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 17,
+                    "line": 1,
+                  },
+                },
+                "name": "T",
+                "range": Array [
+                  17,
+                  18,
+                ],
+                "type": "Identifier",
+              },
               "range": Array [
                 17,
                 18,
@@ -22812,7 +23101,24 @@ Object {
                   "line": 1,
                 },
               },
-              "name": "U",
+              "name": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 21,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 20,
+                    "line": 1,
+                  },
+                },
+                "name": "U",
+                "range": Array [
+                  20,
+                  21,
+                ],
+                "type": "Identifier",
+              },
               "range": Array [
                 20,
                 21,
@@ -26460,7 +26766,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "X",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 12,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 11,
+                  "line": 1,
+                },
+              },
+              "name": "X",
+              "range": Array [
+                11,
+                12,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               11,
               12,
@@ -26886,7 +27209,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 29,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 28,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                28,
+                29,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               28,
               29,
@@ -27364,7 +27704,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "X",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 12,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 11,
+                  "line": 1,
+                },
+              },
+              "name": "X",
+              "range": Array [
+                11,
+                12,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               11,
               23,
@@ -28454,7 +28811,7 @@ Object {
           "argument": Object {
             "loc": Object {
               "end": Object {
-                "column": 69,
+                "column": 55,
                 "line": 1,
               },
               "start": Object {
@@ -28465,97 +28822,9 @@ Object {
             "name": "args",
             "range": Array [
               51,
-              69,
+              55,
             ],
             "type": "Identifier",
-            "typeAnnotation": Object {
-              "loc": Object {
-                "end": Object {
-                  "column": 69,
-                  "line": 1,
-                },
-                "start": Object {
-                  "column": 55,
-                  "line": 1,
-                },
-              },
-              "range": Array [
-                55,
-                69,
-              ],
-              "type": "TSTypeAnnotation",
-              "typeAnnotation": Object {
-                "loc": Object {
-                  "end": Object {
-                    "column": 69,
-                    "line": 1,
-                  },
-                  "start": Object {
-                    "column": 56,
-                    "line": 1,
-                  },
-                },
-                "range": Array [
-                  56,
-                  69,
-                ],
-                "type": "TSTypeReference",
-                "typeName": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 61,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 56,
-                      "line": 1,
-                    },
-                  },
-                  "name": "Array",
-                  "range": Array [
-                    56,
-                    61,
-                  ],
-                  "type": "Identifier",
-                },
-                "typeParameters": Object {
-                  "loc": Object {
-                    "end": Object {
-                      "column": 69,
-                      "line": 1,
-                    },
-                    "start": Object {
-                      "column": 61,
-                      "line": 1,
-                    },
-                  },
-                  "params": Array [
-                    Object {
-                      "loc": Object {
-                        "end": Object {
-                          "column": 68,
-                          "line": 1,
-                        },
-                        "start": Object {
-                          "column": 62,
-                          "line": 1,
-                        },
-                      },
-                      "range": Array [
-                        62,
-                        68,
-                      ],
-                      "type": "TSStringKeyword",
-                    },
-                  ],
-                  "range": Array [
-                    61,
-                    69,
-                  ],
-                  "type": "TSTypeParameterInstantiation",
-                },
-              },
-            },
           },
           "loc": Object {
             "end": Object {
@@ -28572,6 +28841,94 @@ Object {
             69,
           ],
           "type": "RestElement",
+          "typeAnnotation": Object {
+            "loc": Object {
+              "end": Object {
+                "column": 69,
+                "line": 1,
+              },
+              "start": Object {
+                "column": 55,
+                "line": 1,
+              },
+            },
+            "range": Array [
+              55,
+              69,
+            ],
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 69,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 56,
+                  "line": 1,
+                },
+              },
+              "range": Array [
+                56,
+                69,
+              ],
+              "type": "TSTypeReference",
+              "typeName": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 61,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 56,
+                    "line": 1,
+                  },
+                },
+                "name": "Array",
+                "range": Array [
+                  56,
+                  61,
+                ],
+                "type": "Identifier",
+              },
+              "typeParameters": Object {
+                "loc": Object {
+                  "end": Object {
+                    "column": 69,
+                    "line": 1,
+                  },
+                  "start": Object {
+                    "column": 61,
+                    "line": 1,
+                  },
+                },
+                "params": Array [
+                  Object {
+                    "loc": Object {
+                      "end": Object {
+                        "column": 68,
+                        "line": 1,
+                      },
+                      "start": Object {
+                        "column": 62,
+                        "line": 1,
+                      },
+                    },
+                    "range": Array [
+                      62,
+                      68,
+                    ],
+                    "type": "TSStringKeyword",
+                  },
+                ],
+                "range": Array [
+                  61,
+                  69,
+                ],
+                "type": "TSTypeParameterInstantiation",
+              },
+            },
+          },
         },
       ],
       "range": Array [
@@ -30924,7 +31281,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 15,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 14,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                14,
+                15,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               14,
               15,
@@ -32064,7 +32438,24 @@ Object {
                       "line": 11,
                     },
                   },
-                  "name": "J",
+                  "name": Object {
+                    "loc": Object {
+                      "end": Object {
+                        "column": 9,
+                        "line": 11,
+                      },
+                      "start": Object {
+                        "column": 8,
+                        "line": 11,
+                      },
+                    },
+                    "name": "J",
+                    "range": Array [
+                      222,
+                      223,
+                    ],
+                    "type": "Identifier",
+                  },
                   "range": Array [
                     222,
                     223,
@@ -32281,7 +32672,24 @@ Object {
                       "line": 13,
                     },
                   },
-                  "name": "F",
+                  "name": Object {
+                    "loc": Object {
+                      "end": Object {
+                        "column": 10,
+                        "line": 13,
+                      },
+                      "start": Object {
+                        "column": 9,
+                        "line": 13,
+                      },
+                    },
+                    "name": "F",
+                    "range": Array [
+                      275,
+                      276,
+                    ],
+                    "type": "Identifier",
+                  },
                   "range": Array [
                     275,
                     276,
@@ -34962,7 +35370,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 15,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 14,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                14,
+                15,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               14,
               15,
@@ -35295,7 +35720,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 16,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 15,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                15,
+                16,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               15,
               16,
@@ -41021,7 +41463,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 12,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                12,
+                13,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               12,
               13,
@@ -41496,7 +41955,24 @@ Object {
                 "line": 1,
               },
             },
-            "name": "T",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 13,
+                  "line": 1,
+                },
+                "start": Object {
+                  "column": 12,
+                  "line": 1,
+                },
+              },
+              "name": "T",
+              "range": Array [
+                12,
+                13,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               12,
               24,
@@ -43015,7 +43491,24 @@ Object {
                 "line": 2,
               },
             },
-            "name": "A",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 25,
+                  "line": 2,
+                },
+                "start": Object {
+                  "column": 24,
+                  "line": 2,
+                },
+              },
+              "name": "A",
+              "range": Array [
+                68,
+                69,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               68,
               69,
@@ -43144,7 +43637,24 @@ Object {
                 "line": 3,
               },
             },
-            "name": "A",
+            "name": Object {
+              "loc": Object {
+                "end": Object {
+                  "column": 25,
+                  "line": 3,
+                },
+                "start": Object {
+                  "column": 24,
+                  "line": 3,
+                },
+              },
+              "name": "A",
+              "range": Array [
+                112,
+                113,
+              ],
+              "type": "Identifier",
+            },
             "range": Array [
               112,
               129,
