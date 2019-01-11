@@ -564,7 +564,7 @@ class Referencer extends OriginalReferencer {
      */
     TSMethodSignature(node) {
         const upperTypeMode = this.typeMode;
-        const { computed, key, typeParameters, params, typeAnnotation } = node;
+        const { computed, key, typeParameters, params, returnType } = node;
 
         if (computed) {
             this.typeMode = false;
@@ -576,7 +576,7 @@ class Referencer extends OriginalReferencer {
         }
         this.visit(typeParameters);
         params.forEach(this.visit, this);
-        this.visit(typeAnnotation); // Maybe returnType?
+        this.visit(returnType);
 
         this.typeMode = upperTypeMode;
     }

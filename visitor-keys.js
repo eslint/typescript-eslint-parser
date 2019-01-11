@@ -61,7 +61,7 @@ module.exports = Evk.unionWith({
     TSImportEqualsDeclaration: ["id", "moduleReference"],
     TSFunctionType: ["typeParameters", "params", "returnType"],
     TSMappedType: ["typeParameter"],
-    TSMethodSignature: ["typeAnnotation", "typeParameters", "key", "params"],
+    TSMethodSignature: ["typeParameters", "key", "params", "returnType"],
     TSModuleBlock: ["body"],
     TSModuleDeclaration: ["id", "body"],
     TSNamespaceExportDeclaration: ["id"],
