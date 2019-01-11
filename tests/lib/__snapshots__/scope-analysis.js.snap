@@ -5398,7 +5398,7 @@ Object {
   "block": Object {
     "range": Array [
       0,
-      36,
+      35,
     ],
     "type": "Program",
   },
@@ -5969,7 +5969,7 @@ Object {
   "block": Object {
     "range": Array [
       0,
-      20,
+      19,
     ],
     "type": "Program",
   },
