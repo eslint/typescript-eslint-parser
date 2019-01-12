@@ -41588,7 +41588,7 @@ Object {
             1,
             23,
           ],
-          "type": "ObjectPattern",
+          "type": "ObjectExpression",
         },
         "loc": Object {
           "end": Object {

@@ -355,6 +355,26 @@ class Referencer extends OriginalReferencer {
     }
 
     /**
+     * Don't make variable because it declares only types.
+     * Switch to the type mode and visit child nodes to find `typeof x` expression in type declarations.
+     * @param {TSClassImplements} node The TSClassImplements node to visit.
+     * @returns {void}
+     */
+    TSClassImplements(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
+     * Don't make variable because it declares only types.
+     * Switch to the type mode and visit child nodes to find `typeof x` expression in type declarations.
+     * @param {TSIndexSignature} node The TSIndexSignature node to visit.
+     * @returns {void}
+     */
+    TSIndexSignature(node) {
+        this.visitTypeNodes(node);
+    }
+
+    /**
      * Visit type assertion.
      * @param {TSTypeAssertion} node The TSTypeAssertion node to visit.
      * @returns {void}
