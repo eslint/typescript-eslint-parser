@@ -20,23 +20,28 @@ const visitorKeys = require("./visitor-keys");
 
 exports.version = require("./package.json").version;
 
-exports.parseForESLint = function parseForESLint(code, options) {
-    if (typeof options !== "object" || options === null) {
-        options = { useJSXTextNode: true };
-    } else if (typeof options.useJSXTextNode !== "boolean") {
-        options = Object.assign({}, options, { useJSXTextNode: true });
+exports.parseForESLint = function parseForESLint(code, inputOptions) {
+    const options = Object.assign({
+        useJSXTextNode: true,
+        // typescript-estree doesn't respect ecmaFeatures object
+        jsx: false
+    }, inputOptions);
+
+    if (typeof options.useJSXTextNode !== "boolean") {
+        options.useJSXTextNode = true;
     }
-    if (typeof options.filePath === "string") {
-        const tsx = options.filePath.endsWith(".tsx");
-        if (tsx || options.filePath.endsWith(".ts")) {
-            options = Object.assign({}, options, { jsx: tsx });
+
+    options.jsx = (options.ecmaFeatures || {}).jsx;
+    if (typeof options.jsx !== "boolean") {
+        inputOptions.jsx = false;
+    }
+
+    // override the jsx option depending on the file path
+    if (typeof inputOptions.filePath === "string") {
+        const tsx = inputOptions.filePath.endsWith(".tsx");
+        if (tsx || inputOptions.filePath.endsWith(".ts")) {
+            options.jsx = tsx;
         }
-    }
-    if (typeof options.jsx !== "boolean" &&
-        options.ecmaFeatures &&
-        typeof options.ecmaFeatures.jsx === "boolean") {
-        // allow the user to override the jsx setting
-        options.jsx = options.ecmaFeatures.jsx;
     }
 
     const ast = parse(code, options);

@@ -38,7 +38,9 @@ describe("TSX", () => {
         const code = shelljs.cat(`${path.resolve(TSX_FIXTURES_DIR, filename)}.src.tsx`);
         const config = {
             useJSXTextNode: true,
-            jsx: true
+            ecmaFeatures: {
+                jsx: true
+            }
         };
         test(`fixtures/${filename}.src`, testUtils.createSnapshotTestBlock(code, config));
     });
@@ -70,7 +72,9 @@ describe("TSX", () => {
             const config = {
                 parser: "typescript-eslint-parser",
                 parserOptions: {
-                    jsx: true
+                    ecmaFeatures: {
+                        jsx: true
+                    }
                 }
             };
             const messages = linter.verify(code, config);
@@ -101,7 +105,9 @@ describe("TSX", () => {
             const config = {
                 parser: "typescript-eslint-parser",
                 parserOptions: {
-                    jsx: true
+                    ecmaFeatures: {
+                        jsx: true
+                    }
                 }
             };
             const messages = linter.verify(code, config, { filename: "test.ts" });
@@ -132,7 +138,9 @@ describe("TSX", () => {
             const config = {
                 parser: "typescript-eslint-parser",
                 parserOptions: {
-                    jsx: false
+                    ecmaFeatures: {
+                        jsx: false
+                    }
                 }
             };
             const messages = linter.verify(code, config, { filename: "test.tsx" });

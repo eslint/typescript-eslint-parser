@@ -35,7 +35,9 @@ describe("Comments", () => {
     testFiles.forEach(filename => {
         const code = shelljs.cat(`${path.resolve(FIXTURES_DIR, filename)}.src.js`);
         const config = {
-            jsx: true
+            ecmaFeatures: {
+                jsx: true
+            }
         };
         test(`fixtures/${filename}.src`, testUtils.createSnapshotTestBlock(code, config));
     });
