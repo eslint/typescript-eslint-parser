@@ -33,7 +33,7 @@ exports.parseForESLint = function parseForESLint(code, inputOptions) {
 
     options.jsx = (options.ecmaFeatures || {}).jsx;
     if (typeof options.jsx !== "boolean") {
-        inputOptions.jsx = false;
+        options.jsx = false;
     }
 
     // override the jsx option depending on the file path
