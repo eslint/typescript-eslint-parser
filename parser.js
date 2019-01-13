@@ -33,15 +33,15 @@ exports.parseForESLint = function parseForESLint(code, options) {
         }
     }
 
-    const ast = parse(code, options);
-
     // https://eslint.org/docs/user-guide/configuring#specifying-parser-options
     // if sourceType is not provided by default eslint expect that it will be set to "script"
     options.sourceType = options.sourceType || "script";
-
-    if (ast && ast.type === "Program") {
-        ast.sourceType = options.sourceType;
+    if (options.sourceType !== "module" && options.sourceType !== "script") {
+        options.sourceType = "script";
     }
+
+    const ast = parse(code, options);
+    ast.sourceType = options.sourceType;
 
     traverser.traverse(ast, {
         enter: node => {
