@@ -26,7 +26,8 @@ const defaultConfig = {
     raw: true,
     tokens: true,
     comment: true,
-    errorOnUnknownASTType: true
+    errorOnUnknownASTType: true,
+    sourceType: "module"
 };
 
 /**
