@@ -1,5 +1,13 @@
-> <h1>Help Wanted!</h1>
-> If you're familiar with TypeScript and ESLint, and you'd like to see this project progress, please consider contributing. We need people with a good knowledge of TypeScript to ensure that the integration with the ESLint ecosystem is useful.
+# This project has been moved to the TypeScript ESLint organization -> https://typescript-eslint.io
+
+The `typescript-eslint-parser` npm package will not receive any future updates, instead please follow along on the new monorepo, where the project will be released under the name `@typescript-eslint/parser`.
+
+```diff
+- typescript-eslint-parser
++ @typescript-eslint/parser
+```
+
+---
 
 # TypeScript ESLint Parser
 
