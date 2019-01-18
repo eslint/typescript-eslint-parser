@@ -1,6 +1,6 @@
-# This project has been moved to the TypeScript ESLint organization -> https://typescript-eslint.io
+# Deprecated: TypeScript ESLint Parser
 
-The `typescript-eslint-parser` npm package will not receive any future updates, instead please follow along on the new monorepo, where the project will be released under the name `@typescript-eslint/parser`.
+**Important:** This repository is no longer maintained and `typescript-eslint-parser` will not receive any future updates. There is an actively maintained fork of this project available at https://typescript-eslint.io and published on npm as `@typescript-eslint-parser`.
 
 ```diff
 - typescript-eslint-parser
@@ -8,8 +8,6 @@ The `typescript-eslint-parser` npm package will not receive any future updates, 
 ```
 
 ---
-
-# TypeScript ESLint Parser
 
 An ESLint custom parser which leverages [TypeScript ESTree](https://github.com/JamesHenry/typescript-estree) to allow for ESLint to lint TypeScript source code.
 
@@ -73,17 +71,6 @@ If you use a non-supported version of TypeScript, the parser will log a warning 
 
 **Please ensure that you are using a supported version before submitting any issues/bug reports.**
 
-## Reporting Issues
-
-Please **do not report parsing/AST issues in this repo**, report them directly to [TypeScript ESTree](https://github.com/JamesHenry/typescript-estree).
-
-Please check the current list of open and known issues and ensure the issue has not been reported before. When creating a new issue provide as much information about your environment as possible. This includes:
-
-- ESLint Version
-- TypeScript version
-- The `typescript-eslint-parser` version
-- ESLint config or rules and plugins currently enabled
-
 ## Integration Tests
 
 We have a very flexible way of running integration tests which connects all of the moving parts of the usage of this parser in the ESLint ecosystem.
@@ -105,10 +92,6 @@ If you ever need to change what gets installed when the docker images are built 
 ```sh
 npm run kill-integration-test-containers
 ```
-
-## Contributing
-
-Issues and pull requests will be triaged and responded to as quickly as possible. We operate under the [ESLint Contributor Guidelines](http://eslint.org/docs/developer-guide/contributing), so please be sure to read them before contributing. If you're not sure where to dig in, check out the [issues](https://github.com/eslint/typescript-eslint-parser/issues).
 
 ## Build Commands
 
