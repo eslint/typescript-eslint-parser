@@ -1,3 +1,10 @@
+v22.0.0 - January 18, 2019
+
+* [`0c76467`](https://github.com/eslint/typescript-eslint-parser/commit/0c7646754aae00c7c7beed69a67704082e78aabb) Docs: Update README with deprecation notice (#602) (Nicholas C. Zakas)
+* [`26348b6`](https://github.com/eslint/typescript-eslint-parser/commit/26348b69afe52e5a170799c0dc14357609cc51fd) Docs: Update README.md regarding migration (#600) (James Henry)
+* [`a8fee90`](https://github.com/eslint/typescript-eslint-parser/commit/a8fee9089306b9fc890dd9275cbc7f3988fcccda) Fix: sourceType not correctly set in AST when provided in options. (#583) (Armano)
+* [`567e8db`](https://github.com/eslint/typescript-eslint-parser/commit/567e8dbcfdc44702b3acfac4bf311397a26dfee5) Breaking: typescript-estree to 18.0.0 and typescript to 3.2.1 (#596) (Armano)
+
 v21.0.2 - December 3, 2018
 
 * [`fed0a5a`](https://github.com/eslint/typescript-eslint-parser/commit/fed0a5a4bc7b3c6a242081adf91af50e848fcf62) Docs: Update README.md (#567) (dudiharush)

@@ -1,6 +1,6 @@
 # Deprecated: TypeScript ESLint Parser
 
-**Important:** This repository is no longer maintained and `typescript-eslint-parser` will not receive any future updates. There is an actively maintained fork of this project available at https://typescript-eslint.io and published on npm as `@typescript-eslint-parser`.
+**Important:** This repository is no longer maintained and `typescript-eslint-parser` will not receive any future updates. There is an actively maintained fork of this project available at https://typescript-eslint.io and published on npm as `@typescript-eslint/parser`.
 
 ```diff
 - typescript-eslint-parser
